@@ -1,0 +1,91 @@
+$p-dark: #151515
+$s-dark: #301B3F
+$p-lit: #DDDDDD
+$s-lit: #3C415C
+    
+html,body
+    background-color: $p-dark
+    color: $p-lit
+
+nav 
+    height: 100vh
+    background-color: $s-dark
+    color: $p-lit
+    // position: fixed
+    // z-index: 1
+
+    img.img-fluid
+        width: 15vw
+
+    a.nav-link
+        color: $p-lit
+    .nav-link:focus, a.nav-link:hover
+        color: $s-lit
+
+section 
+    .content-grp
+        padding: 2%
+
+#exp
+    .card
+        background: linear-gradient(180deg, #3C415C 0%, #301B3F 100%)
+        margin: 4% 0px
+        border-radius: 25px 0px
+        box-shadow: 3px 3px 10px rgb(221 221 221 / 25%)
+        backdrop-filter: blur(4px)  
+
+    .img-fluid
+        max-width: 150px
+        width: 40%
+    .content-grp
+        padding: 0% 6%
+    .col-md-4
+        text-align: center
+
+
+#edu
+    .content-grp
+        padding: 1% 5%
+
+        .card
+            border: 0px solid rgba(0,0,0,.125)
+            background-color: #3C415C
+            color: #DDDDDD
+            border-radius: 25px
+
+        .card-header
+            background-color: #301B3F
+            color: #DDDDDD
+        
+        .card-body
+            color: #DDDDDD
+
+#accomp
+    .accomp-grp
+        .card.h-100
+            background-color: #3C415C
+            color: #DDDDDD
+        .card-img-top
+            width: 90%
+            margin: 0 auto
+
+
+#prof
+
+    #courses
+
+        a.list-group-item.list-group-item-action
+            background-color: #3C415C
+            color: #DDDDDD
+            border: 1px solid rgba(0,0,0,.125)
+    
+    #skills
+        li.list-group-item
+            background-color: #3C415C
+            color: #DDDDDD
+        .skill-grp
+            padding: 0 5%
+        .fw-bold
+            padding-bottom: 5%
+        .progress-bar
+            background-color: #301B3F
