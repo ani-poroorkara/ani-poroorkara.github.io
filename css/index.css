@@ -64,6 +64,7 @@ section .content-grp {
 #accomp .accomp-grp .card-img-top {
   width: 90%;
   margin: 0 auto;
+  max-width: 250px;
 }
 
 #prof #courses a.list-group-item.list-group-item-action {
