@@ -7,20 +7,30 @@ html,body
     background-color: $p-dark
     color: $p-lit
 
-nav 
-    height: 100vh
-    background-color: $s-dark
-    color: $p-lit
-    // position: fixed
-    // z-index: 1
+.side-navbar
+  width: 280px
+  height: 100%
+  position: fixed
+  margin-left: -300px
+  background-color: #100901
+  transition: 0.5s
 
-    img.img-fluid
-        width: 15vw
+.nav-link
+  &:active, &:focus, &:hover
+    background-color: #ffffff26
 
-    a.nav-link
-        color: $p-lit
-    .nav-link:focus, a.nav-link:hover
-        color: $s-lit
+.my-container
+  transition: 0.4s
+
+.active-nav
+  margin-left: 0
+
+/* for main section
+
+.active-cont
+  margin-left: 280px
+
+
 
 section 
     .content-grp
