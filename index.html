@@ -18,62 +18,30 @@
 </head>
 
 <body>
-
-  <main class="container-fluid">
-    <div class="row flex-nowrap">
-        <nav class="col-auto col-md-3 col-xl-2 px-sm-2 px-0  sticky-top">
-            <div class="d-flex flex-column align-items-center align-items-sm-start px-3 pt-2 min-vh-100">
-                <div class="d-flex align-items-center pb-3 mb-md-0 me-md-auto text-white text-decoration-none">
-                    <img src="img/man.png" class="img-fluid" alt="...">
-                </div>
-                
-                <a href="/" class="d-flex align-items-center pb-3 mb-md-0 me-md-auto text-white text-decoration-none">
-                    <span class="fs-5 d-none d-sm-inline">Anirudh Poroorkara</span>
-                </a>
-                <ul class="nav nav-pills flex-column mb-sm-auto mb-0 align-items-center align-items-sm-start" id="menu">
-                    <li class="nav-item">
-                        <a href="#exp" class="nav-link align-middle px-0">
-                            <i class="bi bi-briefcase"></i> <span class="ms-1 d-none d-sm-inline">Experience</span>
-                        </a>
-                    </li>
-                    
-                    <li>
-                        <a href="#edu" class="nav-link px-0 align-middle">
-                            <i class="bi bi-book"></i> <span class="ms-1 d-none d-sm-inline">Education</span></a>
-                    </li>
-                    <li>
-                        <a href="#prof-menu" data-bs-toggle="collapse" class="nav-link px-0 align-middle">
-                            <i class="bi bi-eyeglasses"></i> <span class="ms-1 d-none d-sm-inline">Proficiency</span> </a>
-                        <ul class="collapse show nav flex-column ms-1" id="prof-menu" data-bs-parent="#menu">
-                            <li class="w-100">
-                                <a href="#" class="nav-link px-0"> <i class="bi bi-file-earmark-code"></i> <span class="d-none d-sm-inline">Courses</span></a>
-                            </li>
-                            <li>
-                                <a href="#" class="nav-link px-0"> <i class="bi bi-code-square"></i> <span class="d-none d-sm-inline">Skills</span></a>
-                            </li>
-                        </ul>
-                    </li>
-                    <li>
-                        <a href="#accomp-menu" data-bs-toggle="collapse" class="nav-link px-0 align-middle">
-                            <i class="bi bi-trophy"></i> <span class="ms-1 d-none d-sm-inline">Accomplishments</span> </a>
-                        <ul class="collapse show nav flex-column ms-1" id="accomp-menu" data-bs-parent="#menu">
-                            <li class="w-100">
-                                <a href="#" class="nav-link px-0"> <i class="bi bi-easel"></i> <span class="d-none d-sm-inline">Projects</span></a>
-                            </li>
-                            <li>
-                                <a href="#" class="nav-link px-0"> <i class="bi bi-star"></i> <span class="d-none d-sm-inline">Awards</span></a>
-                            </li>
-                            <li>
-                                <a href="#" class="nav-link px-0"> <i class="bi bi-journal-check"></i> <span class="d-none d-sm-inline">Publications</span></a>
-                            </li>
-                        </ul>
-                    </li>
-                </ul>
-                <hr>
+    <div class="side-navbar active-nav d-flex justify-content-between flex-wrap flex-column" id="sidebar">
+        <ul class="nav flex-column text-white w-100">
+          <a href="#" class="nav-link h3 text-white my-2">
+            Side Nav
+          </a>
+          <li href="#" class="nav-link">
+            <span class="mx-2">Home</span>
+          </li>
+          <li href="#" class="nav-link">
+            <span class="mx-2">About</span>
+          </li>
+          <li href="#" class="nav-link">
+            <span class="mx-2">Contact</span>
+          </li>
+        </ul>
+    </div>
+    <div class="p-1 my-container active-cont">
+        <nav class="navbar sticky-top">
+            <div class="container-fluid">
+                <button type="button" class="btn btn-light" id="menu-btn">Light</button>
             </div>
           </nav>
-        <div class="col py-3">
-            <section id="exp">
+          
+          <section id="exp">
                 <h1 class="display-4">
                     Experience
                 </h1>
@@ -143,7 +111,7 @@
                 </div>
 
             </section>
-            
+
             <section id="accomp">
                 <h1 class="display-4">
                     Accomplishments
@@ -164,7 +132,7 @@
                             </div>
                           </div>
                         </div>
-            
+
                       </div>
                 </div>
             </section>
@@ -218,14 +186,10 @@
                       </ol>
                 </div>
             </section>
-            
-        </div>
-        
     </div>
-</div>
 
  <!-- Option 1: Bootstrap Bundle with Popper -->
  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
-
+ <script src="js/animate.js"></script>
 </body>
 </html>

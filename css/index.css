@@ -3,19 +3,30 @@ html, body {
   color: #DDDDDD;
 }
 
-nav {
-  height: 100vh;
-  background-color: #301B3F;
-  color: #DDDDDD;
+.side-navbar {
+  width: 280px;
+  height: 100%;
+  position: fixed;
+  margin-left: -300px;
+  background-color: #100901;
+  transition: 0.5s;
 }
-nav img.img-fluid {
-  width: 15vw;
+
+.nav-link:active, .nav-link:focus, .nav-link:hover {
+  background-color: #ffffff26;
 }
-nav a.nav-link {
-  color: #DDDDDD;
+
+.my-container {
+  transition: 0.4s;
 }
-nav .nav-link:focus, nav a.nav-link:hover {
-  color: #3C415C;
+
+.active-nav {
+  margin-left: 0;
+}
+
+/* for main section */
+.active-cont {
+  margin-left: 280px;
 }
 
 section .content-grp {
@@ -64,6 +75,7 @@ section .content-grp {
 #accomp .accomp-grp .card-img-top {
   width: 90%;
   margin: 0 auto;
+  max-width: 250px;
 }
 
 #prof #courses a.list-group-item.list-group-item-action {
