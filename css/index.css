@@ -2,6 +2,9 @@ html, body {
   background-color: #151515;
   color: #DDDDDD; }
 
+section h1 {
+  padding: 2% 0; }
+
 .side-navbar {
   width: 280px;
   height: 100%;
