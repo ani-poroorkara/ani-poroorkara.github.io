@@ -101,18 +101,26 @@ section .content-grp {
     #accomp .accomp-grp .card .card-footer .text-muted {
       color: #283747 !important; }
 
+#prof #courses h1 {
+  color: #932432; }
 #prof #courses a.list-group-item.list-group-item-action {
-  background-color: #3C415C;
-  color: #DDDDDD;
-  border: 1px solid rgba(0, 0, 0, 0.125); }
+  background-color: #DE354C;
+  color: #F3F3F3;
+  border: 1px solid #932432; }
+#prof #skills h1 {
+  color: #932432; }
 #prof #skills li.list-group-item {
-  background-color: #3C415C;
-  color: #DDDDDD; }
+  background-color: #DE354C;
+  color: #F3F3F3;
+  border: 1px solid #932432; }
 #prof #skills .skill-grp {
   padding: 0 5%; }
 #prof #skills .fw-bold {
   padding-bottom: 5%; }
 #prof #skills .progress-bar {
-  background-color: #301B3F; }
+  background-color: #3C1874; }
+#prof #skills .badge.rounded-pill {
+  background-color: #F3F3F3;
+  color: #932432; }
 
 /*# sourceMappingURL=index.css.map */

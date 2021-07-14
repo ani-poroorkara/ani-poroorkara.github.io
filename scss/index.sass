@@ -143,19 +143,34 @@ section
 
 
 #prof
+    
     #courses
+        h1
+            color: $text-secondary
+
         a.list-group-item.list-group-item-action
-            background-color: #3C415C
-            color: #DDDDDD
-            border: 1px solid rgba(0,0,0,.125)
+            background-color: $bg-secondary
+            color: $bg-primary
+            border: 1px solid $text-secondary
     
     #skills
+        h1
+            color: $text-secondary
+
         li.list-group-item
-            background-color: #3C415C
-            color: #DDDDDD
+            background-color: $bg-secondary
+            color: $bg-primary
+            border: 1px solid $text-secondary
+
         .skill-grp
             padding: 0 5%
+
         .fw-bold
             padding-bottom: 5%
+
         .progress-bar
-            background-color: #301B3F
+            background-color: $text-primary
+
+        .badge.rounded-pill
+            background-color: $bg-primary
+            color: $text-secondary
