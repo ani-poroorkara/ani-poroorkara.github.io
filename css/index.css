@@ -1,6 +1,8 @@
 html, body {
   background-color: #F3F3F3;
-  color: #3C1874; }
+  color: #3C1874;
+  background-image: url("../img/bg.svg");
+  background-blend-mode: overlay; }
 
 section h1 {
   padding: 2% 0; }
