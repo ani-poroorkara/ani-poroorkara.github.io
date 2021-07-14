@@ -3,8 +3,12 @@ html, body {
   color: #3C1874;
   background-image: url("../img/bg.svg"); }
 
-section h1 {
-  padding: 2% 0; }
+section h1.display-4 {
+  padding: 2% 0;
+  background-color: #3C1874;
+  color: #F3F3F3;
+  border-radius: 25px;
+  text-align: center; }
 
 .side-navbar {
   width: 280px;
