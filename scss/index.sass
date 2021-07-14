@@ -1,15 +1,18 @@
 // Color
-$p-dark: #151515
-$s-dark: #301B3F
-$p-lit: #DDDDDD
-$s-lit: #3C415C
+$bg-primary: #F3F3F3
+$bg-secondary: #DE354C
+
+$text-primary: #3C1874
+$text-secondary: #932432
+
+$extra: #283747
 
 // Font
 
 //Universal fix
 html,body
-    background-color: $p-dark
-    color: $p-lit
+    background-color: $bg-primary
+    color: $text-primary
 
 section
     h1
@@ -20,12 +23,31 @@ section
     height: 100%
     position: fixed
     margin-left: -300px
-    background-color: #151515
+    background-color: $bg-secondary
     transition: 0.5s
 
-.nav-link
+    ul.dropdown-menu.show
+        background-color: $extra
+        
+        .dropdown-item
+            color: $bg-primary
+
+            &:active, &:focus, &:hover
+                background-color: $bg-secondary
+                color: $extra
+
+
+.nav-head
     &:active, &:focus, &:hover
-        background-color: #301B3F
+        background-color: $bg-primary
+        color: $bg-secondary
+
+.nav-link
+    color: $bg-primary
+
+    &:active, &:focus, &:hover
+        background-color: $bg-primary
+        color: $bg-secondary
 
 .my-container
     transition: 0.4s
@@ -45,7 +67,9 @@ section
 .active-cont
     margin-left: 280px
 
-
+#menu-btn
+    background-color: $bg-secondary
+    color: $bg-primary
 
 section 
     .content-grp
