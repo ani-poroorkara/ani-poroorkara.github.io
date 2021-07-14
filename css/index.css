@@ -1,0 +1,88 @@
+html, body {
+  background-color: #151515;
+  color: #DDDDDD; }
+
+section h1 {
+  padding: 2% 0; }
+
+.side-navbar {
+  width: 280px;
+  height: 100%;
+  position: fixed;
+  margin-left: -300px;
+  background-color: #151515;
+  transition: 0.5s; }
+
+.nav-link:active, .nav-link:focus, .nav-link:hover {
+  background-color: #301B3F; }
+
+.my-container {
+  transition: 0.4s; }
+
+.active-nav {
+  margin-left: 0; }
+
+.profile-pic img {
+  width: 35vw;
+  margin: 0 auto;
+  padding: 5% 3%;
+  max-width: 200px; }
+
+/* for main section */
+.active-cont {
+  margin-left: 280px; }
+
+section .content-grp {
+  padding: 2%; }
+
+#exp .card {
+  background: linear-gradient(180deg, #3C415C 0%, #301B3F 100%);
+  margin: 4% 0px;
+  border-radius: 25px 0px;
+  backdrop-filter: blur(4px); }
+#exp .img-fluid {
+  max-width: 150px;
+  width: 40%; }
+#exp .content-grp {
+  padding: 0% 6%; }
+#exp .col-md-4 {
+  text-align: center; }
+
+#edu .content-grp {
+  padding: 1% 5%; }
+  #edu .content-grp .card {
+    border: 0px solid rgba(0, 0, 0, 0.125);
+    background-color: #3C415C;
+    color: #DDDDDD;
+    border-radius: 25px; }
+  #edu .content-grp .card-header {
+    background-color: #301B3F;
+    color: #DDDDDD; }
+  #edu .content-grp .card-body {
+    color: #DDDDDD; }
+
+#accomp .accomp-grp .card.h-100 {
+  background-color: #3C415C;
+  color: #DDDDDD;
+  padding: 0vw 1vw;
+  margin: 0vw 2vw; }
+#accomp .accomp-grp .card-img-top {
+  width: 90%;
+  margin: 0 auto;
+  max-width: 200px; }
+
+#prof #courses a.list-group-item.list-group-item-action {
+  background-color: #3C415C;
+  color: #DDDDDD;
+  border: 1px solid rgba(0, 0, 0, 0.125); }
+#prof #skills li.list-group-item {
+  background-color: #3C415C;
+  color: #DDDDDD; }
+#prof #skills .skill-grp {
+  padding: 0 5%; }
+#prof #skills .fw-bold {
+  padding-bottom: 5%; }
+#prof #skills .progress-bar {
+  background-color: #301B3F; }
+
+/*# sourceMappingURL=index.css.map */
