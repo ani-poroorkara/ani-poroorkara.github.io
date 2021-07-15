@@ -1,34 +1,72 @@
 // Color
-$p-dark: #151515
-$s-dark: #301B3F
-$p-lit: #DDDDDD
-$s-lit: #3C415C
+$bg-primary: #F3F3F3
+$bg-secondary: #DE354C
+
+$text-primary: #3C1874
+$text-secondary: #932432
+
+$extra: #283747
 
 // Font
 
+
 //Universal fix
 html,body
-    background-color: $p-dark
-    color: $p-lit
+    background-color: $bg-primary
+    color: $text-primary
+    background-image: url('../img/bg-1.svg')
+    background-position: center
+    background-repeat: no-repeat
 
 section
-    h1
+    h1.display-4
         padding: 2% 0
+        background-color: $text-primary
+        color: $bg-primary
+        border-radius: 25px
+        text-align: center
+        max-width: 80vw
+        margin: 0 auto
+        mix-blend-mode: hard-light
 
+section 
+    .content-grp
+        padding: 2%
+
+// Sidebar 
 .side-navbar
     width: 280px
     height: 100%
     position: fixed
     margin-left: -300px
-    background-color: #151515
+    background-color: $bg-secondary
     transition: 0.5s
+    background-image: url('../img/navbar-bg.svg')
+    background-position: center
+    background-repeat: no-repeat
+
+    ul.dropdown-menu.show
+        background-color: $extra
+        
+        .dropdown-item
+            color: $bg-primary
+
+            &:active, &:focus, &:hover
+                background-color: $bg-secondary
+                color: $extra
+
+
+.nav-head
+    &:active, &:focus, &:hover
+        background-color: $bg-primary
+        color: $bg-secondary
 
 .nav-link
-    &:active, &:focus, &:hover
-        background-color: #301B3F
+    color: $bg-primary
 
-.my-container
-    transition: 0.4s
+    &:active, &:focus, &:hover
+        background-color: $bg-primary
+        color: $bg-secondary
 
 .active-nav
     margin-left: 0
@@ -40,24 +78,29 @@ section
         padding: 5% 3%
         max-width: 200px
 
-/* for main section
+// Main 
+.my-container
+    transition: 0.4s
 
 .active-cont
     margin-left: 280px
 
-
-
-section 
-    .content-grp
-        padding: 2%
+#menu-btn
+    background-color: $bg-secondary
+    color: $bg-primary
 
 #exp
+    
     .card
-        background: linear-gradient(180deg, #3C415C 0%, #301B3F 100%)
+        background: linear-gradient(180deg, $text-secondary 0%, $bg-secondary 100%)
         margin: 4% 0px
         border-radius: 25px 0px
-        // box-shadow: 3px 3px 10px rgb(221 221 221 / 25%)
-        backdrop-filter: blur(4px)  
+        backdrop-filter: blur(4px)
+        color: $bg-primary
+        border: 0px solid rgba(0,0,0,.125)
+
+        .text-muted
+            color: $extra !important
 
     .img-fluid
         max-width: 150px
@@ -69,52 +112,76 @@ section
 
 
 #edu
-    .content-grp
-        padding: 1% 5%
-
         .card
             border: 0px solid rgba(0,0,0,.125)
-            background-color: #3C415C
-            color: #DDDDDD
+            background-color: $bg-secondary
+            color: $bg-secondary
             border-radius: 25px
-
-        .card-header
-            background-color: #301B3F
-            color: #DDDDDD
         
         .card-body
-            color: #DDDDDD
+            color: $bg-primary
+            
+            .text-muted
+                color: $extra !important    
 
 #accomp
     .accomp-grp
-        .card.h-100
-            background-color: #3C415C
-            color: #DDDDDD
+        .card
+            background-color: $bg-secondary
+            color: $bg-primary
             padding: 0vw 1vw
-            margin: 0vw 2vw
-        .card-img-top
-            width: 90%
-            margin: 0 auto
-            max-width: 200px
+            margin: 0vw 1vw
+
+            .card-img-top
+                width: 90%
+                margin: 0 auto
+                max-width: 200px
+            
+            .btn
+                background-color: $text-primary
+                color: $bg-primary
+
+                &:active, &:focus, &:hover
+                    background-color: $bg-primary
+                    color: $bg-secondary
+
+            .card-footer
+                background-color: $text-secondary
+                
+                .text-muted
+                    color: $extra !important
 
 
 
 #prof
-
+    
     #courses
+        h1
+            color: $text-secondary
 
         a.list-group-item.list-group-item-action
-            background-color: #3C415C
-            color: #DDDDDD
-            border: 1px solid rgba(0,0,0,.125)
+            background-color: $bg-secondary
+            color: $bg-primary
+            border: 1px solid $text-secondary
     
     #skills
+        h1
+            color: $text-secondary
+
         li.list-group-item
-            background-color: #3C415C
-            color: #DDDDDD
+            background-color: $bg-secondary
+            color: $bg-primary
+            border: 1px solid $text-secondary
+
         .skill-grp
             padding: 0 5%
+
         .fw-bold
             padding-bottom: 5%
+
         .progress-bar
-            background-color: #301B3F
+            background-color: $text-primary
+
+        .badge.rounded-pill
+            background-color: $bg-primary
+            color: $text-secondary

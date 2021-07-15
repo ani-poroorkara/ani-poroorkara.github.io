@@ -1,23 +1,50 @@
 html, body {
-  background-color: #151515;
-  color: #DDDDDD; }
+  background-color: #F3F3F3;
+  color: #3C1874;
+  background-image: url("../img/bg-1.svg");
+  background-position: center;
+  background-repeat: no-repeat; }
 
-section h1 {
-  padding: 2% 0; }
+section h1.display-4 {
+  padding: 2% 0;
+  background-color: #3C1874;
+  color: #F3F3F3;
+  border-radius: 25px;
+  text-align: center;
+  max-width: 80vw;
+  margin: 0 auto;
+  mix-blend-mode: hard-light; }
+
+section .content-grp {
+  padding: 2%; }
 
 .side-navbar {
   width: 280px;
   height: 100%;
   position: fixed;
   margin-left: -300px;
-  background-color: #151515;
-  transition: 0.5s; }
+  background-color: #DE354C;
+  transition: 0.5s;
+  background-image: url("../img/navbar-bg.svg");
+  background-position: center;
+  background-repeat: no-repeat; }
+  .side-navbar ul.dropdown-menu.show {
+    background-color: #283747; }
+    .side-navbar ul.dropdown-menu.show .dropdown-item {
+      color: #F3F3F3; }
+      .side-navbar ul.dropdown-menu.show .dropdown-item:active, .side-navbar ul.dropdown-menu.show .dropdown-item:focus, .side-navbar ul.dropdown-menu.show .dropdown-item:hover {
+        background-color: #DE354C;
+        color: #283747; }
 
-.nav-link:active, .nav-link:focus, .nav-link:hover {
-  background-color: #301B3F; }
+.nav-head:active, .nav-head:focus, .nav-head:hover {
+  background-color: #F3F3F3;
+  color: #DE354C; }
 
-.my-container {
-  transition: 0.4s; }
+.nav-link {
+  color: #F3F3F3; }
+  .nav-link:active, .nav-link:focus, .nav-link:hover {
+    background-color: #F3F3F3;
+    color: #DE354C; }
 
 .active-nav {
   margin-left: 0; }
@@ -28,18 +55,25 @@ section h1 {
   padding: 5% 3%;
   max-width: 200px; }
 
-/* for main section */
+.my-container {
+  transition: 0.4s; }
+
 .active-cont {
   margin-left: 280px; }
 
-section .content-grp {
-  padding: 2%; }
+#menu-btn {
+  background-color: #DE354C;
+  color: #F3F3F3; }
 
 #exp .card {
-  background: linear-gradient(180deg, #3C415C 0%, #301B3F 100%);
+  background: linear-gradient(180deg, #932432 0%, #DE354C 100%);
   margin: 4% 0px;
   border-radius: 25px 0px;
-  backdrop-filter: blur(4px); }
+  backdrop-filter: blur(4px);
+  color: #F3F3F3;
+  border: 0px solid rgba(0, 0, 0, 0.125); }
+  #exp .card .text-muted {
+    color: #283747 !important; }
 #exp .img-fluid {
   max-width: 150px;
   width: 40%; }
@@ -48,41 +82,56 @@ section .content-grp {
 #exp .col-md-4 {
   text-align: center; }
 
-#edu .content-grp {
-  padding: 1% 5%; }
-  #edu .content-grp .card {
-    border: 0px solid rgba(0, 0, 0, 0.125);
-    background-color: #3C415C;
-    color: #DDDDDD;
-    border-radius: 25px; }
-  #edu .content-grp .card-header {
-    background-color: #301B3F;
-    color: #DDDDDD; }
-  #edu .content-grp .card-body {
-    color: #DDDDDD; }
+#edu .card {
+  border: 0px solid rgba(0, 0, 0, 0.125);
+  background-color: #DE354C;
+  color: #DE354C;
+  border-radius: 25px; }
+#edu .card-body {
+  color: #F3F3F3; }
+  #edu .card-body .text-muted {
+    color: #283747 !important; }
 
-#accomp .accomp-grp .card.h-100 {
-  background-color: #3C415C;
-  color: #DDDDDD;
+#accomp .accomp-grp .card {
+  background-color: #DE354C;
+  color: #F3F3F3;
   padding: 0vw 1vw;
-  margin: 0vw 2vw; }
-#accomp .accomp-grp .card-img-top {
-  width: 90%;
-  margin: 0 auto;
-  max-width: 200px; }
+  margin: 0vw 1vw; }
+  #accomp .accomp-grp .card .card-img-top {
+    width: 90%;
+    margin: 0 auto;
+    max-width: 200px; }
+  #accomp .accomp-grp .card .btn {
+    background-color: #3C1874;
+    color: #F3F3F3; }
+    #accomp .accomp-grp .card .btn:active, #accomp .accomp-grp .card .btn:focus, #accomp .accomp-grp .card .btn:hover {
+      background-color: #F3F3F3;
+      color: #DE354C; }
+  #accomp .accomp-grp .card .card-footer {
+    background-color: #932432; }
+    #accomp .accomp-grp .card .card-footer .text-muted {
+      color: #283747 !important; }
 
+#prof #courses h1 {
+  color: #932432; }
 #prof #courses a.list-group-item.list-group-item-action {
-  background-color: #3C415C;
-  color: #DDDDDD;
-  border: 1px solid rgba(0, 0, 0, 0.125); }
+  background-color: #DE354C;
+  color: #F3F3F3;
+  border: 1px solid #932432; }
+#prof #skills h1 {
+  color: #932432; }
 #prof #skills li.list-group-item {
-  background-color: #3C415C;
-  color: #DDDDDD; }
+  background-color: #DE354C;
+  color: #F3F3F3;
+  border: 1px solid #932432; }
 #prof #skills .skill-grp {
   padding: 0 5%; }
 #prof #skills .fw-bold {
   padding-bottom: 5%; }
 #prof #skills .progress-bar {
-  background-color: #301B3F; }
+  background-color: #3C1874; }
+#prof #skills .badge.rounded-pill {
+  background-color: #F3F3F3;
+  color: #932432; }
 
 /*# sourceMappingURL=index.css.map */
