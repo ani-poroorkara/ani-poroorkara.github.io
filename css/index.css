@@ -23,7 +23,10 @@ section .content-grp {
   position: fixed;
   margin-left: -300px;
   background-color: #DE354C;
-  transition: 0.5s; }
+  transition: 0.5s;
+  background-image: url("../img/navbar-bg.svg");
+  background-position: center;
+  background-repeat: no-repeat; }
   .side-navbar ul.dropdown-menu.show {
     background-color: #283747; }
     .side-navbar ul.dropdown-menu.show .dropdown-item {
