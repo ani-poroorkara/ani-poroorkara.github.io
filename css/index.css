@@ -1,14 +1,21 @@
 html, body {
   background-color: #F3F3F3;
   color: #3C1874;
-  background-image: url("../img/bg.svg"); }
+  background-image: url("../img/bg-1.svg");
+  background-position: center;
+  background-repeat: no-repeat; }
 
 section h1.display-4 {
   padding: 2% 0;
   background-color: #3C1874;
   color: #F3F3F3;
   border-radius: 25px;
-  text-align: center; }
+  text-align: center;
+  max-width: 80vw;
+  margin: 0 auto; }
+
+section .content-grp {
+  padding: 2%; }
 
 .side-navbar {
   width: 280px;
@@ -54,9 +61,6 @@ section h1.display-4 {
   background-color: #DE354C;
   color: #F3F3F3; }
 
-section .content-grp {
-  padding: 2%; }
-
 #exp .card {
   background: linear-gradient(180deg, #932432 0%, #DE354C 100%);
   margin: 4% 0px;
@@ -74,17 +78,15 @@ section .content-grp {
 #exp .col-md-4 {
   text-align: center; }
 
-#edu .content-grp {
-  padding: 1% 5%; }
-  #edu .content-grp .card {
-    border: 0px solid rgba(0, 0, 0, 0.125);
-    background-color: #DE354C;
-    color: #DE354C;
-    border-radius: 25px; }
-  #edu .content-grp .card-body {
-    color: #F3F3F3; }
-    #edu .content-grp .card-body .text-muted {
-      color: #283747 !important; }
+#edu .card {
+  border: 0px solid rgba(0, 0, 0, 0.125);
+  background-color: #DE354C;
+  color: #DE354C;
+  border-radius: 25px; }
+#edu .card-body {
+  color: #F3F3F3; }
+  #edu .card-body .text-muted {
+    color: #283747 !important; }
 
 #accomp .accomp-grp .card {
   background-color: #DE354C;
