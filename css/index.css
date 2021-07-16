@@ -1,46 +1,137 @@
-/*
-Error: Invalid mixin "======".
-        on line 8 of scss/index.sass
+html, body {
+  background-color: #EEFBFB;
+  color: #203647;
+  background-image: url("../img/bg.svg");
+  background-position: center;
+  background-repeat: no-repeat; }
 
-3: //Universal fix
-4: html,body
-5:     background-color: $bg-primary
-6:     color: $text-primary
-7: 
-8: =======
-9:     background-image: $main-bg-img
-10: >>>>>>> b0766d790ffeac253a0b2e35d16133a10fc7a2a8
-11:     background-position: center
-12:     background-repeat: no-repeat
-13: 
+section h1.display-4 {
+  padding: 2% 0;
+  background-color: #203647;
+  color: #EEFBFB;
+  border-radius: 25px;
+  text-align: center;
+  max-width: 80vw;
+  margin: 0 auto;
+  mix-blend-mode: hard-light; }
 
-Backtrace:
-scss/index.sass:8
-/usr/lib/ruby/vendor_ruby/sass/engine.rb:1119:in `parse_mixin_definition'
-/usr/lib/ruby/vendor_ruby/sass/engine.rb:658:in `parse_line'
-/usr/lib/ruby/vendor_ruby/sass/engine.rb:539:in `build_tree'
-/usr/lib/ruby/vendor_ruby/sass/engine.rb:558:in `block in append_children'
-/usr/lib/ruby/vendor_ruby/sass/engine.rb:557:in `each'
-/usr/lib/ruby/vendor_ruby/sass/engine.rb:557:in `append_children'
-/usr/lib/ruby/vendor_ruby/sass/engine.rb:417:in `_to_tree'
-/usr/lib/ruby/vendor_ruby/sass/engine.rb:389:in `_render_with_sourcemap'
-/usr/lib/ruby/vendor_ruby/sass/engine.rb:307:in `render_with_sourcemap'
-/usr/lib/ruby/vendor_ruby/sass/plugin/compiler.rb:462:in `update_stylesheet'
-/usr/lib/ruby/vendor_ruby/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
-/usr/lib/ruby/vendor_ruby/sass/plugin/compiler.rb:209:in `each'
-/usr/lib/ruby/vendor_ruby/sass/plugin/compiler.rb:209:in `update_stylesheets'
-/usr/lib/ruby/vendor_ruby/sass/plugin/compiler.rb:443:in `on_file_changed'
-/usr/lib/ruby/vendor_ruby/sass/plugin/compiler.rb:320:in `block in watch'
-/var/lib/gems/2.7.0/gems/sass-listen-4.0.0/lib/sass-listen/event/config.rb:23:in `call'
-/var/lib/gems/2.7.0/gems/sass-listen-4.0.0/lib/sass-listen/event/processor.rb:115:in `_process_changes'
-/var/lib/gems/2.7.0/gems/sass-listen-4.0.0/lib/sass-listen/event/processor.rb:19:in `block in loop_for'
-/var/lib/gems/2.7.0/gems/sass-listen-4.0.0/lib/sass-listen/event/processor.rb:15:in `loop'
-/var/lib/gems/2.7.0/gems/sass-listen-4.0.0/lib/sass-listen/event/processor.rb:15:in `loop_for'
-/var/lib/gems/2.7.0/gems/sass-listen-4.0.0/lib/sass-listen/event/loop.rb:84:in `_wait_for_changes'
-/var/lib/gems/2.7.0/gems/sass-listen-4.0.0/lib/sass-listen/event/loop.rb:42:in `block in setup'
-/var/lib/gems/2.7.0/gems/sass-listen-4.0.0/lib/sass-listen/internals/thread_pool.rb:6:in `block in add'
-*/
-body:before {
-  white-space: pre;
-  font-family: monospace;
-  content: "Error: Invalid mixin \"======\".\A         on line 8 of scss/index.sass\A \A 3: //Universal fix\A 4: html,body\A 5:     background-color: $bg-primary\A 6:     color: $text-primary\A 7: \A 8: =======\A 9:     background-image: $main-bg-img\A 10: >>>>>>> b0766d790ffeac253a0b2e35d16133a10fc7a2a8\A 11:     background-position: center\A 12:     background-repeat: no-repeat\A 13: "; }
+section .content-grp {
+  padding: 2%; }
+
+.side-navbar {
+  width: 280px;
+  height: 100%;
+  position: fixed;
+  margin-left: -300px;
+  background-color: #12232E;
+  transition: 0.5s;
+  background-image: url("../img/navbar-bg.svg");
+  background-position: center;
+  background-repeat: no-repeat; }
+  .side-navbar ul.dropdown-menu.show {
+    background-color: #4DA8DA; }
+    .side-navbar ul.dropdown-menu.show .dropdown-item {
+      color: #EEFBFB; }
+      .side-navbar ul.dropdown-menu.show .dropdown-item:active, .side-navbar ul.dropdown-menu.show .dropdown-item:focus, .side-navbar ul.dropdown-menu.show .dropdown-item:hover {
+        background-color: #12232E;
+        color: #4DA8DA; }
+
+.nav-head:active, .nav-head:focus, .nav-head:hover {
+  background-color: #EEFBFB;
+  color: #12232E; }
+
+.nav-link {
+  color: #EEFBFB; }
+  .nav-link:active, .nav-link:focus, .nav-link:hover {
+    background-color: #EEFBFB;
+    color: #12232E; }
+
+.active-nav {
+  margin-left: 0; }
+
+.profile-pic img {
+  width: 35vw;
+  margin: 0 auto;
+  padding: 5% 3%;
+  max-width: 200px; }
+
+.my-container {
+  transition: 0.4s; }
+
+.active-cont {
+  margin-left: 280px; }
+
+#menu-btn {
+  background-color: #12232E;
+  color: #EEFBFB; }
+
+#exp .card {
+  background: linear-gradient(180deg, #007CC7 0%, #12232E 100%);
+  margin: 4% 0px;
+  border-radius: 25px 0px;
+  backdrop-filter: blur(4px);
+  color: #EEFBFB;
+  border: 0px solid rgba(0, 0, 0, 0.125); }
+  #exp .card .text-muted {
+    color: #4DA8DA !important; }
+#exp .img-fluid {
+  max-width: 150px;
+  width: 40%; }
+#exp .content-grp {
+  padding: 0% 6%; }
+#exp .col-md-4 {
+  text-align: center; }
+
+#edu .card {
+  border: 0px solid rgba(0, 0, 0, 0.125);
+  background-color: #12232E;
+  color: #12232E;
+  border-radius: 25px; }
+#edu .card-body {
+  color: #EEFBFB; }
+  #edu .card-body .text-muted {
+    color: #4DA8DA !important; }
+
+#accomp .accomp-grp .card {
+  background-color: #12232E;
+  color: #EEFBFB;
+  padding: 0vw 1vw;
+  margin: 0vw 1vw; }
+  #accomp .accomp-grp .card .card-img-top {
+    width: 90%;
+    margin: 0 auto;
+    max-width: 200px; }
+  #accomp .accomp-grp .card .btn {
+    background-color: #203647;
+    color: #EEFBFB; }
+    #accomp .accomp-grp .card .btn:active, #accomp .accomp-grp .card .btn:focus, #accomp .accomp-grp .card .btn:hover {
+      background-color: #EEFBFB;
+      color: #12232E; }
+  #accomp .accomp-grp .card .card-footer {
+    background-color: #007CC7; }
+    #accomp .accomp-grp .card .card-footer .text-muted {
+      color: #4DA8DA !important; }
+
+#prof #courses h1 {
+  color: #007CC7; }
+#prof #courses a.list-group-item.list-group-item-action {
+  background-color: #12232E;
+  color: #EEFBFB;
+  border: 1px solid #007CC7; }
+#prof #skills h1 {
+  color: #007CC7; }
+#prof #skills li.list-group-item {
+  background-color: #12232E;
+  color: #EEFBFB;
+  border: 1px solid #007CC7; }
+#prof #skills .skill-grp {
+  padding: 0 5%; }
+#prof #skills .fw-bold {
+  padding-bottom: 5%; }
+#prof #skills .progress-bar {
+  background-color: #203647; }
+#prof #skills .badge.rounded-pill {
+  background-color: #EEFBFB;
+  color: #007CC7; }
+
+/*# sourceMappingURL=index.css.map */
