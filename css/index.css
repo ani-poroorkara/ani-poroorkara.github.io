@@ -1,6 +1,6 @@
 html, body {
-  background-color: #F3C178;
-  color: #0B0500;
+  background-color: #0E131F;
+  color: #D3C4D1;
   background-image: url("../img/bg-dark.svg");
   background-position: center;
   background-repeat: no-repeat;
@@ -8,7 +8,7 @@ html, body {
 
 section h1.display-4 {
   padding: 2% 0;
-  color: #0B0500;
+  color: #D3C4D1;
   border-radius: 25px;
   text-align: center;
   max-width: 80vw;
@@ -22,29 +22,29 @@ section .content-grp {
   height: 100%;
   position: fixed;
   margin-left: -300px;
-  background-color: #00A878;
+  background-color: #252323;
   transition: 0.5s;
-  background-image: url("../img/Navbar-dark.svg");
+  background-image: url("../img/navbar-dark.svg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: auto; }
   .side-navbar ul.dropdown-menu.show {
-    background-color: #00A878; }
+    background-color: #252323; }
     .side-navbar ul.dropdown-menu.show .dropdown-item {
-      color: #0B0500; }
+      color: #D3C4D1; }
       .side-navbar ul.dropdown-menu.show .dropdown-item:active, .side-navbar ul.dropdown-menu.show .dropdown-item:focus, .side-navbar ul.dropdown-menu.show .dropdown-item:hover {
-        background-color: #D8F1A0;
-        color: #0B0500; }
+        background-color: #3A015C;
+        color: #D3C4D1; }
 
 .nav-head:active, .nav-head:focus, .nav-head:hover {
-  background-color: #D8F1A0;
-  color: #0B0500; }
+  background-color: #3A015C;
+  color: #D3C4D1; }
 
 .nav-link {
-  color: #0B0500; }
+  color: #D3C4D1; }
   .nav-link:active, .nav-link:focus, .nav-link:hover {
-    background-color: #D8F1A0;
-    color: #0B0500; }
+    background-color: #3A015C;
+    color: #D3C4D1; }
 
 .active-nav {
   margin-left: 0; }
@@ -62,18 +62,18 @@ section .content-grp {
   margin-left: 280px; }
 
 #menu-btn {
-  background-color: #00A878;
-  color: #0B0500; }
+  background-color: #252323;
+  color: #D3C4D1; }
 
 #exp .card {
-  background: linear-gradient(180deg, #F3C178 0%, #FE5E41 100%);
+  background: linear-gradient(180deg, #0E131F 0%, #13837E 100%);
   margin: 4% 0px;
   border-radius: 25px 0px;
   backdrop-filter: blur(4px);
-  color: #0B0500;
-  border: 1px solid #FE5E41; }
+  color: #D3C4D1;
+  border: 1px solid #13837E; }
   #exp .card .text-muted {
-    color: #D8F1A0 !important; }
+    color: #33312E !important; }
 #exp .img-fluid {
   max-width: 150px;
   width: 40%; }
@@ -83,58 +83,58 @@ section .content-grp {
   text-align: center; }
 
 #edu .card {
-  border: 1px solid #FE5E41;
-  background: linear-gradient(180deg, #F3C178 0%, #FE5E41 100%);
-  color: #0B0500;
+  border: 1px solid #13837E;
+  background: linear-gradient(180deg, #0E131F 0%, #13837E 100%);
+  color: #D3C4D1;
   border-radius: 25px; }
 #edu .card-body {
-  color: #0B0500; }
+  color: #D3C4D1; }
   #edu .card-body .text-muted {
-    color: #D8F1A0 !important; }
+    color: #33312E !important; }
 
 #accomp .accomp-grp .card {
-  background: linear-gradient(180deg, #F3C178 0%, #FE5E41 100%);
-  color: #0B0500;
+  background: linear-gradient(180deg, #0E131F 0%, #13837E 100%);
+  color: #D3C4D1;
   padding: 0vw 1vw;
   margin: 0vw 1vw;
-  border: 1px solid #FE5E41; }
+  border: 1px solid #13837E; }
   #accomp .accomp-grp .card .card-img-top {
     width: 90%;
     margin: 0 auto;
     max-width: 200px; }
   #accomp .accomp-grp .card .btn {
-    background-color: #0B0500;
-    color: #D8F1A0; }
+    background-color: #D3C4D1;
+    color: #33312E; }
     #accomp .accomp-grp .card .btn:active, #accomp .accomp-grp .card .btn:focus, #accomp .accomp-grp .card .btn:hover {
-      background-color: #D8F1A0;
-      color: #0B0500; }
+      background-color: #33312E;
+      color: #D3C4D1; }
   #accomp .accomp-grp .card .card-footer {
     padding: 0.5rem 0rem;
     background-color: rgba(0, 0, 0, 0);
     border-top: 1px solid rgba(0, 0, 0, 0.125); }
     #accomp .accomp-grp .card .card-footer .text-muted {
-      color: #D8F1A0 !important; }
+      color: #33312E !important; }
 
 #prof #courses h1 {
-  color: #0B0500; }
+  color: #D3C4D1; }
 #prof #courses a.list-group-item.list-group-item-action {
-  background: linear-gradient(180deg, #F3C178 0%, #FE5E41 100%);
-  color: #0B0500;
-  border: 1px solid #D8F1A0; }
+  background: linear-gradient(180deg, #0E131F 0%, #13837E 100%);
+  color: #D3C4D1;
+  border: 1px solid #33312E; }
 #prof #skills h1 {
-  color: #0B0500; }
+  color: #D3C4D1; }
 #prof #skills li.list-group-item {
-  background: linear-gradient(180deg, #F3C178 0%, #FE5E41 100%);
-  color: #0B0500;
-  border: 1px solid #D8F1A0; }
+  background: linear-gradient(180deg, #0E131F 0%, #13837E 100%);
+  color: #D3C4D1;
+  border: 1px solid #33312E; }
 #prof #skills .skill-grp {
   padding: 0 5%; }
 #prof #skills .fw-bold {
   padding-bottom: 5%; }
 #prof #skills .progress-bar {
-  background-color: #7DCD85; }
+  background-color: #E65F5C; }
 #prof #skills .badge.rounded-pill {
-  background-color: #D8F1A0;
-  color: #0B0500; }
+  background-color: #33312E;
+  color: #D3C4D1; }
 
 /*# sourceMappingURL=index.css.map */
