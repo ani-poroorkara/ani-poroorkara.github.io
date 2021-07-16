@@ -2,22 +2,22 @@
 
 //Universal fix
 html,body
-    background-color: $bg-primary
-    color: $text-primary
+    background-color: $bg-m
+    color: $text-p
     background-image: $main-bg-img
     background-position: center
     background-repeat: no-repeat
+    background-size: auto
 
 section
     h1.display-4
         padding: 2% 0
-        background-color: $text-primary
-        color: $bg-primary
+        // background-color: 
+        color: $text-p
         border-radius: 25px
         text-align: center
         max-width: 80vw
         margin: 0 auto
-        mix-blend-mode: hard-light
 
 section 
     .content-grp
@@ -29,34 +29,35 @@ section
     height: 100%
     position: fixed
     margin-left: -300px
-    background-color: $bg-secondary
+    background-color: $bg-sb
     transition: 0.5s
     background-image: $sidebar-bg-img
     background-position: center
     background-repeat: no-repeat
+    background-size: auto
 
     ul.dropdown-menu.show
-        background-color: $extra
+        background-color: $bg-sb
         
         .dropdown-item
-            color: $bg-primary
+            color: $text-p
 
             &:active, &:focus, &:hover
-                background-color: $bg-secondary
-                color: $extra
+                background-color: $hl-sb
+                color: $text-p
 
 
 .nav-head
     &:active, &:focus, &:hover
-        background-color: $bg-primary
-        color: $bg-secondary
+        background-color: $hl-sb
+        color: $text-p
 
 .nav-link
-    color: $bg-primary
+    color: $text-p
 
     &:active, &:focus, &:hover
-        background-color: $bg-primary
-        color: $bg-secondary
+        background-color: $hl-sb
+        color: $text-p
 
 .active-nav
     margin-left: 0
@@ -76,21 +77,20 @@ section
     margin-left: 280px
 
 #menu-btn
-    background-color: $bg-secondary
-    color: $bg-primary
+    background-color: $bg-sb
+    color: $text-p
 
 #exp
-    
     .card
-        background: linear-gradient(180deg, $text-secondary 0%, $bg-secondary 100%)
+        background: linear-gradient(180deg, $bg-m 0%, $fg-m 100%)
         margin: 4% 0px
         border-radius: 25px 0px
         backdrop-filter: blur(4px)
-        color: $bg-primary
-        border: 0px solid rgba(0,0,0,.125)
+        color: $text-p
+        border: 1px solid $fg-m
 
         .text-muted
-            color: $extra !important
+            color: $text-s !important
 
     .img-fluid
         max-width: 150px
@@ -103,24 +103,25 @@ section
 
 #edu
         .card
-            border: 0px solid rgba(0,0,0,.125)
-            background-color: $bg-secondary
-            color: $bg-secondary
+            border: 1px solid $fg-m
+            background: linear-gradient(180deg, $bg-m 0%, $fg-m 100%)
+            color: $text-p
             border-radius: 25px
         
         .card-body
-            color: $bg-primary
+            color: $text-p
             
             .text-muted
-                color: $extra !important    
+                color: $text-s !important    
 
 #accomp
     .accomp-grp
         .card
-            background-color: $bg-secondary
-            color: $bg-primary
+            background: linear-gradient(180deg, $bg-m 0%, $fg-m 100%)
+            color: $text-p
             padding: 0vw 1vw
             margin: 0vw 1vw
+            border: 1px solid $fg-m
 
             .card-img-top
                 width: 90%
@@ -128,18 +129,19 @@ section
                 max-width: 200px
             
             .btn
-                background-color: $text-primary
-                color: $bg-primary
+                background-color: $text-p
+                color: $text-s
 
                 &:active, &:focus, &:hover
-                    background-color: $bg-primary
-                    color: $bg-secondary
-
+                    background-color: $text-s
+                    color: $text-p
+            
             .card-footer
-                background-color: $text-secondary
-                
+                padding: 0.5rem 0rem
+                background-color: rgba(0,0,0,0)
+                border-top: 1px solid rgba(0,0,0,.125)
                 .text-muted
-                    color: $extra !important
+                    color: $text-s !important
 
 
 
@@ -147,21 +149,21 @@ section
     
     #courses
         h1
-            color: $text-secondary
+            color: $text-p
 
         a.list-group-item.list-group-item-action
-            background-color: $bg-secondary
-            color: $bg-primary
-            border: 1px solid $text-secondary
+            background: linear-gradient(180deg, $bg-m 0%, $fg-m 100%)
+            color: $text-p
+            border: 1px solid $text-s
     
     #skills
         h1
-            color: $text-secondary
+            color: $text-p
 
         li.list-group-item
-            background-color: $bg-secondary
-            color: $bg-primary
-            border: 1px solid $text-secondary
+            background: linear-gradient(180deg, $bg-m 0%, $fg-m 100%)
+            color: $text-p
+            border: 1px solid $text-s
 
         .skill-grp
             padding: 0 5%
@@ -170,8 +172,8 @@ section
             padding-bottom: 5%
 
         .progress-bar
-            background-color: $text-primary
+            background-color: $hl-m
 
         .badge.rounded-pill
-            background-color: $bg-primary
-            color: $text-secondary
+            background-color: $text-s
+            color: $text-p
