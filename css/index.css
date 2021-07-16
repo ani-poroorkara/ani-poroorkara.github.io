@@ -1,14 +1,14 @@
 html, body {
-  background-color: #F3F3F3;
-  color: #3C1874;
-  background-image: url("../img/bg.svg");
+  background-color: #EEFBFB;
+  color: #203647;
+  background-image: url("../img/bg-a.svg");
   background-position: center;
   background-repeat: no-repeat; }
 
 section h1.display-4 {
   padding: 2% 0;
-  background-color: #3C1874;
-  color: #F3F3F3;
+  background-color: #203647;
+  color: #EEFBFB;
   border-radius: 25px;
   text-align: center;
   max-width: 80vw;
@@ -23,28 +23,28 @@ section .content-grp {
   height: 100%;
   position: fixed;
   margin-left: -300px;
-  background-color: #DE354C;
+  background-color: #12232E;
   transition: 0.5s;
   background-image: url("../img/navbar-bg.svg");
   background-position: center;
   background-repeat: no-repeat; }
   .side-navbar ul.dropdown-menu.show {
-    background-color: #283747; }
+    background-color: #4DA8DA; }
     .side-navbar ul.dropdown-menu.show .dropdown-item {
-      color: #F3F3F3; }
+      color: #EEFBFB; }
       .side-navbar ul.dropdown-menu.show .dropdown-item:active, .side-navbar ul.dropdown-menu.show .dropdown-item:focus, .side-navbar ul.dropdown-menu.show .dropdown-item:hover {
-        background-color: #DE354C;
-        color: #283747; }
+        background-color: #12232E;
+        color: #4DA8DA; }
 
 .nav-head:active, .nav-head:focus, .nav-head:hover {
-  background-color: #F3F3F3;
-  color: #DE354C; }
+  background-color: #EEFBFB;
+  color: #12232E; }
 
 .nav-link {
-  color: #F3F3F3; }
+  color: #EEFBFB; }
   .nav-link:active, .nav-link:focus, .nav-link:hover {
-    background-color: #F3F3F3;
-    color: #DE354C; }
+    background-color: #EEFBFB;
+    color: #12232E; }
 
 .active-nav {
   margin-left: 0; }
@@ -62,18 +62,18 @@ section .content-grp {
   margin-left: 280px; }
 
 #menu-btn {
-  background-color: #DE354C;
-  color: #F3F3F3; }
+  background-color: #12232E;
+  color: #EEFBFB; }
 
 #exp .card {
-  background: linear-gradient(180deg, #932432 0%, #DE354C 100%);
+  background: linear-gradient(180deg, #007CC7 0%, #12232E 100%);
   margin: 4% 0px;
   border-radius: 25px 0px;
   backdrop-filter: blur(4px);
-  color: #F3F3F3;
+  color: #EEFBFB;
   border: 0px solid rgba(0, 0, 0, 0.125); }
   #exp .card .text-muted {
-    color: #283747 !important; }
+    color: #4DA8DA !important; }
 #exp .img-fluid {
   max-width: 150px;
   width: 40%; }
@@ -84,17 +84,17 @@ section .content-grp {
 
 #edu .card {
   border: 0px solid rgba(0, 0, 0, 0.125);
-  background-color: #DE354C;
-  color: #DE354C;
+  background-color: #12232E;
+  color: #12232E;
   border-radius: 25px; }
 #edu .card-body {
-  color: #F3F3F3; }
+  color: #EEFBFB; }
   #edu .card-body .text-muted {
-    color: #283747 !important; }
+    color: #4DA8DA !important; }
 
 #accomp .accomp-grp .card {
-  background-color: #DE354C;
-  color: #F3F3F3;
+  background-color: #12232E;
+  color: #EEFBFB;
   padding: 0vw 1vw;
   margin: 0vw 1vw; }
   #accomp .accomp-grp .card .card-img-top {
@@ -102,36 +102,36 @@ section .content-grp {
     margin: 0 auto;
     max-width: 200px; }
   #accomp .accomp-grp .card .btn {
-    background-color: #3C1874;
-    color: #F3F3F3; }
+    background-color: #203647;
+    color: #EEFBFB; }
     #accomp .accomp-grp .card .btn:active, #accomp .accomp-grp .card .btn:focus, #accomp .accomp-grp .card .btn:hover {
-      background-color: #F3F3F3;
-      color: #DE354C; }
+      background-color: #EEFBFB;
+      color: #12232E; }
   #accomp .accomp-grp .card .card-footer {
-    background-color: #932432; }
+    background-color: #007CC7; }
     #accomp .accomp-grp .card .card-footer .text-muted {
-      color: #283747 !important; }
+      color: #4DA8DA !important; }
 
 #prof #courses h1 {
-  color: #932432; }
+  color: #007CC7; }
 #prof #courses a.list-group-item.list-group-item-action {
-  background-color: #DE354C;
-  color: #F3F3F3;
-  border: 1px solid #932432; }
+  background-color: #12232E;
+  color: #EEFBFB;
+  border: 1px solid #007CC7; }
 #prof #skills h1 {
-  color: #932432; }
+  color: #007CC7; }
 #prof #skills li.list-group-item {
-  background-color: #DE354C;
-  color: #F3F3F3;
-  border: 1px solid #932432; }
+  background-color: #12232E;
+  color: #EEFBFB;
+  border: 1px solid #007CC7; }
 #prof #skills .skill-grp {
   padding: 0 5%; }
 #prof #skills .fw-bold {
   padding-bottom: 5%; }
 #prof #skills .progress-bar {
-  background-color: #3C1874; }
+  background-color: #203647; }
 #prof #skills .badge.rounded-pill {
-  background-color: #F3F3F3;
-  color: #932432; }
+  background-color: #EEFBFB;
+  color: #007CC7; }
 
 /*# sourceMappingURL=index.css.map */
