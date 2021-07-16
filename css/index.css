@@ -1,140 +1,83 @@
-html, body {
-  background-color: #F3C178;
-  color: #0B0500;
-  background-image: url("../img/bg.svg");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: auto; }
+/*
+Error: Undefined variable: "$bg-primary".
+        on line 112 of scss/index.sass
 
-section h1.display-4 {
-  padding: 2% 0;
-  color: #0B0500;
-  border-radius: 25px;
-  text-align: center;
-  max-width: 80vw;
-  margin: 0 auto; }
+107:             background: linear-gradient(180deg, $bg-m 0%, $fg-m 100%)
+108:             color: $text-p
+109:             border-radius: 25px
+110:         
+111:         .card-body
+112:             color: $bg-primary
+113:             
+114:             .text-muted
+115:                 color: $text-s !important    
+116: 
+117: #accomp
 
-section .content-grp {
-  padding: 2%; }
-
-.side-navbar {
-  width: 280px;
-  height: 100%;
-  position: fixed;
-  margin-left: -300px;
-  background-color: #00A878;
-  transition: 0.5s;
-  background-image: url("../img/navbar-bg.svg");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: auto; }
-  .side-navbar ul.dropdown-menu.show {
-    background-color: #00A878; }
-    .side-navbar ul.dropdown-menu.show .dropdown-item {
-      color: #0B0500; }
-      .side-navbar ul.dropdown-menu.show .dropdown-item:active, .side-navbar ul.dropdown-menu.show .dropdown-item:focus, .side-navbar ul.dropdown-menu.show .dropdown-item:hover {
-        background-color: #D8F1A0;
-        color: #0B0500; }
-
-.nav-head:active, .nav-head:focus, .nav-head:hover {
-  background-color: #D8F1A0;
-  color: #0B0500; }
-
-.nav-link {
-  color: #0B0500; }
-  .nav-link:active, .nav-link:focus, .nav-link:hover {
-    background-color: #D8F1A0;
-    color: #0B0500; }
-
-.active-nav {
-  margin-left: 0; }
-
-.profile-pic img {
-  width: 35vw;
-  margin: 0 auto;
-  padding: 5% 3%;
-  max-width: 200px; }
-
-.my-container {
-  transition: 0.4s; }
-
-.active-cont {
-  margin-left: 280px; }
-
-#menu-btn {
-  background-color: #00A878;
-  color: #0B0500; }
-
-#exp .card {
-  background: linear-gradient(180deg, #F3C178 0%, #FE5E41 100%);
-  margin: 4% 0px;
-  border-radius: 25px 0px;
-  backdrop-filter: blur(4px);
-  color: #0B0500;
-  border: 1px solid #FE5E41; }
-  #exp .card .text-muted {
-    color: #D8F1A0 !important; }
-#exp .img-fluid {
-  max-width: 150px;
-  width: 40%; }
-#exp .content-grp {
-  padding: 0% 6%; }
-#exp .col-md-4 {
-  text-align: center; }
-
-#edu .card {
-  border: 1px solid #FE5E41;
-  background: linear-gradient(180deg, #F3C178 0%, #FE5E41 100%);
-  color: #0B0500;
-  border-radius: 25px; }
-#edu .card-body {
-  color: #2B282C; }
-  #edu .card-body .text-muted {
-    color: #D8F1A0 !important; }
-
-#accomp .accomp-grp .card {
-  background: linear-gradient(180deg, #F3C178 0%, #FE5E41 100%);
-  color: #0B0500;
-  padding: 0vw 1vw;
-  margin: 0vw 1vw;
-  border: 1px solid #FE5E41; }
-  #accomp .accomp-grp .card .card-img-top {
-    width: 90%;
-    margin: 0 auto;
-    max-width: 200px; }
-  #accomp .accomp-grp .card .btn {
-    background-color: #0B0500;
-    color: #D8F1A0; }
-    #accomp .accomp-grp .card .btn:active, #accomp .accomp-grp .card .btn:focus, #accomp .accomp-grp .card .btn:hover {
-      background-color: #D8F1A0;
-      color: #0B0500; }
-  #accomp .accomp-grp .card .card-footer {
-    padding: 0.5rem 0rem;
-    background-color: rgba(0, 0, 0, 0);
-    border-top: 1px solid rgba(0, 0, 0, 0.125); }
-    #accomp .accomp-grp .card .card-footer .text-muted {
-      color: #D8F1A0 !important; }
-
-#prof #courses h1 {
-  color: #0B0500; }
-#prof #courses a.list-group-item.list-group-item-action {
-  background: linear-gradient(180deg, #F3C178 0%, #FE5E41 100%);
-  color: #0B0500;
-  border: 1px solid #D8F1A0; }
-#prof #skills h1 {
-  color: #0B0500; }
-#prof #skills li.list-group-item {
-  background: linear-gradient(180deg, #F3C178 0%, #FE5E41 100%);
-  color: #0B0500;
-  border: 1px solid #D8F1A0; }
-#prof #skills .skill-grp {
-  padding: 0 5%; }
-#prof #skills .fw-bold {
-  padding-bottom: 5%; }
-#prof #skills .progress-bar {
-  background-color: #7DCD85; }
-#prof #skills .badge.rounded-pill {
-  background-color: #D8F1A0;
-  color: #0B0500; }
-
-/*# sourceMappingURL=index.css.map */
+Backtrace:
+scss/index.sass:112
+/usr/lib/ruby/vendor_ruby/sass/script/tree/variable.rb:49:in `_perform'
+/usr/lib/ruby/vendor_ruby/sass/script/tree/node.rb:50:in `perform'
+/usr/lib/ruby/vendor_ruby/sass/tree/visitors/perform.rb:398:in `visit_prop'
+/usr/lib/ruby/vendor_ruby/sass/tree/visitors/base.rb:36:in `visit'
+/usr/lib/ruby/vendor_ruby/sass/tree/visitors/perform.rb:158:in `block in visit'
+/usr/lib/ruby/vendor_ruby/sass/stack.rb:79:in `block in with_base'
+/usr/lib/ruby/vendor_ruby/sass/stack.rb:135:in `with_frame'
+/usr/lib/ruby/vendor_ruby/sass/stack.rb:79:in `with_base'
+/usr/lib/ruby/vendor_ruby/sass/tree/visitors/perform.rb:158:in `visit'
+/usr/lib/ruby/vendor_ruby/sass/tree/visitors/perform.rb:440:in `block (2 levels) in visit_rule'
+/usr/lib/ruby/vendor_ruby/sass/tree/visitors/perform.rb:440:in `map'
+/usr/lib/ruby/vendor_ruby/sass/tree/visitors/perform.rb:440:in `block in visit_rule'
+/usr/lib/ruby/vendor_ruby/sass/tree/visitors/perform.rb:179:in `with_environment'
+/usr/lib/ruby/vendor_ruby/sass/tree/visitors/perform.rb:438:in `visit_rule'
+/usr/lib/ruby/vendor_ruby/sass/tree/visitors/base.rb:36:in `visit'
+/usr/lib/ruby/vendor_ruby/sass/tree/visitors/perform.rb:158:in `block in visit'
+/usr/lib/ruby/vendor_ruby/sass/stack.rb:79:in `block in with_base'
+/usr/lib/ruby/vendor_ruby/sass/stack.rb:135:in `with_frame'
+/usr/lib/ruby/vendor_ruby/sass/stack.rb:79:in `with_base'
+/usr/lib/ruby/vendor_ruby/sass/tree/visitors/perform.rb:158:in `visit'
+/usr/lib/ruby/vendor_ruby/sass/tree/visitors/perform.rb:440:in `block (2 levels) in visit_rule'
+/usr/lib/ruby/vendor_ruby/sass/tree/visitors/perform.rb:440:in `map'
+/usr/lib/ruby/vendor_ruby/sass/tree/visitors/perform.rb:440:in `block in visit_rule'
+/usr/lib/ruby/vendor_ruby/sass/tree/visitors/perform.rb:179:in `with_environment'
+/usr/lib/ruby/vendor_ruby/sass/tree/visitors/perform.rb:438:in `visit_rule'
+/usr/lib/ruby/vendor_ruby/sass/tree/visitors/base.rb:36:in `visit'
+/usr/lib/ruby/vendor_ruby/sass/tree/visitors/perform.rb:158:in `block in visit'
+/usr/lib/ruby/vendor_ruby/sass/stack.rb:79:in `block in with_base'
+/usr/lib/ruby/vendor_ruby/sass/stack.rb:135:in `with_frame'
+/usr/lib/ruby/vendor_ruby/sass/stack.rb:79:in `with_base'
+/usr/lib/ruby/vendor_ruby/sass/tree/visitors/perform.rb:158:in `visit'
+/usr/lib/ruby/vendor_ruby/sass/tree/visitors/base.rb:52:in `block in visit_children'
+/usr/lib/ruby/vendor_ruby/sass/tree/visitors/base.rb:52:in `map'
+/usr/lib/ruby/vendor_ruby/sass/tree/visitors/base.rb:52:in `visit_children'
+/usr/lib/ruby/vendor_ruby/sass/tree/visitors/perform.rb:167:in `block in visit_children'
+/usr/lib/ruby/vendor_ruby/sass/tree/visitors/perform.rb:179:in `with_environment'
+/usr/lib/ruby/vendor_ruby/sass/tree/visitors/perform.rb:166:in `visit_children'
+/usr/lib/ruby/vendor_ruby/sass/tree/visitors/base.rb:36:in `block in visit'
+/usr/lib/ruby/vendor_ruby/sass/tree/visitors/perform.rb:186:in `visit_root'
+/usr/lib/ruby/vendor_ruby/sass/tree/visitors/base.rb:36:in `visit'
+/usr/lib/ruby/vendor_ruby/sass/tree/visitors/perform.rb:157:in `visit'
+/usr/lib/ruby/vendor_ruby/sass/tree/visitors/perform.rb:10:in `visit'
+/usr/lib/ruby/vendor_ruby/sass/tree/root_node.rb:36:in `css_tree'
+/usr/lib/ruby/vendor_ruby/sass/tree/root_node.rb:29:in `render_with_sourcemap'
+/usr/lib/ruby/vendor_ruby/sass/engine.rb:389:in `_render_with_sourcemap'
+/usr/lib/ruby/vendor_ruby/sass/engine.rb:307:in `render_with_sourcemap'
+/usr/lib/ruby/vendor_ruby/sass/plugin/compiler.rb:462:in `update_stylesheet'
+/usr/lib/ruby/vendor_ruby/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
+/usr/lib/ruby/vendor_ruby/sass/plugin/compiler.rb:209:in `each'
+/usr/lib/ruby/vendor_ruby/sass/plugin/compiler.rb:209:in `update_stylesheets'
+/usr/lib/ruby/vendor_ruby/sass/plugin/compiler.rb:443:in `on_file_changed'
+/usr/lib/ruby/vendor_ruby/sass/plugin/compiler.rb:320:in `block in watch'
+/var/lib/gems/2.7.0/gems/sass-listen-4.0.0/lib/sass-listen/event/config.rb:23:in `call'
+/var/lib/gems/2.7.0/gems/sass-listen-4.0.0/lib/sass-listen/event/processor.rb:115:in `_process_changes'
+/var/lib/gems/2.7.0/gems/sass-listen-4.0.0/lib/sass-listen/event/processor.rb:19:in `block in loop_for'
+/var/lib/gems/2.7.0/gems/sass-listen-4.0.0/lib/sass-listen/event/processor.rb:15:in `loop'
+/var/lib/gems/2.7.0/gems/sass-listen-4.0.0/lib/sass-listen/event/processor.rb:15:in `loop_for'
+/var/lib/gems/2.7.0/gems/sass-listen-4.0.0/lib/sass-listen/event/loop.rb:84:in `_wait_for_changes'
+/var/lib/gems/2.7.0/gems/sass-listen-4.0.0/lib/sass-listen/event/loop.rb:42:in `block in setup'
+/var/lib/gems/2.7.0/gems/sass-listen-4.0.0/lib/sass-listen/internals/thread_pool.rb:6:in `block in add'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Error: Undefined variable: \"$bg-primary\".\A         on line 112 of scss/index.sass\A \A 107:             background: linear-gradient(180deg, $bg-m 0%, $fg-m 100%)\A 108:             color: $text-p\A 109:             border-radius: 25px\A 110:         \A 111:         .card-body\A 112:             color: $bg-primary\A 113:             \A 114:             .text-muted\A 115:                 color: $text-s !important    \A 116: \A 117: #accomp"; }
