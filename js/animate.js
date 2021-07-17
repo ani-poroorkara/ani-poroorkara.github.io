@@ -16,6 +16,6 @@ menu_btn.addEventListener("click", () => {
 var webpage = document.querySelector("body");
 function changeTheme(theme_selector, theme){
   webpage.className = theme_selector;
-  webpage.style.backgroundImage = "url('../img/theme/"+theme+"/main-bg.svg')";
-  sidebar.style.backgroundImage = "url('../img/theme/"+theme+"/nb-bg.svg')";;
+  webpage.style.backgroundImage = "url('img/theme/"+theme+"/main-bg.svg')";
+  sidebar.style.backgroundImage = "url('img/theme/"+theme+"/nb-bg.svg')";;
 } 
