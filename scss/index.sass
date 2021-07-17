@@ -7,12 +7,11 @@ html,body
     background-image: $main-bg-img
     background-position: center
     background-repeat: no-repeat
-    background-size: auto
+    background-size: cover
 
 section
     h1.display-4
         padding: 2% 0
-        // background-color: 
         color: $text-p
         border-radius: 25px
         text-align: center
@@ -154,7 +153,7 @@ section
         a.list-group-item.list-group-item-action
             background: linear-gradient(180deg, $bg-m 0%, $fg-m 100%)
             color: $text-p
-            border: 1px solid $text-s
+            border: 1px solid $fg-m
     
     #skills
         h1
@@ -163,7 +162,7 @@ section
         li.list-group-item
             background: linear-gradient(180deg, $bg-m 0%, $fg-m 100%)
             color: $text-p
-            border: 1px solid $text-s
+            border: 1px solid $fg-m
 
         .skill-grp
             padding: 0 5%
@@ -175,5 +174,5 @@ section
             background-color: $hl-m
 
         .badge.rounded-pill
-            background-color: $text-s
-            color: $text-p
+            background-color: $hl-m
+            color: $text-s
