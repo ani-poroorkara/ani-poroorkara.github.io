@@ -100,6 +100,9 @@ section .content-grp {
 #menu-btn {
   background-color: var(--bg-sb);
   color: var(--text-p); }
+  #menu-btn:active, #menu-btn:focus, #menu-btn:hover {
+    background-color: var(--text-p);
+    color: var(--bg-sb); }
 
 #exp .card {
   background: linear-gradient(180deg, var(--bg-m) 0%, var(--fg-m) 100%);
