@@ -139,10 +139,10 @@ section .content-grp {
     margin: 0 auto;
     max-width: 200px; }
   #accomp .accomp-grp .card .btn {
-    background-color: var(--text-p);
+    background-color: var(--hl-m);
     color: var(--text-s); }
     #accomp .accomp-grp .card .btn:active, #accomp .accomp-grp .card .btn:focus, #accomp .accomp-grp .card .btn:hover {
-      background-color: var(--text-s);
+      background-color: var(--hl-m);
       color: var(--text-p); }
   #accomp .accomp-grp .card .card-footer {
     padding: 0.5rem 0rem;
