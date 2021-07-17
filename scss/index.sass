@@ -1,19 +1,18 @@
 @import base
-
+    
 //Universal fix
 html,body
-    background-color: $bg-m
-    color: $text-p
-    background-image: $main-bg-img
+    background-color: var(--bg-m)
+    color: var(--text-p)
+    background-image: $default-m-bg
     background-position: center
     background-repeat: no-repeat
-    background-size: auto
+    background-size: cover
 
 section
     h1.display-4
         padding: 2% 0
-        // background-color: 
-        color: $text-p
+        color: var(--text-p)
         border-radius: 25px
         text-align: center
         max-width: 80vw
@@ -29,35 +28,35 @@ section
     height: 100%
     position: fixed
     margin-left: -300px
-    background-color: $bg-sb
+    background-color: var(--bg-sb)
     transition: 0.5s
-    background-image: $sidebar-bg-img
+    background-image: $default-sb-bg
     background-position: center
     background-repeat: no-repeat
     background-size: auto
 
     ul.dropdown-menu.show
-        background-color: $bg-sb
+        background-color: var(--bg-sb)
         
         .dropdown-item
-            color: $text-p
+            color: var(--text-p)
 
             &:active, &:focus, &:hover
-                background-color: $hl-sb
-                color: $text-p
+                background-color: var(--hl-sb)
+                color: var(--text-p)
 
 
 .nav-head
     &:active, &:focus, &:hover
-        background-color: $hl-sb
-        color: $text-p
+        background-color: var(--hl-sb)
+        color: var(--text-p)
 
 .nav-link
-    color: $text-p
+    color: var(--text-p)
 
     &:active, &:focus, &:hover
-        background-color: $hl-sb
-        color: $text-p
+        background-color: var(--hl-sb)
+        color: var(--text-p)
 
 .active-nav
     margin-left: 0
@@ -77,20 +76,20 @@ section
     margin-left: 280px
 
 #menu-btn
-    background-color: $bg-sb
-    color: $text-p
+    background-color: var(--bg-sb)
+    color: var(--text-p)
 
 #exp
     .card
-        background: linear-gradient(180deg, $bg-m 0%, $fg-m 100%)
+        background: linear-gradient(180deg, var(--bg-m) 0%, var(--fg-m) 100%)
         margin: 4% 0px
         border-radius: 25px 0px
         backdrop-filter: blur(4px)
-        color: $text-p
-        border: 1px solid $fg-m
+        color: var(--text-p)
+        border: 1px solid var(--fg-m)
 
         .text-muted
-            color: $text-s !important
+            color: var(--text-s) !important
 
     .img-fluid
         max-width: 150px
@@ -103,25 +102,25 @@ section
 
 #edu
         .card
-            border: 1px solid $fg-m
-            background: linear-gradient(180deg, $bg-m 0%, $fg-m 100%)
-            color: $text-p
+            border: 1px solid var(--fg-m)
+            background: linear-gradient(180deg, var(--bg-m) 0%, var(--fg-m) 100%)
+            color: var(--text-p)
             border-radius: 25px
         
         .card-body
-            color: $text-p
+            color: var(--text-p)
             
             .text-muted
-                color: $text-s !important    
+                color: var(--text-s) !important    
 
 #accomp
     .accomp-grp
         .card
-            background: linear-gradient(180deg, $bg-m 0%, $fg-m 100%)
-            color: $text-p
+            background: linear-gradient(180deg, var(--bg-m) 0%, var(--fg-m) 100%)
+            color: var(--text-p)
             padding: 0vw 1vw
             margin: 0vw 1vw
-            border: 1px solid $fg-m
+            border: 1px solid var(--fg-m)
 
             .card-img-top
                 width: 90%
@@ -129,19 +128,19 @@ section
                 max-width: 200px
             
             .btn
-                background-color: $text-p
-                color: $text-s
+                background-color: var(--text-p)
+                color: var(--text-s)
 
                 &:active, &:focus, &:hover
-                    background-color: $text-s
-                    color: $text-p
+                    background-color: var(--text-s)
+                    color: var(--text-p)
             
             .card-footer
                 padding: 0.5rem 0rem
                 background-color: rgba(0,0,0,0)
                 border-top: 1px solid rgba(0,0,0,.125)
                 .text-muted
-                    color: $text-s !important
+                    color: var(--text-s) !important
 
 
 
@@ -149,21 +148,21 @@ section
     
     #courses
         h1
-            color: $text-p
+            color: var(--text-p)
 
         a.list-group-item.list-group-item-action
-            background: linear-gradient(180deg, $bg-m 0%, $fg-m 100%)
-            color: $text-p
-            border: 1px solid $text-s
+            background: linear-gradient(180deg, var(--bg-m) 0%, var(--fg-m) 100%)
+            color: var(--text-p)
+            border: 1px solid var(--fg-m)
     
     #skills
         h1
-            color: $text-p
+            color: var(--text-p)
 
         li.list-group-item
-            background: linear-gradient(180deg, $bg-m 0%, $fg-m 100%)
-            color: $text-p
-            border: 1px solid $text-s
+            background: linear-gradient(180deg, var(--bg-m) 0%, var(--fg-m) 100%)
+            color: var(--text-p)
+            border: 1px solid var(--fg-m)
 
         .skill-grp
             padding: 0 5%
@@ -172,8 +171,8 @@ section
             padding-bottom: 5%
 
         .progress-bar
-            background-color: $hl-m
+            background-color: var(--hl-m)
 
         .badge.rounded-pill
-            background-color: $text-s
-            color: $text-p
+            background-color: var(--hl-m)
+            color: var(--text-s)

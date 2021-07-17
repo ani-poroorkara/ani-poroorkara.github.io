@@ -1,3 +1,28 @@
+.theme-graveyard {
+  --text-p: #D3C4D1;
+  --text-s: #33312E;
+  --bg-sb: #252323;
+  --hl-sb: #3A015C;
+  --bg-m: #0E131F;
+  --fg-m: #13837E;
+  --hl-m: #E65F5C; }
 
+.theme-ocean {
+  --text-p: #0C0F0A;
+  --text-s: #494949;
+  --bg-sb: #2978A0;
+  --hl-sb: #ECDD7B;
+  --bg-m: #95D9DA;
+  --fg-m: #657ED4;
+  --hl-m: #F6AE2D; }
+
+.theme-forest {
+  --text-p: #0B0500;
+  --text-s: #D8F1A0;
+  --bg-sb: #00A878;
+  --hl-sb: #D8F1A0;
+  --bg-m: #F3C178;
+  --fg-m: #FE5E41;
+  --hl-m: #7DCD85; }
 
 /*# sourceMappingURL=base.css.map */
