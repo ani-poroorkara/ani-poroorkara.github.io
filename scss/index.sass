@@ -9,6 +9,16 @@ html,body
     background-repeat: no-repeat
     background-size: cover
 
+footer
+    text-align: center
+    font-size: 1rem
+    color: var(--text-s)
+    a
+        color: var(--text-s)
+        &:active, &:focus, &:hover
+            color: var(--text-p)
+
+
 section
     h1.display-4
         padding: 2% 0
@@ -78,6 +88,9 @@ section
 #menu-btn
     background-color: var(--bg-sb)
     color: var(--text-p)
+    &:active, &:focus, &:hover
+        background-color: var(--text-p)
+        color: var(--bg-sb)
 
 #exp
     .card
@@ -101,17 +114,17 @@ section
 
 
 #edu
-        .card
-            border: 1px solid var(--fg-m)
-            background: linear-gradient(180deg, var(--bg-m) 0%, var(--fg-m) 100%)
-            color: var(--text-p)
-            border-radius: 25px
+    .card
+        border: 1px solid var(--fg-m)
+        background: linear-gradient(180deg, var(--bg-m) 0%, var(--fg-m) 100%)
+        color: var(--text-p)
+        border-radius: 25px
+    
+    .card-body
+        color: var(--text-p)
         
-        .card-body
-            color: var(--text-p)
-            
-            .text-muted
-                color: var(--text-s) !important    
+        .text-muted
+            color: var(--text-s) !important    
 
 #accomp
     .accomp-grp
@@ -128,11 +141,11 @@ section
                 max-width: 200px
             
             .btn
-                background-color: var(--text-p)
+                background-color: var(--hl-m)
                 color: var(--text-s)
 
                 &:active, &:focus, &:hover
-                    background-color: var(--text-s)
+                    background-color: var(--hl-m)
                     color: var(--text-p)
             
             .card-footer

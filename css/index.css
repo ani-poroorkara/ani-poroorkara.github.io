@@ -33,6 +33,15 @@ html, body {
   background-repeat: no-repeat;
   background-size: cover; }
 
+footer {
+  text-align: center;
+  font-size: 1rem;
+  color: var(--text-s); }
+  footer a {
+    color: var(--text-s); }
+    footer a:active, footer a:focus, footer a:hover {
+      color: var(--text-p); }
+
 section h1.display-4 {
   padding: 2% 0;
   color: var(--text-p);
@@ -91,6 +100,9 @@ section .content-grp {
 #menu-btn {
   background-color: var(--bg-sb);
   color: var(--text-p); }
+  #menu-btn:active, #menu-btn:focus, #menu-btn:hover {
+    background-color: var(--text-p);
+    color: var(--bg-sb); }
 
 #exp .card {
   background: linear-gradient(180deg, var(--bg-m) 0%, var(--fg-m) 100%);
@@ -130,10 +142,10 @@ section .content-grp {
     margin: 0 auto;
     max-width: 200px; }
   #accomp .accomp-grp .card .btn {
-    background-color: var(--text-p);
+    background-color: var(--hl-m);
     color: var(--text-s); }
     #accomp .accomp-grp .card .btn:active, #accomp .accomp-grp .card .btn:focus, #accomp .accomp-grp .card .btn:hover {
-      background-color: var(--text-s);
+      background-color: var(--hl-m);
       color: var(--text-p); }
   #accomp .accomp-grp .card .card-footer {
     padding: 0.5rem 0rem;

@@ -1,3 +1,6 @@
+// AOS initialization [IMPORTANT]
+AOS.init();
+
 // Detect mobile interface
 var menu_btn = document.querySelector("#menu-btn");
 var sidebar = document.querySelector("#sidebar");
