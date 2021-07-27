@@ -1,3 +1,13 @@
+.theme-space {
+  --text-p: #0C0F0A;
+  --text-s: #494949;
+  --bg-sb: #2978A0;
+  --hl-sb: #ECDD7B;
+  --bg-m: #011638;
+  --fg-m: #657ED4;
+  --hl-m: #F6AE2D;
+}
+
 .theme-graveyard {
   --text-p: #D3C4D1;
   --text-s: #33312E;
@@ -6,16 +16,6 @@
   --bg-m: #0E131F;
   --fg-m: #13837E;
   --hl-m: #E65F5C;
-}
-
-.theme-ocean {
-  --text-p: #0C0F0A;
-  --text-s: #494949;
-  --bg-sb: #2978A0;
-  --hl-sb: #ECDD7B;
-  --bg-m: #95D9DA;
-  --fg-m: #657ED4;
-  --hl-m: #F6AE2D;
 }
 
 .theme-forest {
@@ -31,9 +31,9 @@
 html, body {
   background-color: var(--bg-m);
   color: var(--text-p);
-  background-image: url("../img/theme/graveyard/main-bg.svg");
+  background-image: url("../img/theme/space/main-bg.svg");
+  background-attachment: fixed;
   background-position: center;
-  background-repeat: no-repeat;
   background-size: cover;
 }
 
@@ -71,7 +71,7 @@ section .content-grp {
   margin-left: -300px;
   background-color: var(--bg-sb);
   transition: 0.5s;
-  background-image: url("../img/theme/graveyard/nb-bg.svg");
+  background-image: url("../img/theme/space/nb-bg.svg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: auto;
