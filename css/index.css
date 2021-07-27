@@ -35,6 +35,13 @@ html, body {
   background-attachment: fixed;
   background-position: center;
   background-size: cover;
+  overflow-x: hidden;
+}
+
+nav .navbar.sticky-top {
+  position: fixed;
+  width: 100%;
+  top: 0;
 }
 
 footer {
