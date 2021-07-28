@@ -1,4 +1,4 @@
-// AOS initialization [IMPORTANT]
+// AOS initialization [DO NOT REMOVE]
 AOS.init();
 
 // Detect mobile interface

@@ -1,28 +1,37 @@
-.theme-graveyard {
-  --text-p: #D3C4D1;
-  --text-s: #33312E;
-  --bg-sb: #252323;
-  --hl-sb: #3A015C;
-  --bg-m: #0E131F;
-  --fg-m: #13837E;
-  --hl-m: #E65F5C; }
+.theme-space {
+  --text-p: #AFDAFF;
+  --text-c: #8F2D56;
+  --but-bg: #E01A4F;
+  --but-text: #FFFFFF;
+  --bg-m-a: #011638;
+  --bg-m-b: #0B193C;
+  --bg-m-c: #161D40;
+  --bg-m-d: #202043;
+  --bg-m-e: #2A2347;
+  --hl-sb: #C7AADF;
+  --hl-text-sb: #000500;
+  --bg-sd-dd: #2A2347;
+  --card-a: #D499B9;
+  --card-b: #ADBDFF;
+  --card-text: #091624;
+}
 
-.theme-ocean {
-  --text-p: #0C0F0A;
-  --text-s: #494949;
-  --bg-sb: #2978A0;
-  --hl-sb: #ECDD7B;
-  --bg-m: #95D9DA;
-  --fg-m: #657ED4;
-  --hl-m: #F6AE2D; }
-
-.theme-forest {
-  --text-p: #0B0500;
-  --text-s: #D8F1A0;
-  --bg-sb: #00A878;
-  --hl-sb: #D8F1A0;
-  --bg-m: #F3C178;
-  --fg-m: #FE5E41;
-  --hl-m: #7DCD85; }
+.theme-organic {
+  --text-p: #EDFFEC;
+  --text-c: #9792E3;
+  --but-bg: #F2FF49;
+  --but-text: #0C2137;
+  --bg-m-a: #2B2D42;
+  --bg-m-b: #292A3F;
+  --bg-m-c: #27273C;
+  --bg-m-d: #242439;
+  --bg-m-e: #222136;
+  --hl-sb: #EF5B5B;
+  --hl-text-sb: #000500;
+  --bg-sd-dd: #D80032;
+  --card-a: #08B2E3;
+  --card-b: #34E4EA;
+  --card-text: #091624;
+}
 
 /*# sourceMappingURL=base.css.map */
