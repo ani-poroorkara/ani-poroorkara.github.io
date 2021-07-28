@@ -1,5 +1,6 @@
 .theme-space {
   --text-p: #AFDAFF;
+  --text-c: #8F2D56;
   --but-bg: #E01A4F;
   --but-text: #FFFFFF;
   --bg-m-a: #011638;
@@ -88,10 +89,10 @@ nav.navbar.sticky-top {
 footer {
   text-align: center;
   font-size: 1rem;
-  color: var(--text-s);
+  color: var(--text-c);
 }
 footer a {
-  color: var(--text-s);
+  color: var(--text-c);
 }
 footer a:active, footer a:focus, footer a:hover {
   color: var(--text-p);
