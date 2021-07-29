@@ -188,6 +188,9 @@ section .content-grp {
   text-align: center;
   padding: 0 2%;
 }
+#landing a {
+  text-decoration: none;
+}
 #landing h1 {
   backdrop-filter: blur(5px);
   border-radius: 20px;
