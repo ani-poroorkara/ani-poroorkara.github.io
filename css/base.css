@@ -1,3 +1,36 @@
+@import url("https://fonts.googleapis.com/css2?family=Dosis:wght@300&family=Rajdhani&display=swap");
+@keyframes backgroundanimation {
+  0% {
+    background-color: var(--bg-m-a);
+  }
+  10% {
+    background-color: var(--bg-m-b);
+  }
+  20% {
+    background-color: var(--bg-m-c);
+  }
+  30% {
+    background-color: var(--bg-m-d);
+  }
+  40% {
+    background-color: var(--bg-m-e);
+  }
+  50% {
+    background-color: var(--bg-m-e);
+  }
+  60% {
+    background-color: var(--bg-m-d);
+  }
+  70% {
+    background-color: var(--bg-m-c);
+  }
+  80% {
+    background-color: var(--bg-m-b);
+  }
+  100% {
+    background-color: var(--bg-m-a);
+  }
+}
 .theme-space {
   --text-p: #AFDAFF;
   --text-c: #8F2D56;

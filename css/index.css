@@ -1,3 +1,36 @@
+@import url("https://fonts.googleapis.com/css2?family=Dosis:wght@300&family=Rajdhani&display=swap");
+@keyframes backgroundanimation {
+  0% {
+    background-color: var(--bg-m-a);
+  }
+  10% {
+    background-color: var(--bg-m-b);
+  }
+  20% {
+    background-color: var(--bg-m-c);
+  }
+  30% {
+    background-color: var(--bg-m-d);
+  }
+  40% {
+    background-color: var(--bg-m-e);
+  }
+  50% {
+    background-color: var(--bg-m-e);
+  }
+  60% {
+    background-color: var(--bg-m-d);
+  }
+  70% {
+    background-color: var(--bg-m-c);
+  }
+  80% {
+    background-color: var(--bg-m-b);
+  }
+  100% {
+    background-color: var(--bg-m-a);
+  }
+}
 .theme-space {
   --text-p: #AFDAFF;
   --text-c: #8F2D56;
@@ -40,44 +73,14 @@ html, body {
   background-position: center;
   background-size: cover;
   overflow-x: hidden;
+  font-family: "Rajdhani", sans-serif;
+  transition: smooth;
 }
 
 body {
   animation: backgroundanimation 15s ease-in-out infinite;
 }
 
-@keyframes backgroundanimation {
-  0% {
-    background-color: var(--bg-m-a);
-  }
-  10% {
-    background-color: var(--bg-m-b);
-  }
-  20% {
-    background-color: var(--bg-m-c);
-  }
-  30% {
-    background-color: var(--bg-m-d);
-  }
-  40% {
-    background-color: var(--bg-m-e);
-  }
-  50% {
-    background-color: var(--bg-m-e);
-  }
-  60% {
-    background-color: var(--bg-m-d);
-  }
-  70% {
-    background-color: var(--bg-m-c);
-  }
-  80% {
-    background-color: var(--bg-m-b);
-  }
-  100% {
-    background-color: var(--bg-m-a);
-  }
-}
 nav.navbar.sticky-top {
   position: fixed;
   width: 100%;
@@ -88,6 +91,7 @@ footer {
   text-align: center;
   font-size: 1rem;
   color: var(--text-c);
+  font-family: "Dosis", sans-serif;
 }
 footer a {
   color: var(--text-c);
@@ -103,6 +107,7 @@ section h1.display-4 {
   text-align: center;
   max-width: 80vw;
   margin: 2% auto;
+  font-family: "Dosis", sans-serif;
 }
 section .content-grp {
   padding: 2%;
@@ -119,9 +124,11 @@ section .content-grp {
   background-position: center;
   background-repeat: no-repeat;
   background-size: auto;
+  font-family: "Dosis", sans-serif;
 }
 .side-navbar ul.dropdown-menu.show {
   background-color: var(--bg-sd-dd);
+  cursor: pointer;
 }
 .side-navbar ul.dropdown-menu.show .dropdown-item {
   color: var(--text-p);
@@ -131,6 +138,9 @@ section .content-grp {
   color: var(--hl-text-sb);
 }
 
+.nav-head {
+  cursor: pointer;
+}
 .nav-head:active, .nav-head:focus, .nav-head:hover {
   background-color: var(--hl-sb);
   color: var(--hl-text-sb);
@@ -138,6 +148,7 @@ section .content-grp {
 
 .nav-link {
   color: var(--text-p);
+  cursor: pointer;
 }
 .nav-link:active, .nav-link:focus, .nav-link:hover {
   background-color: var(--hl-sb);
@@ -170,6 +181,34 @@ section .content-grp {
 #menu-btn:active, #menu-btn:focus, #menu-btn:hover {
   background-color: var(--hl-text-s);
   color: var(--hl-sb);
+}
+
+#landing {
+  color: var(--text-p);
+  text-align: center;
+  padding: 0 2%;
+}
+#landing h1 {
+  backdrop-filter: blur(5px);
+  border-radius: 20px;
+}
+#landing h1 .highlight1 {
+  color: var(--but-bg);
+}
+#landing h1 .highlight2 {
+  background-color: var(--text-p);
+  color: var(--bg-m-a);
+  border-radius: 10px;
+}
+#landing h1 .highlight3 {
+  background-color: var(--but-bg);
+  color: var(--but-text);
+  border-radius: 10px;
+  cursor: pointer;
+}
+#landing h1 .highlight3:active, #landing h1 .highlight3:focus, #landing h1 .highlight3:hover {
+  background-color: var(--but-text);
+  color: var(--but-bg);
 }
 
 #exp .card {

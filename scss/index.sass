@@ -7,31 +7,11 @@ html,body
     background-position: center
     background-size: cover
     overflow-x: hidden
+    font-family: $body-font
+    transition: smooth
 
 body
     animation: backgroundanimation 15s ease-in-out infinite
-
-@keyframes backgroundanimation
-    0%
-        background-color: var(--bg-m-a)
-    10% 
-        background-color: var(--bg-m-b)
-    20% 
-        background-color: var(--bg-m-c)
-    30% 
-        background-color: var(--bg-m-d)
-    40% 
-        background-color: var(--bg-m-e)
-    50% 
-        background-color: var(--bg-m-e)
-    60%
-        background-color: var(--bg-m-d)
-    70%
-        background-color: var(--bg-m-c)
-    80%
-        background-color: var(--bg-m-b)
-    100%
-        background-color: var(--bg-m-a)
 
 nav.navbar.sticky-top
         position: fixed
@@ -42,6 +22,7 @@ footer
     text-align: center
     font-size: 1rem
     color: var(--text-c)
+    font-family: $head-font
     a
         color: var(--text-c)
         &:active, &:focus, &:hover
@@ -57,6 +38,7 @@ section
         text-align: center
         max-width: 80vw
         margin: 2% auto
+        font-family: $head-font
 
     .content-grp
         padding: 2%
@@ -74,10 +56,11 @@ section
     background-position: center
     background-repeat: no-repeat
     background-size: auto
+    font-family: $head-font
 
     ul.dropdown-menu.show
         background-color: var(--bg-sd-dd)
-        
+        cursor: pointer
         .dropdown-item
             color: var(--text-p)
 
@@ -87,13 +70,14 @@ section
 
 
 .nav-head
+    cursor: pointer
     &:active, &:focus, &:hover
         background-color: var(--hl-sb)
         color: var(--hl-text-sb)
 
 .nav-link
     color: var(--text-p)
-
+    cursor: pointer
     &:active, &:focus, &:hover
         background-color: var(--hl-sb)
         color: var(--hl-text-sb)
@@ -121,6 +105,28 @@ section
     &:active, &:focus, &:hover
         background-color: var(--hl-text-s)
         color: var(--hl-sb)
+
+#landing
+    color: var(--text-p)
+    text-align: center
+    padding: 0 2%
+    h1
+        backdrop-filter: blur(5px)
+        border-radius: 20px
+        .highlight1
+            color: var(--but-bg)
+        .highlight2
+            background-color: var(--text-p)
+            color: var(--bg-m-a)
+            border-radius: 10px
+        .highlight3
+            background-color: var(--but-bg)
+            color: var(--but-text)
+            border-radius: 10px
+            cursor: pointer
+            &:active, &:focus, &:hover
+                background-color: var(--but-text)
+                color: var(--but-bg)
 
 #exp
     .card
