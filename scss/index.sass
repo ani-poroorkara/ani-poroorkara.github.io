@@ -229,3 +229,20 @@ section
         .badge.rounded-pill
             background-color: var(--but-text)
             color: var(--but-bg)
+
+#contact
+    backdrop-filter: brightness(0.5)
+    border-radius: 20px
+    .content-grp
+        text-align: center
+        a
+            color: var(--but-bg)
+            transition: transform .7s ease-in-out
+            .btn-lg
+                font-size: 2rem
+                
+            &:active, &:focus, &:hover
+                background-color: var(--but-bg)
+                color: var(--but-text)
+                transform: rotateY(360deg)
+            

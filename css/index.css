@@ -309,4 +309,24 @@ section .content-grp {
   color: var(--but-bg);
 }
 
+#contact {
+  backdrop-filter: brightness(0.5);
+  border-radius: 20px;
+}
+#contact .content-grp {
+  text-align: center;
+}
+#contact .content-grp a {
+  color: var(--but-bg);
+  transition: transform 0.7s ease-in-out;
+}
+#contact .content-grp a .btn-lg {
+  font-size: 2rem;
+}
+#contact .content-grp a:active, #contact .content-grp a:focus, #contact .content-grp a:hover {
+  background-color: var(--but-bg);
+  color: var(--but-text);
+  transform: rotateY(360deg);
+}
+
 /*# sourceMappingURL=index.css.map */
