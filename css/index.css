@@ -174,11 +174,11 @@ section .content-grp {
   margin-left: 280px;
 }
 
-#menu-btn {
+.sb-togg {
   background-color: var(--hl-sb);
   color: var(--hl-text-s);
 }
-#menu-btn:active, #menu-btn:focus, #menu-btn:hover {
+.sb-togg:active, .sb-togg:focus, .sb-togg:hover {
   background-color: var(--hl-text-s);
   color: var(--hl-sb);
 }
