@@ -47,6 +47,8 @@
   --card-a: #D499B9;
   --card-b: #ADBDFF;
   --card-text: #091624;
+  --proj: #E0AFA0;
+  --pub: #FFA737;
 }
 
 .theme-organic {
@@ -65,6 +67,8 @@
   --card-a: #08B2E3;
   --card-b: #34E4EA;
   --card-text: #091624;
+  --proj: #E0AFA0;
+  --pub: #FFA737;
 }
 
 html, body {
@@ -266,6 +270,12 @@ section .content-grp {
   width: 90%;
   margin: 0 auto;
   max-width: 200px;
+}
+#accomp .accomp-grp .card .proj-col {
+  background-color: var(--proj) !important;
+}
+#accomp .accomp-grp .card .pub-col {
+  background-color: var(--pub) !important;
 }
 #accomp .accomp-grp .card .btn {
   background-color: var(--but-bg);

@@ -47,6 +47,8 @@
   --card-a: #D499B9;
   --card-b: #ADBDFF;
   --card-text: #091624;
+  --proj: #E0AFA0;
+  --pub: #FFA737;
 }
 
 .theme-organic {
@@ -65,6 +67,8 @@
   --card-a: #08B2E3;
   --card-b: #34E4EA;
   --card-text: #091624;
+  --proj: #E0AFA0;
+  --pub: #FFA737;
 }
 
 /*# sourceMappingURL=base.css.map */
