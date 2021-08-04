@@ -218,6 +218,9 @@ section .content-grp {
   color: var(--but-bg);
 }
 
+#exp .col-md-4 {
+  margin: auto;
+}
 #exp .card {
   background: transparent;
   margin: 4% 0px;
