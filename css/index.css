@@ -248,6 +248,9 @@ section .content-grp {
   text-align: center;
 }
 
+#edu .col {
+  margin: 2% auto;
+}
 #edu .card {
   border: 1px solid var(--card-b);
   background: var(--card-a);
@@ -257,8 +260,39 @@ section .content-grp {
 #edu .card-body {
   color: var(--card-text);
 }
+#edu .card-body h5 {
+  font-size: 1.5rem;
+  text-align: center;
+  backdrop-filter: brightness(0.5);
+  border-radius: 10px;
+}
+#edu .card-body .score {
+  font-size: 1.5rem;
+  backdrop-filter: invert(1);
+  border-radius: 10px;
+  text-align: center;
+}
 #edu .card-body .text-muted {
   color: var(--card-text) !important;
+  font-size: 1.25rem;
+}
+#edu #ug {
+  background-image: url("../img/edu/ug.svg");
+  background-repeat: no-repeat;
+  background-position-x: right;
+  background-position-y: center;
+}
+#edu #twth {
+  background-image: url("../img/edu/12.svg");
+  background-repeat: no-repeat;
+  background-position-x: right;
+  background-position-y: center;
+}
+#edu #teth {
+  background-image: url("../img/edu/10.svg");
+  background-repeat: no-repeat;
+  background-position-x: right;
+  background-position-y: center;
 }
 
 #accomp .accomp-grp .card {

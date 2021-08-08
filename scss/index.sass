@@ -160,6 +160,8 @@ section
 
 
 #edu
+    .col
+        margin: 2% auto
     .card
         border: 1px solid var(--card-b)
         background: var(--card-a)
@@ -168,9 +170,38 @@ section
     
     .card-body
         color: var(--card-text)
+        h5
+            font-size: 1.5rem   
+            text-align: center
+            backdrop-filter: brightness(0.5)
+            border-radius: 10px
+        .score
+            font-size: 1.5rem
+            backdrop-filter: invert(1)
+            border-radius: 10px
+            text-align: center
         
         .text-muted
-            color: var(--card-text) !important    
+            color: var(--card-text) !important   
+            font-size: 1.25rem
+
+    #ug
+        background-image: $ug-bg
+        background-repeat: no-repeat
+        background-position-x: right
+        background-position-y: center
+    
+    #twth
+        background-image: $twth-bg
+        background-repeat: no-repeat
+        background-position-x: right
+        background-position-y: center
+    
+    #teth
+        background-image: $teth-bg
+        background-repeat: no-repeat
+        background-position-x: right
+        background-position-y: center
 
 #accomp
     .accomp-grp
