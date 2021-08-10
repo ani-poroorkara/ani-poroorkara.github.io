@@ -340,29 +340,11 @@ section .content-grp {
   color: var(--card-text);
   border: 1px solid var(--card-b);
 }
-#prof #skills h1 {
+#prof #courses .card {
+  backdrop-filter: brightness(0.5);
+  background-color: transparent;
   color: var(--text-p);
-}
-#prof #skills li.list-group-item {
-  background: linear-gradient(180deg, var(--card-a) 0%, var(--card-b) 100%);
-  color: var(--card-text);
-  border: 1px solid var(--card-b);
-}
-#prof #skills .skill-grp {
-  padding: 0 5%;
-}
-#prof #skills .fw-bold {
-  padding-bottom: 5%;
-}
-#prof #skills .progress-bar {
-  background-color: var(--but-bg);
-}
-#prof #skills .progress {
-  background-color: var(--but-text);
-}
-#prof #skills .badge.rounded-pill {
-  background-color: var(--but-text);
-  color: var(--but-bg);
+  margin: 2% 0;
 }
 
 #contact {
