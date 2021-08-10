@@ -7,31 +7,12 @@ html,body
     background-position: center
     background-size: cover
     overflow-x: hidden
+    font-family: $body-font
+    transition: all .7s ease-in-out
+    scroll-behavior: smooth
 
 body
-    animation: backgroundanimation 15s ease-in-out infinite
-
-@keyframes backgroundanimation
-    0%
-        background-color: var(--bg-m-a)
-    10% 
-        background-color: var(--bg-m-b)
-    20% 
-        background-color: var(--bg-m-c)
-    30% 
-        background-color: var(--bg-m-d)
-    40% 
-        background-color: var(--bg-m-e)
-    50% 
-        background-color: var(--bg-m-e)
-    60%
-        background-color: var(--bg-m-d)
-    70%
-        background-color: var(--bg-m-c)
-    80%
-        background-color: var(--bg-m-b)
-    100%
-        background-color: var(--bg-m-a)
+    animation: backgroundanimation 5s ease-in-out infinite
 
 nav.navbar.sticky-top
         position: fixed
@@ -42,6 +23,7 @@ footer
     text-align: center
     font-size: 1rem
     color: var(--text-c)
+    font-family: $head-font
     a
         color: var(--text-c)
         &:active, &:focus, &:hover
@@ -57,6 +39,7 @@ section
         text-align: center
         max-width: 80vw
         margin: 2% auto
+        font-family: $head-font
 
     .content-grp
         padding: 2%
@@ -74,10 +57,11 @@ section
     background-position: center
     background-repeat: no-repeat
     background-size: auto
+    font-family: $head-font
 
     ul.dropdown-menu.show
         background-color: var(--bg-sd-dd)
-        
+        cursor: pointer
         .dropdown-item
             color: var(--text-p)
 
@@ -87,13 +71,14 @@ section
 
 
 .nav-head
+    cursor: pointer
     &:active, &:focus, &:hover
         background-color: var(--hl-sb)
         color: var(--hl-text-sb)
 
 .nav-link
     color: var(--text-p)
-
+    cursor: pointer
     &:active, &:focus, &:hover
         background-color: var(--hl-sb)
         color: var(--hl-text-sb)
@@ -115,14 +100,40 @@ section
 .active-cont
     margin-left: 280px
 
-#menu-btn
+.sb-togg
     background-color: var(--hl-sb)
     color: var(--hl-text-s)
     &:active, &:focus, &:hover
         background-color: var(--hl-text-s)
         color: var(--hl-sb)
 
+#landing
+    color: var(--text-p)
+    text-align: center
+    padding: 0 2%
+    a 
+        text-decoration: none
+    h1
+        backdrop-filter: blur(5px)
+        border-radius: 20px
+        .highlight1
+            color: var(--but-bg)
+        .highlight2
+            background-color: var(--text-p)
+            color: var(--bg-m-a)
+            border-radius: 10px
+        .highlight3
+            background-color: var(--but-bg)
+            color: var(--but-text)
+            border-radius: 10px
+            cursor: pointer
+            &:active, &:focus, &:hover
+                background-color: var(--but-text)
+                color: var(--but-bg)
+
 #exp
+    .col-md-4
+        margin: auto
     .card
         background: transparent
         margin: 4% 0px
@@ -130,13 +141,19 @@ section
         backdrop-filter: blur(10px)
         color: var(--card-b)
         border: 1px solid var(--card-b)
+        
+        .blockquote-footer
+            font-size: 1em
+            color: var(--hl-sb)
 
         .text-muted
             color: var(--card-b) !important
 
     .img-fluid
-        max-width: 150px
-        width: 40%
+        max-width: 200px
+        width: 100%
+        margin: 2% 0
+
     .content-grp
         padding: 0% 6%
     .col-md-4
@@ -144,6 +161,8 @@ section
 
 
 #edu
+    .col
+        margin: 2% auto
     .card
         border: 1px solid var(--card-b)
         background: var(--card-a)
@@ -152,9 +171,38 @@ section
     
     .card-body
         color: var(--card-text)
+        h5
+            font-size: 1.5rem   
+            text-align: center
+            backdrop-filter: brightness(0.5)
+            border-radius: 10px
+        .score
+            font-size: 1.5rem
+            backdrop-filter: invert(1)
+            border-radius: 10px
+            text-align: center
         
         .text-muted
-            color: var(--card-text) !important    
+            color: var(--card-text) !important   
+            font-size: 1.25rem
+
+    #ug
+        background-image: $ug-bg
+        background-repeat: no-repeat
+        background-position-x: right
+        background-position-y: center
+    
+    #twth
+        background-image: $twth-bg
+        background-repeat: no-repeat
+        background-position-x: right
+        background-position-y: center
+    
+    #teth
+        background-image: $teth-bg
+        background-repeat: no-repeat
+        background-position-x: right
+        background-position-y: center
 
 #accomp
     .accomp-grp
@@ -167,10 +215,17 @@ section
             border: 1px solid var(--card-b)
 
             .card-img-top
-                width: 90%
-                margin: 0 auto
+                width: 100%
+                margin: 5% auto
                 max-width: 200px
-            
+                max-height: 150px
+
+            .proj-col
+                background-color: var(--proj) !important
+
+            .pub-col
+                background-color: var(--pub) !important
+
             .btn
                 background-color: var(--but-bg)
                 color: var(--but-text)
@@ -187,7 +242,6 @@ section
                     color: var(--card-b) !important
 
 
-
 #prof
     
     #courses
@@ -198,28 +252,30 @@ section
             background: linear-gradient(180deg, var(--card-a) 0%, var(--card-b) 100%)
             color: var(--card-text)
             border: 1px solid var(--card-b)
-    
-    #skills
-        h1
+
+        .card
+            backdrop-filter: brightness(0.5)
+            background-color: transparent
             color: var(--text-p)
-
-        li.list-group-item
-            background: linear-gradient(180deg, var(--card-a) 0%, var(--card-b) 100%)
-            color: var(--card-text)
-            border: 1px solid var(--card-b)
-
-        .skill-grp
-            padding: 0 5%
-
-        .fw-bold
-            padding-bottom: 5%
-
-        .progress-bar
-            background-color: var(--but-bg)
+            margin: 2% 0
     
-        .progress
-            background-color: var(--but-text)
 
-        .badge.rounded-pill
-            background-color: var(--but-text)
+#contact
+    backdrop-filter: brightness(0.5)
+    border-radius: 20px
+    .display-4
+        padding: 0 0 
+    .content-grp
+        text-align: center
+        padding: 0 0
+        a
             color: var(--but-bg)
+            transition: transform .7s ease-in-out
+            .btn-lg
+                font-size: 2rem
+                
+            &:active, &:focus, &:hover
+                background-color: var(--but-bg)
+                color: var(--but-text)
+                transform: rotateY(360deg)
+            

@@ -1,6 +1,6 @@
 <head>
     <title>Anirudh Poroorkara</title>
-    <link rel="shortcut icon" href="assets/img/brand-icon.svg" type="image/x-icon" />
+    <link rel="shortcut icon" href="img/logo.svg" type="image/x-icon" />
 
     <!-- Required meta tags -->
     <meta charset="utf-8">
@@ -24,32 +24,32 @@
     <div class="side-navbar active-nav d-flex justify-content-between flex-wrap flex-column" id="sidebar">
         <ul class="nav flex-column text-white w-100">
           <div class="profile-pic">
-            <img src="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png" class="rounded" alt="profile picture">
+            <img src="img/man.png" class="rounded" alt="profile picture">
           </div>
           <a href="/" class="nav-link h3 my-2 nav-head">
             Anirudh Poroorkara
           </a>
-          <li href="#" class="nav-link">
+          <a href="#accomp" class="nav-link">
+            <span class="mx-2"> <i class="bi bi-award"></i> Projects</span>
+          </a>
+          <a href="#exp" class="nav-link">
             <span class="mx-2"> <i class="bi bi-briefcase"></i> Experience</span>
-          </li>
-          <li href="#" class="nav-link">
+          </a>
+          <a href="#edu" class="nav-link">
             <span class="mx-2"> <i class="bi bi-book"></i> Education</span>
-          </li>
-          <li href="#" class="nav-link">
-            <span class="mx-2"> <i class="bi bi-award"></i> Accomplishments</span>
-          </li>
-          <li  href="" class="nav-link">
+          </a>
+          <a  href="#prof" class="nav-link">
             <span class="mx-2"> <i class="bi bi-menu-button-wide-fill"></i> Proficiency</span>
-          </li>
+          </a>
           <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            <a class="nav-link dropdown-toggle" href="#contact" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
               <span class="mx-2"> <i class="bi bi-people"></i> Quick links</span>
             </a>
             <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-              <li><a class="dropdown-item" href="#"> <i class="bi bi-linkedin"></i> LinkedIn</a></li>
-              <li><a class="dropdown-item" href="#"> <i class="bi bi-github"></i> GitHub</a></li>
-              <li><a class="dropdown-item" href="#"> <i class="bi bi-envelope-fill"></i> Email</a></li>
-              <li><a class="dropdown-item" href="#"> <i class="bi bi-instagram"></i> Instagram</a></li>
+              <li><a class="dropdown-item" href="https://www.linkedin.com/in/anirudh-poroorkara-34900017b/" target="_blank"> <i class="bi bi-linkedin"></i> LinkedIn</a></li>
+              <li><a class="dropdown-item" href="https://github.com/ani-poroorkara/" target="_blank"> <i class="bi bi-github"></i> GitHub</a></li>
+              <li><a class="dropdown-item" href = "mailto: anirudh_p@outlook.com" target="_blank"> <i class="bi bi-envelope-fill"></i> Email</a></li>
+              <li><a class="dropdown-item" href="https://www.instagram.com/aniporoorkara/?hl=en" target="_blank"> <i class="bi bi-instagram"></i> Instagram</a></li>
             </ul>
           </li>
           <li class="nav-item dropdown">
@@ -57,8 +57,8 @@
               <span class="mx-2"> <i class="bi bi-palette"></i> Theme</span>
             </a>
             <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-              <li><a class="dropdown-item" href="javascript:changeTheme('theme-space','space')"> <i class="bi bi-droplet-half"></i> Space</a></li>
-              <li><a class="dropdown-item" href="javascript:changeTheme('theme-organic','organic')"> <i class="bi bi-cloud-moon-fill"></i> Organic</a></li>
+              <li><a class="dropdown-item" href="javascript:changeTheme('theme-space','space')"> <i class="bi bi-stars"></i> Space</a></li>
+              <li><a class="dropdown-item" href="javascript:changeTheme('theme-organic','organic')"> <i class="bi bi-hexagon-half"></i> Organic</a></li>
             </ul>
           </li>
         </ul>
@@ -66,12 +66,127 @@
     <div class="p-1 my-container active-cont">
         <nav class="navbar sticky-top">
             <div class="container-fluid">
-              <button type="button" class="btn" id="menu-btn"><i class="bi bi-person-lines-fill"></i></button>
+              <button type="button" class="btn sb-togg" id="menu-btn"><i class="bi bi-person-lines-fill"></i></button>
             </div>
           </nav>
           
           <main class="container">
-
+            
+            <section id="landing">
+            
+              <h1 class="display-4">Hey!</h1> 
+              <h1 class="display-3"> I am <span class="highlight1">Anirudh Poroorkara</span></h1>
+              <h1 class="display-5">I am a <span class="highlight2"> software engineer</span> who enjoys creating <a href="#accomp" class="highlight3">stuff..</a> 
+                and meeting <a href="#contact" class="highlight3">new people?</a></h1>
+              
+            </section>
+            
+            <section id="accomp">
+              <h1 class="display-4" data-aos="fade-up" data-aos-duration="1500">
+                  My Projects
+              </h1> 
+              <div class="accomp-grp content-grp">
+                  <div class="row row-cols-1 row-cols-md-3 g-4">
+                    <div class="col" data-aos="flip-up" data-aos-duration="1500">
+                      <div class="card h-100">
+                        <img src="img/project/pg.svg" class="card-img-top" alt="...">
+                        <span class="badge proj-col text-dark">Project</span>
+                        <div class="card-body">
+                          <h5 class="card-title">Playlist Generation</h5>
+                          <p class="card-text">
+                            Generate  a  playlist  taking  your  music  files  as  input  and  generate using Genetic Algorithms either  a 
+                             text file containing the list or merge the entire list into a single music track.
+                          </p>
+                          <a href="https://github.com/ani-poroorkara/PlaylistGenerator-using-Genetic-Algorithm" target="_blank" class="btn">Read More!</a>
+                        </div>
+                        <div class="card-footer">
+                          <small class="text-muted">Updated on May 2020 </small>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col" data-aos="flip-up" data-aos-duration="1500">
+                      <div class="card h-100">
+                        <img src="img/project/hg.svg" class="card-img-top" alt="...">
+                        <span class="badge proj-col text-dark">Project</span>
+                        <span class="badge pub-col text-dark">Publication</span>
+                        <div class="card-body">
+                          <h5 class="card-title">Hand Gesture Recognition</h5>
+                          <p class="card-text">
+                            The data model uses Deep learning, Convolutional Neural Networks to recognize hand gestures.</p>
+                          <a href="https://github.com/ani-poroorkara/handRecogz" target="_blank" class="btn">Read More!</a>
+                        </div>
+                        <div class="card-footer">
+                          <small class="text-muted">Updated on December 2019 </small>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col" data-aos="flip-up" data-aos-duration="1500">
+                      <div class="card h-100">
+                        <img src="img/project/gb.svg" class="card-img-top" alt="...">
+                        <span class="badge proj-col text-dark">Project</span>
+                        <div class="card-body">
+                          <h5 class="card-title">GradBot</h5>
+                          <p class="card-text">
+                            A simple bot implementation using logistic regression and Rivescript to estimate admit chances to a graduate university
+                          </p>
+                          <a href="https://github.com/ani-poroorkara/gradBot" target="_blank" class="btn">Read More!</a>
+                        </div>
+                        <div class="card-footer">
+                          <small class="text-muted">Updated on December 2019 </small>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col" data-aos="flip-up" data-aos-duration="1500">
+                      <div class="card h-100">
+                        <img src="img/project/th.svg" class="card-img-top" alt="...">
+                        <span class="badge proj-col text-dark">Project</span>
+                        <div class="card-body">
+                          <h5 class="card-title">Predicting Hatred Tweets</h5>
+                          <p class="card-text">
+                            Predict Hatred tweets from twitter using deep convolutional layers with multichannel input layers.
+                          </p>
+                          <a href="https://github.com/ani-poroorkara/PredictingHatredCommentsOnTwitter" target="_blank" class="btn">Read More!</a>
+                        </div>
+                        <div class="card-footer">
+                          <small class="text-muted">Updated on April 2020 </small>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col" data-aos="flip-up" data-aos-duration="1500">
+                      <div class="card h-100">
+                        <img src="img/project/tree.svg" class="card-img-top" alt="...">
+                        <span class="badge proj-col text-dark">Project</span>
+                        <div class="card-body">
+                          <h5 class="card-title">Decision Tree Classifier</h5>
+                          <p class="card-text">
+                            Create any kind of Decision Tree Classifier with any dataset.
+                          </p>
+                          <a href="https://github.com/ani-poroorkara/DecisionTreeClassifier" target="_blank" class="btn">Read More!</a>
+                        </div>
+                        <div class="card-footer">
+                          <small class="text-muted">Updated on October 2019 </small>
+                        </div>
+                      </div>
+                    </div>
+                      <div class="col" data-aos="flip-up" data-aos-duration="1500">
+                        <div class="card h-100">
+                          <img src="img/project/forest.svg" class="card-img-top" alt="...">
+                          <span class="badge proj-col text-dark">Project</span>
+                          <div class="card-body">
+                            <h5 class="card-title">Random Forest Classifier</h5>
+                            <p class="card-text">
+                              Create any kind of Random Forest Classifier with any dataset.
+                            </p>
+                            <a href="https://github.com/ani-poroorkara/RandomForestClassifier" target="_blank" class="btn">Read More!</a>
+                          </div>
+                          <div class="card-footer">
+                            <small class="text-muted">Updated on October 2019 </small>
+                          </div>
+                        </div>
+                      </div>
+                  </div>
+                </div>
+          </section>
           <section id="exp">
                 <h1 class="display-4" data-aos="fade-up" data-aos-duration="1500">
                     Experience
@@ -80,31 +195,39 @@
                     <div class="card" data-aos="fade-right" data-aos-duration="1500">
                         <div class="row g-0">
                           <div class="col-md-4">
-                            <img src="img/logo.svg" class="img-fluid" alt="...">
+                            <a href="https://getcogno.ai/" target="_blank">
+                              <img src="img/work/cognoai.svg" class="img-fluid" alt="...">
+                            </a>
                           </div>
                           <div class="col-md-8">
                             <div class="card-body">
-                              <h5 class="card-title">Work Experience</h5>
-                              <p class="card-text">Describe your role here with points, etc</p>
-                              <p class="card-text"><small class="text-muted"><i>Mon, 20XX to Month, 20XX</i></small></p>
+                              <h5 class="card-title">Associate Project Manager</h5>
+                              <footer class="blockquote-footer">CognoAI by AllinCall Research and Solutions</footer>
+                              <p class="card-text">CognoAI provides AI chatbots through different platform for
+                                improving fintech at an enterprise level.</p>
+                              <p class="card-text"><small class="text-muted"><i>July, 2020 to July, 2021</i></small></p>
                             </div>
                           </div>
                         </div>
                     </div>
                     <div class="card" data-aos="fade-left" data-aos-duration="1500">
-                        <div class="row g-0">
-                          <div class="col-md-4">
-                            <img src="img/logo.svg" class="img-fluid" alt="...">
-                          </div>
-                          <div class="col-md-8">
-                            <div class="card-body">
-                              <h5 class="card-title">Work Experience</h5>
-                              <p class="card-text">Describe your role here with points, etc</p>
-                              <p class="card-text"><small class="text-muted"><i>Mon, 20XX to Month, 20XX</i></small></p>
-                            </div>
+                      <div class="row g-0">
+                        <div class="col-md-4">
+                          <a href="https://www.abbott.co.in/" target="_blank">
+                            <img src="img/work/abbott.svg" class="img-fluid" alt="...">
+                          </a>
+                        </div>
+                        <div class="col-md-8">
+                          <div class="card-body">
+                            <h5 class="card-title">Data Analyst Intern</h5>
+                            <footer class="blockquote-footer">Abbott Healthcare Private Limited</footer>
+                            <p class="card-text">Abbott is India’s leading and a global healthcare company that conducts innovative
+                              research and manufactures products for human health.</p>
+                            <p class="card-text"><small class="text-muted"><i>December, 2018 to January, 2019</i></small></p>
                           </div>
                         </div>
-                    </div>
+                      </div>
+                  </div>
                 </div>
             </section>
             <section id="edu">
@@ -114,93 +237,194 @@
                 <div class="content-grp" data-aos="zoom-in" data-aos-duration="1500">
                   <div class="row row-cols-1 row-cols-md-3 content-grp">
                     <div class="col">
-                        <div class="card mb-3">              
-                            <div class="card-body">
-                                <h5 class="card-title">XXXX College</h5>
-                                <p class="card-text">Score</p>
-                                <p class="card-text"><small class="text-muted">20XX to 20XX</small></p>
-                            </div>
+                      <div class="card h-100 mb-3" id="ug">              
+                          <div class="card-body">
+                              <h4><i>Undergraduate</i></h4>
+                              <hr>
+                              <h5 class="card-title">Thadomal Shahani Engineering College</h5>
+                              <p class="card-text score">8.69 / 10.00</p>
+                              <p class="card-text"><small class="text-muted"><i><b>2016 -> 2020</b></i></small></p>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="col">
+                    <div class="card h-100 mb-3" id="twth">              
+                        <div class="card-body">
+                            <h4><i>Junior College</i></h4>
+                            <hr>
+                            <h5 class="card-title">Pace Junior Science College (PCM)</h5>
+                            <p class="card-text score">82.15%</p>
+                            <p class="card-text"><small class="text-muted"><i><b>2016</b></i></small></p>
                         </div>
                     </div>
+                </div>
+                <div class="col">
+                  <div class="card h-100 mb-3">              
+                      <div class="card-body" id="teth">
+                          <h4><i>School</i></h4>
+                          <hr>
+                          <h5 class="card-title">Shri Balaji International School (ICSE)</h5>
+                          <p class="card-text score">92.00%</p>
+                          <p class="card-text"><small class="text-muted"><i><b>2014</b></i></small></p>
+                      </div>
+                  </div>
+              </div>
                   </div>
                 </div>
             </section>
 
-            <section id="accomp">
-                <h1 class="display-4" data-aos="fade-up" data-aos-duration="1500">
-                    Accomplishments
-                </h1> 
-                <div class="accomp-grp content-grp">
-                    <div class="row row-cols-1 row-cols-md-3 g-4">
-                        <div class="col" data-aos="flip-up" data-aos-duration="1500">
-                          <div class="card h-100">
-                            <img src="img/dummy-img.png" class="card-img-top" alt="...">
-                            <span class="badge bg-light text-dark">Project</span>
-                            <div class="card-body">
-                              <h5 class="card-title">Card title</h5>
-                              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                              <a href="#" class="btn">Read More!</a>
-                            </div>
-                            <div class="card-footer">
-                              <small class="text-muted">Last updated 3 mins ago</small>
-                            </div>
-                          </div>
-                        </div>
-                </div>
+            <section id="contact">
+              <h1 class="display-4" data-aos="fade-up" data-aos-duration="1500">
+                Hit me up on...
+              </h1>
+              <div class="content-grp">
+                <a href="#" class="btn btn-lg"><i class="bi bi-instagram"></i></a>
+                <a href="#" class="btn btn-lg"><i class="bi bi-linkedin"></i></a>
+                <a href="#" class="btn btn-lg"><i class="bi bi-github"></i></a>
+                <a href="#" class="btn btn-lg"><i class="bi bi-envelope-fill"></i></a>
+              </div>
             </section>
 
             <section id="prof">
-                <h1 class="display-4" data-aos="fade-up" data-aos-duration="1500">
-                    Proficiency
-                </h1>
+              <h1 class="display-4" data-aos="fade-up" data-aos-duration="1500">
+                Courses and Skills
+              </h1>
                 <div id="courses">  
                     <div class="content-grp">
-                      <h1 class="display-5" data-aos="fade-up" data-aos-duration="1500">Courses</h1>
                       <div class="list-group course-grp">
-                          <a href="#" class="list-group-item list-group-item-action" aria-current="true" data-aos="fade-up-right" data-aos-duration="1500">
+                        <div class="card">
+                          <h5 class="card-header">Artificial Intelligence</h5>
+
+                          <a href="https://www.udemy.com/certificate/UC-ad327178-ebb7-4b3a-bfc6-91d13dcee1fd/" class="list-group-item list-group-item-action" aria-current="true" data-aos="fade-up-right" data-aos-duration="1500">
                             <div class="d-flex w-100 justify-content-between">
-                              <h5 class="mb-1">List group item heading</h5>
-                              <small>3 days ago</small>
+                              <h5 class="mb-1"><b>Modern Natural Language Processing in Python</b></h5>
+                              <small>July 2020</small>
                             </div>
-                            <p class="mb-1">Some placeholder content in a paragraph.</p>
-                            <small>And some small print.</small>
+                            <p class="mb-1"><i>Solving Seq2Seq and Classification NLP tasks with Transformer and CNN using Tensorflow 2 in Google Colab.</i></p>
+                            <span class="badge bg-danger">Udemy</span>
+                            <span class="badge bg-dark">Certification</span>
                           </a>
-                          <a href="#" class="list-group-item list-group-item-action" aria-current="true" data-aos="fade-up-left" data-aos-duration="1500">
-                              <div class="d-flex w-100 justify-content-between">
-                                <h5 class="mb-1">List group item heading</h5>
-                                <small>3 days ago</small>
-                              </div>
-                              <p class="mb-1">Some placeholder content in a paragraph.</p>
-                              <small>And some small print.</small>
+                          <a href="https://www.coursera.org/account/accomplishments/verify/85NTU25XXJTG" class="list-group-item list-group-item-action" aria-current="true" data-aos="fade-up-left" data-aos-duration="1500">
+                            <div class="d-flex w-100 justify-content-between">
+                              <h5 class="mb-1"><b>GCP Big Data and Machine Learning Fundamentals</b></h5>
+                              <small>June 2020</small>
+                            </div>
+                            <p class="mb-1"><i>Use Cloud SQL and Dataproc to migrate existing MySQL and Hadoop/Pig/Spark/Hive workloads to Google Cloud.</i></p>
+                            <span class="badge bg-light text-dark">Coursera</span>
+                            <span class="badge bg-dark">Certification</span>
                           </a>
+                          <a href="https://www.udemy.com/certificate/UC-W612RNIP/" class="list-group-item list-group-item-action" aria-current="true" data-aos="fade-up-right" data-aos-duration="1500">
+                            <div class="d-flex w-100 justify-content-between">
+                              <h5 class="mb-1"><b>Artificial Intelligence</b></h5>
+                              <small>October 2019</small>
+                            </div>
+                            <p class="mb-1"><i>Combining the power of Data Science, Machine Learning and Deep Learning to create powerful AI for Real-World applications</i></p>
+                            <span class="badge bg-danger">Udemy</span>
+                            <span class="badge bg-dark">Certification</span>
+                          </a>
+                        </div>
+                        <div class="card">
+                          <h5 class="card-header">Python</h5>
+
+                          <a href="https://cutshort.io/certificate/11657" class="list-group-item list-group-item-action" aria-current="true" data-aos="fade-up-left" data-aos-duration="1500">
+                            <div class="d-flex w-100 justify-content-between">
+                              <h5 class="mb-1"><b>Advanced Python</b></h5>
+                              <small>June 2020</small>
+                            </div>
+                            <p class="mb-1"><i>Advanced proficiency in Python.</i></p>
+                            <span class="badge bg-warning text-dark">CutShort</span>
+                            <span class="badge bg-dark">Certification</span>
+                          </a>
+                          <a href="https://www.coursera.org/account/accomplishments/verify/K4MW43F8ZMHZ" class="list-group-item list-group-item-action" aria-current="true" data-aos="fade-up-right" data-aos-duration="1500">
+                            <div class="d-flex w-100 justify-content-between">
+                              <h5 class="mb-1"><b>Python to Access Web</b></h5>
+                              <small>June 2020</small>
+                            </div>
+                            <p class="mb-1"><i>Using Python to understand the protocols web browsers use to retrieve documents and web apps. Also, retrieve data from websites and APIs using Python</i></p>
+                            <span class="badge bg-light text-dark">Coursera</span>
+                            <span class="badge bg-dark">Certification</span>
+                          </a>
+                          <a href="https://www.coursera.org/account/accomplishments/verify/FYXNA6HJ3UBD" class="list-group-item list-group-item-action" aria-current="true" data-aos="fade-up-left" data-aos-duration="1500">
+                            <div class="d-flex w-100 justify-content-between">
+                              <h5 class="mb-1"><b>Python Data Structures</b></h5>
+                              <small>March 2018</small>
+                            </div>
+                            <p class="mb-1"><i>Learning principles of python data structures and how they are used</i></p>
+                            <span class="badge bg-light text-dark">Coursera</span>
+                            <span class="badge bg-dark">Certification</span>
+                          </a>
+                          <a href="https://www.coursera.org/account/accomplishments/verify/9DYA4P557TDE" class="list-group-item list-group-item-action" aria-current="true" data-aos="fade-up-right" data-aos-duration="1500">
+                            <div class="d-flex w-100 justify-content-between">
+                              <h5 class="mb-1"><b>Python for Beginners</b></h5>
+                              <small>January 2018</small>
+                            </div>
+                            <p class="mb-1"><i>Learning the basics of the Python programming language</i></p>
+                            <span class="badge bg-light text-dark">Coursera</span>
+                            <span class="badge bg-dark">Certification</span>
+                          </a>
+                        </div>
+                          
+                        <div class="card">
+                          <h5 class="card-header">Web Development</h5>
+                          <a href="https://www.udemy.com/certificate/UC-KYQC9P6S/" class="list-group-item list-group-item-action" aria-current="true" data-aos="fade-up-left" data-aos-duration="1500">
+                            <div class="d-flex w-100 justify-content-between">
+                              <h5 class="mb-1"><b>Sass</b></h5>
+                              <small>July 2021</small>
+                            </div>
+                            <p class="mb-1"><i>Sass is a stylesheet language that’s compiled to CSS. Sass helps keep large stylesheets well-organized and makes it easy to share design within and across projects.</i></p>
+                            <span class="badge bg-success">Self-Learnt</span>
+                          </a>
+                          <a href="https://www.udemy.com/certificate/UC-KYQC9P6S/" class="list-group-item list-group-item-action" aria-current="true" data-aos="fade-up-right" data-aos-duration="1500">
+                            <div class="d-flex w-100 justify-content-between">
+                              <h5 class="mb-1"><b>JavaScript</b></h5>
+                              <small>February 2019</small>
+                            </div>
+                            <p class="mb-1"><i>Complete JavaScript course along with 5 different real world projects.</i></p>
+                            <span class="badge bg-danger">Udemy</span>
+                            <span class="badge bg-dark">Certification</span>
+                          </a>
+                          <a href="https://getbootstrap.com/" class="list-group-item list-group-item-action" aria-current="true" data-aos="fade-up-left" data-aos-duration="1500">
+                            <div class="d-flex w-100 justify-content-between">
+                              <h5 class="mb-1"><b>Bootstrap Framework</b></h5>
+                              <small>February 2017</small>
+                            </div>
+                            <p class="mb-1"><i>Boostrap is the world’s most popular framework for building responsive, mobile-first sites.</i></p>
+                            <span class="badge bg-success">Self-Learnt</span>
+                          </a>
+                          <a href="https://developer.mozilla.org/en-US/docs/Web/HTML" class="list-group-item list-group-item-action" aria-current="true" data-aos="fade-up-right" data-aos-duration="1500">
+                            <div class="d-flex w-100 justify-content-between">
+                              <h5 class="mb-1"><b>HTML</b></h5>
+                              <small>February 2017</small>
+                            </div>
+                            <p class="mb-1"><i>HyperText Markup Language is the most basic building block of the Web.</i></p>
+                            <span class="badge bg-success">Self-Learnt</span>
+                          </a>
+                          <a href="https://developer.mozilla.org/en-US/docs/Web/CSS" class="list-group-item list-group-item-action" aria-current="true" data-aos="fade-up-left" data-aos-duration="1500">
+                            <div class="d-flex w-100 justify-content-between">
+                              <h5 class="mb-1"><b>CSS</b></h5>
+                              <small>February 2017</small>
+                            </div>
+                            <p class="mb-1"><i>Cascading Style Sheets is a stylesheet language used to describe the presentation of a document written in HTML. CSS describes how elements should be rendered on screen, on paper, in speech, or on other media.</i></p>
+                            <span class="badge bg-success">Self-Learnt</span>
+                          </a>
+                        </div>
+                        
+                        <div class="card">
+                          <h5 class="card-header">Other Interests</h5>
+
+                          <a href="https://www.udemy.com/certificate/UC-462ba662-44a0-4baa-9b8d-8b1a80f25ec0/" class="list-group-item list-group-item-action" aria-current="true" data-aos="fade-up-right" data-aos-duration="1500">
+                            <div class="d-flex w-100 justify-content-between">
+                              <h5 class="mb-1"><b>Ethical Hacking</b></h5>
+                              <small>April 2020</small>
+                            </div>
+                            <p class="mb-1"><i>Learning network hacking, gaining access, post exploitation attacks and web application attacks.</i></p>
+                            <span class="badge bg-danger">Udemy</span>
+                            <span class="badge bg-dark">Certification</span>
+                          </a>
+                        </div>
+                          
                       </div>
                     </div>
-                    
-                </div>
-                <div id="skills">
-                  <div class="content-grp">
-                    <h1 class="display-5" data-aos="fade-up" data-aos-duration="1500">Skills</h1>
-                    <ol class="list-group skill-grp">
-                        <li class="list-group-item d-flex justify-content-between align-items-start" data-aos="fade-up-right" data-aos-duration="1500">
-                          <div class="ms-2 me-auto">
-                            <div class="fw-bold">Subheading</div>
-                            <div class="progress" style="height: 20px;">
-                                <div class="progress-bar" role="progressbar" style="width: 25%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
-                            </div>
-                          </div>
-                          <span class="badge rounded-pill"><i class="bi bi-patch-check-fill"></i><i class="bi bi-patch-check-fill"></i></span>
-                        </li>
-                        <li class="list-group-item d-flex justify-content-between align-items-start" data-aos="fade-up-left" data-aos-duration="1500">
-                          <div class="ms-2 me-auto">
-                            <div class="fw-bold">Subheading</div>
-                            <div class="progress" style="height: 20px;">
-                                <div class="progress-bar" role="progressbar" style="width: 25%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
-                            </div>
-                          </div>
-                          <span class="badge rounded-pill"><i class="bi bi-patch-check-fill"></i><i class="bi bi-patch-check-fill"></i></span>
-                        </li>
-                      </ol>
-                  </div>
                     
                 </div>
             </section>
@@ -216,7 +440,6 @@
   <!-- JS Scripts -->
   <!-- Bootstrap Bundle with Popper -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
-  
   <!-- AOS Script -->
   <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
   

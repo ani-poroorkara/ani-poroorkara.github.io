@@ -1,51 +1,4 @@
-.theme-space {
-  --text-p: #AFDAFF;
-  --text-c: #8F2D56;
-  --but-bg: #E01A4F;
-  --but-text: #FFFFFF;
-  --bg-m-a: #011638;
-  --bg-m-b: #0B193C;
-  --bg-m-c: #161D40;
-  --bg-m-d: #202043;
-  --bg-m-e: #2A2347;
-  --hl-sb: #C7AADF;
-  --hl-text-sb: #000500;
-  --bg-sd-dd: #2A2347;
-  --card-a: #D499B9;
-  --card-b: #ADBDFF;
-  --card-text: #091624;
-}
-
-.theme-organic {
-  --text-p: #EDFFEC;
-  --text-c: #9792E3;
-  --but-bg: #F2FF49;
-  --but-text: #0C2137;
-  --bg-m-a: #2B2D42;
-  --bg-m-b: #292A3F;
-  --bg-m-c: #27273C;
-  --bg-m-d: #242439;
-  --bg-m-e: #222136;
-  --hl-sb: #EF5B5B;
-  --hl-text-sb: #000500;
-  --bg-sd-dd: #D80032;
-  --card-a: #08B2E3;
-  --card-b: #34E4EA;
-  --card-text: #091624;
-}
-
-html, body {
-  background-image: url("../img/theme/organic/main-bg.svg");
-  background-attachment: fixed;
-  background-position: center;
-  background-size: cover;
-  overflow-x: hidden;
-}
-
-body {
-  animation: backgroundanimation 15s ease-in-out infinite;
-}
-
+@import url("https://fonts.googleapis.com/css2?family=Dosis:wght@300&family=Rajdhani&display=swap");
 @keyframes backgroundanimation {
   0% {
     background-color: var(--bg-m-a);
@@ -78,6 +31,61 @@ body {
     background-color: var(--bg-m-a);
   }
 }
+.theme-space {
+  --text-p: #AFDAFF;
+  --text-c: #8F2D56;
+  --but-bg: #E01A4F;
+  --but-text: #FFFFFF;
+  --bg-m-a: #011638;
+  --bg-m-b: #0B193C;
+  --bg-m-c: #161D40;
+  --bg-m-d: #202043;
+  --bg-m-e: #2A2347;
+  --hl-sb: #C7AADF;
+  --hl-text-sb: #000500;
+  --bg-sd-dd: #2A2347;
+  --card-a: #D499B9;
+  --card-b: #ADBDFF;
+  --card-text: #091624;
+  --proj: #E0AFA0;
+  --pub: #FFA737;
+}
+
+.theme-organic {
+  --text-p: #EDFFEC;
+  --text-c: #9792E3;
+  --but-bg: #F2FF49;
+  --but-text: #0C2137;
+  --bg-m-a: #2B2D42;
+  --bg-m-b: #292A3F;
+  --bg-m-c: #27273C;
+  --bg-m-d: #242439;
+  --bg-m-e: #222136;
+  --hl-sb: #EF5B5B;
+  --hl-text-sb: #000500;
+  --bg-sd-dd: #D80032;
+  --card-a: #08B2E3;
+  --card-b: #34E4EA;
+  --card-text: #091624;
+  --proj: #E0AFA0;
+  --pub: #FFA737;
+}
+
+html, body {
+  background-image: url("../img/theme/organic/main-bg.svg");
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  overflow-x: hidden;
+  font-family: "Rajdhani", sans-serif;
+  transition: all 0.7s ease-in-out;
+  scroll-behavior: smooth;
+}
+
+body {
+  animation: backgroundanimation 5s ease-in-out infinite;
+}
+
 nav.navbar.sticky-top {
   position: fixed;
   width: 100%;
@@ -88,6 +96,7 @@ footer {
   text-align: center;
   font-size: 1rem;
   color: var(--text-c);
+  font-family: "Dosis", sans-serif;
 }
 footer a {
   color: var(--text-c);
@@ -103,6 +112,7 @@ section h1.display-4 {
   text-align: center;
   max-width: 80vw;
   margin: 2% auto;
+  font-family: "Dosis", sans-serif;
 }
 section .content-grp {
   padding: 2%;
@@ -119,9 +129,11 @@ section .content-grp {
   background-position: center;
   background-repeat: no-repeat;
   background-size: auto;
+  font-family: "Dosis", sans-serif;
 }
 .side-navbar ul.dropdown-menu.show {
   background-color: var(--bg-sd-dd);
+  cursor: pointer;
 }
 .side-navbar ul.dropdown-menu.show .dropdown-item {
   color: var(--text-p);
@@ -131,6 +143,9 @@ section .content-grp {
   color: var(--hl-text-sb);
 }
 
+.nav-head {
+  cursor: pointer;
+}
 .nav-head:active, .nav-head:focus, .nav-head:hover {
   background-color: var(--hl-sb);
   color: var(--hl-text-sb);
@@ -138,6 +153,7 @@ section .content-grp {
 
 .nav-link {
   color: var(--text-p);
+  cursor: pointer;
 }
 .nav-link:active, .nav-link:focus, .nav-link:hover {
   background-color: var(--hl-sb);
@@ -163,15 +179,49 @@ section .content-grp {
   margin-left: 280px;
 }
 
-#menu-btn {
+.sb-togg {
   background-color: var(--hl-sb);
   color: var(--hl-text-s);
 }
-#menu-btn:active, #menu-btn:focus, #menu-btn:hover {
+.sb-togg:active, .sb-togg:focus, .sb-togg:hover {
   background-color: var(--hl-text-s);
   color: var(--hl-sb);
 }
 
+#landing {
+  color: var(--text-p);
+  text-align: center;
+  padding: 0 2%;
+}
+#landing a {
+  text-decoration: none;
+}
+#landing h1 {
+  backdrop-filter: blur(5px);
+  border-radius: 20px;
+}
+#landing h1 .highlight1 {
+  color: var(--but-bg);
+}
+#landing h1 .highlight2 {
+  background-color: var(--text-p);
+  color: var(--bg-m-a);
+  border-radius: 10px;
+}
+#landing h1 .highlight3 {
+  background-color: var(--but-bg);
+  color: var(--but-text);
+  border-radius: 10px;
+  cursor: pointer;
+}
+#landing h1 .highlight3:active, #landing h1 .highlight3:focus, #landing h1 .highlight3:hover {
+  background-color: var(--but-text);
+  color: var(--but-bg);
+}
+
+#exp .col-md-4 {
+  margin: auto;
+}
 #exp .card {
   background: transparent;
   margin: 4% 0px;
@@ -180,12 +230,17 @@ section .content-grp {
   color: var(--card-b);
   border: 1px solid var(--card-b);
 }
+#exp .card .blockquote-footer {
+  font-size: 1em;
+  color: var(--hl-sb);
+}
 #exp .card .text-muted {
   color: var(--card-b) !important;
 }
 #exp .img-fluid {
-  max-width: 150px;
-  width: 40%;
+  max-width: 200px;
+  width: 100%;
+  margin: 2% 0;
 }
 #exp .content-grp {
   padding: 0% 6%;
@@ -194,6 +249,9 @@ section .content-grp {
   text-align: center;
 }
 
+#edu .col {
+  margin: 2% auto;
+}
 #edu .card {
   border: 1px solid var(--card-b);
   background: var(--card-a);
@@ -203,8 +261,39 @@ section .content-grp {
 #edu .card-body {
   color: var(--card-text);
 }
+#edu .card-body h5 {
+  font-size: 1.5rem;
+  text-align: center;
+  backdrop-filter: brightness(0.5);
+  border-radius: 10px;
+}
+#edu .card-body .score {
+  font-size: 1.5rem;
+  backdrop-filter: invert(1);
+  border-radius: 10px;
+  text-align: center;
+}
 #edu .card-body .text-muted {
   color: var(--card-text) !important;
+  font-size: 1.25rem;
+}
+#edu #ug {
+  background-image: url("../img/edu/ug.svg");
+  background-repeat: no-repeat;
+  background-position-x: right;
+  background-position-y: center;
+}
+#edu #twth {
+  background-image: url("../img/edu/12.svg");
+  background-repeat: no-repeat;
+  background-position-x: right;
+  background-position-y: center;
+}
+#edu #teth {
+  background-image: url("../img/edu/10.svg");
+  background-repeat: no-repeat;
+  background-position-x: right;
+  background-position-y: center;
 }
 
 #accomp .accomp-grp .card {
@@ -216,9 +305,16 @@ section .content-grp {
   border: 1px solid var(--card-b);
 }
 #accomp .accomp-grp .card .card-img-top {
-  width: 90%;
-  margin: 0 auto;
+  width: 100%;
+  margin: 5% auto;
   max-width: 200px;
+  max-height: 150px;
+}
+#accomp .accomp-grp .card .proj-col {
+  background-color: var(--proj) !important;
+}
+#accomp .accomp-grp .card .pub-col {
+  background-color: var(--pub) !important;
 }
 #accomp .accomp-grp .card .btn {
   background-color: var(--but-bg);
@@ -245,29 +341,35 @@ section .content-grp {
   color: var(--card-text);
   border: 1px solid var(--card-b);
 }
-#prof #skills h1 {
+#prof #courses .card {
+  backdrop-filter: brightness(0.5);
+  background-color: transparent;
   color: var(--text-p);
+  margin: 2% 0;
 }
-#prof #skills li.list-group-item {
-  background: linear-gradient(180deg, var(--card-a) 0%, var(--card-b) 100%);
-  color: var(--card-text);
-  border: 1px solid var(--card-b);
+
+#contact {
+  backdrop-filter: brightness(0.5);
+  border-radius: 20px;
 }
-#prof #skills .skill-grp {
-  padding: 0 5%;
+#contact .display-4 {
+  padding: 0 0;
 }
-#prof #skills .fw-bold {
-  padding-bottom: 5%;
+#contact .content-grp {
+  text-align: center;
+  padding: 0 0;
 }
-#prof #skills .progress-bar {
-  background-color: var(--but-bg);
-}
-#prof #skills .progress {
-  background-color: var(--but-text);
-}
-#prof #skills .badge.rounded-pill {
-  background-color: var(--but-text);
+#contact .content-grp a {
   color: var(--but-bg);
+  transition: transform 0.7s ease-in-out;
+}
+#contact .content-grp a .btn-lg {
+  font-size: 2rem;
+}
+#contact .content-grp a:active, #contact .content-grp a:focus, #contact .content-grp a:hover {
+  background-color: var(--but-bg);
+  color: var(--but-text);
+  transform: rotateY(360deg);
 }
 
 /*# sourceMappingURL=index.css.map */
