@@ -119,6 +119,7 @@ section .content-grp {
 }
 
 .side-navbar {
+  -webkit-backdrop-filter: brightness(0.5);
   backdrop-filter: brightness(0.5);
   width: 280px;
   height: 100%;
@@ -197,6 +198,7 @@ section .content-grp {
   text-decoration: none;
 }
 #landing h1 {
+  -webkit-backdrop-filter: blur(5px);
   backdrop-filter: blur(5px);
   border-radius: 20px;
 }
@@ -226,6 +228,7 @@ section .content-grp {
   background: transparent;
   margin: 4% 0px;
   border-radius: 25px;
+  -webkit-backdrop-filter: blur(10px);
   backdrop-filter: blur(10px);
   color: var(--card-b);
   border: 1px solid var(--card-b);
@@ -264,11 +267,13 @@ section .content-grp {
 #edu .card-body h5 {
   font-size: 1.5rem;
   text-align: center;
+  -webkit-backdrop-filter: brightness(0.5);
   backdrop-filter: brightness(0.5);
   border-radius: 10px;
 }
 #edu .card-body .score {
   font-size: 1.5rem;
+  -webkit-backdrop-filter: invert(1);
   backdrop-filter: invert(1);
   border-radius: 10px;
   text-align: center;
@@ -298,6 +303,7 @@ section .content-grp {
 
 #accomp .accomp-grp .card {
   background: transparent;
+  -webkit-backdrop-filter: blur(5px);
   backdrop-filter: blur(5px);
   color: var(--card-b);
   padding: 0vw 1vw;
@@ -342,6 +348,7 @@ section .content-grp {
   border: 1px solid var(--card-b);
 }
 #prof #courses .card {
+  -webkit-backdrop-filter: brightness(0.5);
   backdrop-filter: brightness(0.5);
   background-color: transparent;
   color: var(--text-p);
@@ -349,6 +356,7 @@ section .content-grp {
 }
 
 #contact {
+  -webkit-backdrop-filter: brightness(0.5);
   backdrop-filter: brightness(0.5);
   border-radius: 20px;
 }
