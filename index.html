@@ -20,216 +20,169 @@
 
 </head>
 
-<body class="theme-organic">
-    <div class="side-navbar active-nav d-flex justify-content-between flex-wrap flex-column" id="sidebar">
-        <ul class="nav flex-column text-white w-100">
-          <div class="profile-pic">
-            <img src="img/man.png" class="rounded" alt="profile picture">
-          </div>
-          <a href="/" class="nav-link h3 my-2 nav-head">
-            Anirudh Poroorkara
-          </a>
-          <a href="#accomp" class="nav-link">
-            <span class="mx-2"> <i class="bi bi-award"></i> Projects</span>
-          </a>
-          <a href="#exp" class="nav-link">
-            <span class="mx-2"> <i class="bi bi-briefcase"></i> Experience</span>
-          </a>
-          <a href="#edu" class="nav-link">
-            <span class="mx-2"> <i class="bi bi-book"></i> Education</span>
-          </a>
-          <a  href="#prof" class="nav-link">
-            <span class="mx-2"> <i class="bi bi-menu-button-wide-fill"></i> Proficiency</span>
-          </a>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#contact" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-              <span class="mx-2"> <i class="bi bi-people"></i> Quick links</span>
-            </a>
-            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-              <li><a class="dropdown-item" href="https://www.linkedin.com/in/anirudh-poroorkara-34900017b/" target="_blank"> <i class="bi bi-linkedin"></i> LinkedIn</a></li>
-              <li><a class="dropdown-item" href="https://github.com/ani-poroorkara/" target="_blank"> <i class="bi bi-github"></i> GitHub</a></li>
-              <li><a class="dropdown-item" href = "mailto: anirudh_p@outlook.com" target="_blank"> <i class="bi bi-envelope-fill"></i> Email</a></li>
-              <li><a class="dropdown-item" href="https://www.instagram.com/aniporoorkara/?hl=en" target="_blank"> <i class="bi bi-instagram"></i> Instagram</a></li>
-            </ul>
-          </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-              <span class="mx-2"> <i class="bi bi-palette"></i> Theme</span>
-            </a>
-            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-              <li><a class="dropdown-item" href="javascript:changeTheme('theme-space','space')"> <i class="bi bi-stars"></i> Space</a></li>
-              <li><a class="dropdown-item" href="javascript:changeTheme('theme-organic','organic')"> <i class="bi bi-hexagon-half"></i> Organic</a></li>
-            </ul>
-          </li>
-        </ul>
-    </div>
-    <div class="p-1 my-container active-cont">
-        <nav class="navbar sticky-top">
-            <div class="container-fluid">
-              <button type="button" class="btn sb-togg" id="menu-btn"><i class="bi bi-person-lines-fill"></i></button>
+<body class="theme-space">
+  
+  <main>
+
+    <!-- Landing -->
+    <section id="landing">
+      <h1 class="display-4">Hey!</h1> 
+      <h1 class="display-3"> I am <span class="highlight1">Anirudh Poroorkara</span></h1>
+      <h1 class="display-5">I am a <span class="highlight2"> software engineer</span> who enjoys creating <a href="#accomp" class="highlight3">stuff..</a> 
+        and meeting <a href="#contact" class="highlight3">new people?</a></h1>
+    </section>
+            
+    <!-- Projects -->
+    <section id="accomp">
+      <h1 class="display-4" data-aos="fade-up" data-aos-duration="1500">
+          My Projects
+      </h1> 
+      <div class="accomp-grp content-grp">
+          <div class="row row-cols-1 row-cols-md-3 g-4">
+            <div class="col" data-aos="flip-up" data-aos-duration="1500">
+              <div class="card h-100">
+                <img src="img/project/pg.svg" class="card-img-top" alt="...">
+                <span class="badge proj-col text-dark">Project</span>
+                <div class="card-body">
+                  <h5 class="card-title">Playlist Generation</h5>
+                  <p class="card-text">
+                    Generate  a  playlist  taking  your  music  files  as  input  and  generate using Genetic Algorithms either  a 
+                      text file containing the list or merge the entire list into a single music track.
+                  </p>
+                  <a href="https://github.com/ani-poroorkara/PlaylistGenerator-using-Genetic-Algorithm" target="_blank" class="btn">Read More!</a>
+                </div>
+                <div class="card-footer">
+                  <small class="text-muted">Updated on May 2020 </small>
+                </div>
+              </div>
             </div>
-          </nav>
-          
-          <main class="container">
-            
-            <section id="landing">
-            
-              <h1 class="display-4">Hey!</h1> 
-              <h1 class="display-3"> I am <span class="highlight1">Anirudh Poroorkara</span></h1>
-              <h1 class="display-5">I am a <span class="highlight2"> software engineer</span> who enjoys creating <a href="#accomp" class="highlight3">stuff..</a> 
-                and meeting <a href="#contact" class="highlight3">new people?</a></h1>
-              
-            </section>
-            
-            <section id="accomp">
-              <h1 class="display-4" data-aos="fade-up" data-aos-duration="1500">
-                  My Projects
-              </h1> 
-              <div class="accomp-grp content-grp">
-                  <div class="row row-cols-1 row-cols-md-3 g-4">
-                    <div class="col" data-aos="flip-up" data-aos-duration="1500">
-                      <div class="card h-100">
-                        <img src="img/project/pg.svg" class="card-img-top" alt="...">
-                        <span class="badge proj-col text-dark">Project</span>
-                        <div class="card-body">
-                          <h5 class="card-title">Playlist Generation</h5>
-                          <p class="card-text">
-                            Generate  a  playlist  taking  your  music  files  as  input  and  generate using Genetic Algorithms either  a 
-                             text file containing the list or merge the entire list into a single music track.
-                          </p>
-                          <a href="https://github.com/ani-poroorkara/PlaylistGenerator-using-Genetic-Algorithm" target="_blank" class="btn">Read More!</a>
-                        </div>
-                        <div class="card-footer">
-                          <small class="text-muted">Updated on May 2020 </small>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="col" data-aos="flip-up" data-aos-duration="1500">
-                      <div class="card h-100">
-                        <img src="img/project/hg.svg" class="card-img-top" alt="...">
-                        <span class="badge proj-col text-dark">Project</span>
-                        <span class="badge pub-col text-dark">Publication</span>
-                        <div class="card-body">
-                          <h5 class="card-title">Hand Gesture Recognition</h5>
-                          <p class="card-text">
-                            The data model uses Deep learning, Convolutional Neural Networks to recognize hand gestures.</p>
-                          <a href="https://github.com/ani-poroorkara/handRecogz" target="_blank" class="btn">Read More!</a>
-                        </div>
-                        <div class="card-footer">
-                          <small class="text-muted">Updated on December 2019 </small>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="col" data-aos="flip-up" data-aos-duration="1500">
-                      <div class="card h-100">
-                        <img src="img/project/gb.svg" class="card-img-top" alt="...">
-                        <span class="badge proj-col text-dark">Project</span>
-                        <div class="card-body">
-                          <h5 class="card-title">GradBot</h5>
-                          <p class="card-text">
-                            A simple bot implementation using logistic regression and Rivescript to estimate admit chances to a graduate university
-                          </p>
-                          <a href="https://github.com/ani-poroorkara/gradBot" target="_blank" class="btn">Read More!</a>
-                        </div>
-                        <div class="card-footer">
-                          <small class="text-muted">Updated on December 2019 </small>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="col" data-aos="flip-up" data-aos-duration="1500">
-                      <div class="card h-100">
-                        <img src="img/project/th.svg" class="card-img-top" alt="...">
-                        <span class="badge proj-col text-dark">Project</span>
-                        <div class="card-body">
-                          <h5 class="card-title">Predicting Hatred Tweets</h5>
-                          <p class="card-text">
-                            Predict Hatred tweets from twitter using deep convolutional layers with multichannel input layers.
-                          </p>
-                          <a href="https://github.com/ani-poroorkara/PredictingHatredCommentsOnTwitter" target="_blank" class="btn">Read More!</a>
-                        </div>
-                        <div class="card-footer">
-                          <small class="text-muted">Updated on April 2020 </small>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="col" data-aos="flip-up" data-aos-duration="1500">
-                      <div class="card h-100">
-                        <img src="img/project/tree.svg" class="card-img-top" alt="...">
-                        <span class="badge proj-col text-dark">Project</span>
-                        <div class="card-body">
-                          <h5 class="card-title">Decision Tree Classifier</h5>
-                          <p class="card-text">
-                            Create any kind of Decision Tree Classifier with any dataset.
-                          </p>
-                          <a href="https://github.com/ani-poroorkara/DecisionTreeClassifier" target="_blank" class="btn">Read More!</a>
-                        </div>
-                        <div class="card-footer">
-                          <small class="text-muted">Updated on October 2019 </small>
-                        </div>
-                      </div>
-                    </div>
-                      <div class="col" data-aos="flip-up" data-aos-duration="1500">
-                        <div class="card h-100">
-                          <img src="img/project/forest.svg" class="card-img-top" alt="...">
-                          <span class="badge proj-col text-dark">Project</span>
-                          <div class="card-body">
-                            <h5 class="card-title">Random Forest Classifier</h5>
-                            <p class="card-text">
-                              Create any kind of Random Forest Classifier with any dataset.
-                            </p>
-                            <a href="https://github.com/ani-poroorkara/RandomForestClassifier" target="_blank" class="btn">Read More!</a>
-                          </div>
-                          <div class="card-footer">
-                            <small class="text-muted">Updated on October 2019 </small>
-                          </div>
-                        </div>
-                      </div>
+            <div class="col" data-aos="flip-up" data-aos-duration="1500">
+              <div class="card h-100">
+                <img src="img/project/hg.svg" class="card-img-top" alt="...">
+                <span class="badge proj-col text-dark">Project</span>
+                <span class="badge pub-col text-dark">Publication</span>
+                <div class="card-body">
+                  <h5 class="card-title">Hand Gesture Recognition</h5>
+                  <p class="card-text">
+                    The data model uses Deep learning, Convolutional Neural Networks to recognize hand gestures.</p>
+                  <a href="https://github.com/ani-poroorkara/handRecogz" target="_blank" class="btn">Read More!</a>
+                </div>
+                <div class="card-footer">
+                  <small class="text-muted">Updated on December 2019 </small>
+                </div>
+              </div>
+            </div>
+            <div class="col" data-aos="flip-up" data-aos-duration="1500">
+              <div class="card h-100">
+                <img src="img/project/gb.svg" class="card-img-top" alt="...">
+                <span class="badge proj-col text-dark">Project</span>
+                <div class="card-body">
+                  <h5 class="card-title">GradBot</h5>
+                  <p class="card-text">
+                    A simple bot implementation using logistic regression and Rivescript to estimate admit chances to a graduate university
+                  </p>
+                  <a href="https://github.com/ani-poroorkara/gradBot" target="_blank" class="btn">Read More!</a>
+                </div>
+                <div class="card-footer">
+                  <small class="text-muted">Updated on December 2019 </small>
+                </div>
+              </div>
+            </div>
+            <div class="col" data-aos="flip-up" data-aos-duration="1500">
+              <div class="card h-100">
+                <img src="img/project/th.svg" class="card-img-top" alt="...">
+                <span class="badge proj-col text-dark">Project</span>
+                <div class="card-body">
+                  <h5 class="card-title">Predicting Hatred Tweets</h5>
+                  <p class="card-text">
+                    Predict Hatred tweets from twitter using deep convolutional layers with multichannel input layers.
+                  </p>
+                  <a href="https://github.com/ani-poroorkara/PredictingHatredCommentsOnTwitter" target="_blank" class="btn">Read More!</a>
+                </div>
+                <div class="card-footer">
+                  <small class="text-muted">Updated on April 2020 </small>
+                </div>
+              </div>
+            </div>
+            <div class="col" data-aos="flip-up" data-aos-duration="1500">
+              <div class="card h-100">
+                <img src="img/project/tree.svg" class="card-img-top" alt="...">
+                <span class="badge proj-col text-dark">Project</span>
+                <div class="card-body">
+                  <h5 class="card-title">Decision Tree Classifier</h5>
+                  <p class="card-text">
+                    Create any kind of Decision Tree Classifier with any dataset.
+                  </p>
+                  <a href="https://github.com/ani-poroorkara/DecisionTreeClassifier" target="_blank" class="btn">Read More!</a>
+                </div>
+                <div class="card-footer">
+                  <small class="text-muted">Updated on October 2019 </small>
+                </div>
+              </div>
+            </div>
+              <div class="col" data-aos="flip-up" data-aos-duration="1500">
+                <div class="card h-100">
+                  <img src="img/project/forest.svg" class="card-img-top" alt="...">
+                  <span class="badge proj-col text-dark">Project</span>
+                  <div class="card-body">
+                    <h5 class="card-title">Random Forest Classifier</h5>
+                    <p class="card-text">
+                      Create any kind of Random Forest Classifier with any dataset.
+                    </p>
+                    <a href="https://github.com/ani-poroorkara/RandomForestClassifier" target="_blank" class="btn">Read More!</a>
+                  </div>
+                  <div class="card-footer">
+                    <small class="text-muted">Updated on October 2019 </small>
                   </div>
                 </div>
-          </section>
-          <section id="exp">
-                <h1 class="display-4" data-aos="fade-up" data-aos-duration="1500">
-                    Experience
-                </h1>
-                <div class="content-grp">
-                    <div class="card" data-aos="fade-right" data-aos-duration="1500">
-                        <div class="row g-0">
-                          <div class="col-md-4">
-                            <a href="https://getcogno.ai/" target="_blank">
-                              <img src="img/work/cognoai.svg" class="img-fluid" alt="...">
-                            </a>
-                          </div>
-                          <div class="col-md-8">
-                            <div class="card-body">
-                              <h5 class="card-title">Associate Project Manager</h5>
-                              <footer class="blockquote-footer">CognoAI by AllinCall Research and Solutions</footer>
-                              <p class="card-text">CognoAI provides AI chatbots through different platform for
-                                improving fintech at an enterprise level.</p>
-                              <p class="card-text"><small class="text-muted"><i>July, 2020 to July, 2021</i></small></p>
-                            </div>
-                          </div>
-                        </div>
-                    </div>
-                    <div class="card" data-aos="fade-left" data-aos-duration="1500">
-                      <div class="row g-0">
-                        <div class="col-md-4">
-                          <a href="https://www.abbott.co.in/" target="_blank">
-                            <img src="img/work/abbott.svg" class="img-fluid" alt="...">
-                          </a>
-                        </div>
-                        <div class="col-md-8">
-                          <div class="card-body">
-                            <h5 class="card-title">Data Analyst Intern</h5>
-                            <footer class="blockquote-footer">Abbott Healthcare Private Limited</footer>
-                            <p class="card-text">Abbott is India’s leading and a global healthcare company that conducts innovative
-                              research and manufactures products for human health.</p>
-                            <p class="card-text"><small class="text-muted"><i>December, 2018 to January, 2019</i></small></p>
-                          </div>
-                        </div>
-                      </div>
+              </div>
+          </div>
+        </div>
+    </section>
+
+    <section id="exp">
+      <h1 class="display-4" data-aos="fade-up" data-aos-duration="1500">
+          Experience
+      </h1>
+      <div class="content-grp">
+          <div class="card" data-aos="fade-right" data-aos-duration="1500">
+              <div class="row g-0">
+                <div class="col-md-4">
+                  <a href="https://getcogno.ai/" target="_blank">
+                    <img src="img/work/cognoai.svg" class="img-fluid" alt="...">
+                  </a>
+                </div>
+                <div class="col-md-8">
+                  <div class="card-body">
+                    <h5 class="card-title">Associate Project Manager</h5>
+                    <footer class="blockquote-footer">CognoAI by AllinCall Research and Solutions</footer>
+                    <p class="card-text">CognoAI provides AI chatbots through different platform for
+                      improving fintech at an enterprise level.</p>
+                    <p class="card-text"><small class="text-muted"><i>July, 2020 to July, 2021</i></small></p>
                   </div>
                 </div>
-            </section>
+              </div>
+          </div>
+          <div class="card" data-aos="fade-left" data-aos-duration="1500">
+            <div class="row g-0">
+              <div class="col-md-4">
+                <a href="https://www.abbott.co.in/" target="_blank">
+                  <img src="img/work/abbott.svg" class="img-fluid" alt="...">
+                </a>
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h5 class="card-title">Data Analyst Intern</h5>
+                  <footer class="blockquote-footer">Abbott Healthcare Private Limited</footer>
+                  <p class="card-text">Abbott is India’s leading and a global healthcare company that conducts innovative
+                    research and manufactures products for human health.</p>
+                  <p class="card-text"><small class="text-muted"><i>December, 2018 to January, 2019</i></small></p>
+                </div>
+              </div>
+            </div>
+        </div>
+      </div>
+    </section>
             <section id="edu">
                 <h1 class="display-4" data-aos="fade-up" data-aos-duration="1500">
                     Education
@@ -429,13 +382,13 @@
                 </div>
             </section>
 
-            <footer>
-              <hr>
-              <p>Anirudh Poroorkara</p>
-              <p>	Copyright &#169; 2021 <a href="https://github.com/ani-poroorkara">ani-poroorkara</a></p>
-            </footer>
-          </main>
-    </div>
+    <footer>
+      <hr>
+      <p>Anirudh Poroorkara</p>
+      <p>	Copyright &#169; 2021 <a href="https://github.com/ani-poroorkara">ani-poroorkara</a></p>
+    </footer>
+  </main>
+
 
   <!-- JS Scripts -->
   <!-- Bootstrap Bundle with Popper -->
