@@ -48,55 +48,6 @@ section
         padding: 2%
     
 
-// Sidebar 
-.side-navbar
-    -webkit-backdrop-filter: brightness(0.5)
-    backdrop-filter: brightness(0.5)
-    width: 280px
-    height: 100%
-    position: fixed
-    margin-left: -300px
-    background-color: transparent
-    transition: 0.5s
-    background-position: center
-    background-repeat: no-repeat
-    background-size: auto
-    font-family: $head-font
-
-    ul.dropdown-menu.show
-        background-color: var(--bg-sd-dd)
-        cursor: pointer
-        .dropdown-item
-            color: var(--text-p)
-
-            &:active, &:focus, &:hover
-                background-color: var(--hl-sb)
-                color: var(--hl-text-sb)
-
-
-.nav-head
-    cursor: pointer
-    &:active, &:focus, &:hover
-        background-color: var(--hl-sb)
-        color: var(--hl-text-sb)
-
-.nav-link
-    color: var(--text-p)
-    cursor: pointer
-    &:active, &:focus, &:hover
-        background-color: var(--hl-sb)
-        color: var(--hl-text-sb)
-
-.active-nav
-    margin-left: 0
-
-.profile-pic
-    img
-        width: 35vw
-        margin: 0 auto
-        padding: 5% 3%
-        max-width: 200px
-
 // Main 
 .my-container
     transition: 0.4s
@@ -180,20 +131,33 @@ section
         h5
             font-size: 1.5rem   
             text-align: center
-            -webkit-backdrop-filter: brightness(0.5)
-            backdrop-filter: brightness(0.5)
+            background-color: #2D3142
+            color: white
+            padding: 5px
             border-radius: 10px
         .score
             font-size: 1.5rem
-            -webkit-backdrop-filter: invert(1)
-            backdrop-filter: invert(1)
             border-radius: 10px
             text-align: center
-        
+            margin: 5px auto
+            background-color: EF233C
+            max-width: fit-content
+            padding: 0px 5px
+        .progress
+            background-color: #2D3142
+        .progress-bar 
+            background-color: #EF233C
+        .progress-bar-animated
+            -webkit-animation: 1s linear infinite progress-bar-stripes
+            animation: 1s linear infinite progress-bar-stripes
         .text-muted
             color: var(--card-text) !important   
             font-size: 1.25rem
-
+    #mac
+        background-image: $mast-bg
+        background-repeat: no-repeat
+        background-position-x: right
+        background-position-y: center
     #ug
         background-image: $ug-bg
         background-repeat: no-repeat
@@ -215,19 +179,16 @@ section
 #accomp
     .accomp-grp
         .card
-            background: transparent
-            -webkit-backdrop-filter: blur(5px)
-            backdrop-filter: blur(5px)
-            color: var(--card-b)
-            padding: 0vw 1vw
-            margin: 0vw 1vw
-            border: 1px solid var(--card-b)
+            background: #AFDAFF
+            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25)
+            border-radius: 15px
 
             .card-img-top
                 width: 100%
-                margin: 5% auto
-                max-width: 200px
-                max-height: 150px
+                margin-bottom: 5%
+                max-height: 250px
+                box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25)
+                border-radius: 30px
 
             .proj-col
                 background-color: var(--proj) !important
@@ -244,11 +205,12 @@ section
                     color: var(--but-bg)
             
             .card-footer
+                text-align: center
                 padding: 0.5rem 0rem
                 background-color: rgba(0,0,0,0)
                 border-top: 1px solid rgba(0,0,0,.125)
                 .text-muted
-                    color: var(--card-b) !important
+                    color: var(--card-text) !important
 
 
 #prof
