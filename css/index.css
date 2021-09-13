@@ -57,10 +57,16 @@ main {
   max-width: 700px;
   margin: auto; }
 
-nav.navbar.sticky-top {
-  position: fixed;
-  width: 100%;
-  top: 0; }
+nav {
+  text-align: center;
+  margin-top: 20px; }
+  nav .btn {
+    background-color: transparent;
+    border-color: var(--text-p);
+    color: var(--text-p); }
+    nav .btn:active, nav .btn:focus, nav .btn:hover {
+      background-color: var(--but-bg);
+      color: var(--but-text); }
 
 footer {
   text-align: center;

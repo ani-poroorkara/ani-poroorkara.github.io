@@ -16,11 +16,17 @@ main
     max-width: 700px
     margin: auto
     
+nav
+    text-align: center
+    margin-top: 20px
+    .btn
+        background-color: transparent
+        border-color: var(--text-p)
+        color: var(--text-p)
+        &:active, &:focus, &:hover
+            background-color: var(--but-bg)
+            color: var(--but-text)
 
-nav.navbar.sticky-top
-    position: fixed
-    width: 100%
-    top: 0
 
 footer
     text-align: center
