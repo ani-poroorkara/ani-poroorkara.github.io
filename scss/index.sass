@@ -86,6 +86,27 @@ section
             &:active, &:focus, &:hover
                 background-color: var(--but-text)
                 color: var(--but-bg)
+    div#contact
+        -webkit-backdrop-filter: brightness(0.5)
+        backdrop-filter: brightness(0.5)
+        border-radius: 20px
+        max-width: fit-content
+        margin: 5px auto    
+        .display-4
+            padding: 0 0 
+        .content-grp
+            text-align: center
+            padding: 0 0
+            a
+                color: var(--but-bg)
+                transition: transform .7s ease-in-out
+                .btn-lg
+                    font-size: 2rem
+                    
+                &:active, &:focus, &:hover
+                    background-color: var(--but-bg)
+                    color: var(--but-text)
+                    transform: rotateY(360deg)
 
 #exp
     .col-md-4
@@ -239,23 +260,5 @@ section
             margin: 2% 0
     
 
-#contact
-    -webkit-backdrop-filter: brightness(0.5)
-    backdrop-filter: brightness(0.5)
-    border-radius: 20px
-    .display-4
-        padding: 0 0 
-    .content-grp
-        text-align: center
-        padding: 0 0
-        a
-            color: var(--but-bg)
-            transition: transform .7s ease-in-out
-            .btn-lg
-                font-size: 2rem
-                
-            &:active, &:focus, &:hover
-                background-color: var(--but-bg)
-                color: var(--but-text)
-                transform: rotateY(360deg)
+
             

@@ -120,6 +120,26 @@ section .content-grp {
       #landing h1 .highlight3:active, #landing h1 .highlight3:focus, #landing h1 .highlight3:hover {
         background-color: var(--but-text);
         color: var(--but-bg); }
+  #landing div#contact {
+    -webkit-backdrop-filter: brightness(0.5);
+    backdrop-filter: brightness(0.5);
+    border-radius: 20px;
+    max-width: fit-content;
+    margin: 5px auto; }
+    #landing div#contact .display-4 {
+      padding: 0 0; }
+    #landing div#contact .content-grp {
+      text-align: center;
+      padding: 0 0; }
+      #landing div#contact .content-grp a {
+        color: var(--but-bg);
+        transition: transform 0.7s ease-in-out; }
+        #landing div#contact .content-grp a .btn-lg {
+          font-size: 2rem; }
+        #landing div#contact .content-grp a:active, #landing div#contact .content-grp a:focus, #landing div#contact .content-grp a:hover {
+          background-color: var(--but-bg);
+          color: var(--but-text);
+          transform: rotateY(360deg); }
 
 #exp .col-md-4 {
   margin: auto; }
@@ -249,24 +269,5 @@ section .content-grp {
   background-color: transparent;
   color: var(--text-p);
   margin: 2% 0; }
-
-#contact {
-  -webkit-backdrop-filter: brightness(0.5);
-  backdrop-filter: brightness(0.5);
-  border-radius: 20px; }
-  #contact .display-4 {
-    padding: 0 0; }
-  #contact .content-grp {
-    text-align: center;
-    padding: 0 0; }
-    #contact .content-grp a {
-      color: var(--but-bg);
-      transition: transform 0.7s ease-in-out; }
-      #contact .content-grp a .btn-lg {
-        font-size: 2rem; }
-      #contact .content-grp a:active, #contact .content-grp a:focus, #contact .content-grp a:hover {
-        background-color: var(--but-bg);
-        color: var(--but-text);
-        transform: rotateY(360deg); }
 
 /*# sourceMappingURL=index.css.map */
