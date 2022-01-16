@@ -7,13 +7,17 @@ import { NavComponent } from './nav/nav.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { AboutComponent } from './about/about.component';
 import { ProjectsComponent } from './projects/projects.component';
+import { ContactComponent } from './contact/contact.component';
+import { ConnectformComponent } from './contact/connectform/connectform.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     NavComponent,
     AboutComponent,
-    ProjectsComponent
+    ProjectsComponent,
+    ContactComponent,
+    ConnectformComponent
   ],
   imports: [
     BrowserModule,
