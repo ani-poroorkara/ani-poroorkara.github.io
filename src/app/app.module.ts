@@ -9,6 +9,7 @@ import { AboutComponent } from './about/about.component';
 import { ProjectsComponent } from './projects/projects.component';
 import { ContactComponent } from './contact/contact.component';
 import { ConnectformComponent } from './contact/connectform/connectform.component';
+import { TimelineComponent } from './timeline/timeline.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { ConnectformComponent } from './contact/connectform/connectform.componen
     AboutComponent,
     ProjectsComponent,
     ContactComponent,
-    ConnectformComponent
+    ConnectformComponent,
+    TimelineComponent
   ],
   imports: [
     BrowserModule,

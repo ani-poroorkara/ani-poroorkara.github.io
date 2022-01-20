@@ -21,6 +21,8 @@
     "@angular/router": "~13.1.0",
     "@ng-bootstrap/ng-bootstrap": "^11.0.0",
     "bootstrap": "^4.6.0",
+    "bootstrap-icons": "^1.7.2",
+    "jquery": "^3.6.0",
     "rxjs": "~7.4.0",
     "sass": "^1.48.0",
     "tslib": "^2.3.0",
