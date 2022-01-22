@@ -19,12 +19,15 @@ $link2-pop: #F4DB7D
     background-color: $background-color
 
 // Global CSS Animations
+
+// Removing default link styles
 a
     text-decoration: none
     &:hover
         text-decoration: none
         color: $link-pop
         
+// Link animation on hover
 .link-animation
     display: inline-block
     position: relative
@@ -45,3 +48,9 @@ a
     &:hover:after
         transform: scaleX(1)
         transform-origin: bottom left
+
+// Icon animations on hover
+.icon-animation
+    transition: transform .7s ease-in-out
+    &:hover
+        transform: rotate(360deg)
