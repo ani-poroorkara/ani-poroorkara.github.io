@@ -1,10 +1,8 @@
 <div id="about-description" class="row justify-content-md-center align-items-center">
-    <div id="text-description" class="col-12 col-md-6 align-middle align-items-center">
-        <p >Hello friend! I am</p>
-        <h1 class="display-5">Anirudh Poroorkara</h1>
-        <p>I am a software engineer constantly building projects and web applications 
-            primarily based on Artificial Intelligence models. 
-            Currently, I am a graduate student at <span><a class="link-animation" href="#">University of Windsor.</a></span> </p>
+    <div id="text-description" class="col-12 col-md-6 align-middle align-items-center" *ngIf="myData">
+        <p>{{ myData[0].greeting }}</p>
+        <h1 class="display-5">{{ myData[0].name }}</h1>
+        <p>{{ myData[0].content }}<span><a class="link-animation" href='{{ myData[0].spanLink }}'>{{ myData[0].span }}</a></span> </p>
     </div>
     <div class="col-12 col-md-6">
         <img class="img-fluid" src="../../assets/img/about/landing-robot.svg">

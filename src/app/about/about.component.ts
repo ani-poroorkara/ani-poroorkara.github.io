@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
+import { HttpClient, HttpClientModule } from '@angular/common/http';
+
 @Component({
   selector: 'app-about',
   templateUrl: './about.component.html',
@@ -7,9 +9,20 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AboutComponent implements OnInit {
 
-  constructor() { }
+  myData : any = [];
+  name! : String;
+  constructor( private http: HttpClient ) {}
 
   ngOnInit(): void {
+    this.getData();
   }
 
+  getData(){
+    this.http.get('../assets/data/about.json').subscribe(
+      data => {
+        this.myData = data;
+        console.log(this.myData);
+      }
+    )
+  }
 }
