@@ -10,7 +10,7 @@ import { HttpClient, HttpClientModule } from '@angular/common/http';
 export class AboutComponent implements OnInit {
 
   myData : any = [];
-  name! : String;
+
   constructor( private http: HttpClient ) {}
 
   ngOnInit(): void {
@@ -21,7 +21,7 @@ export class AboutComponent implements OnInit {
     this.http.get('../assets/data/about.json').subscribe(
       data => {
         this.myData = data;
-        console.log(this.myData);
+        // console.log(this.myData);
       }
     )
   }

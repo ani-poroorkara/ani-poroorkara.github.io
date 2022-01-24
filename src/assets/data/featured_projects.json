@@ -1,0 +1,24 @@
+[
+    {
+        "id" : 4001,
+        "name" : "Playlist Generation",
+        "description" : "Generate a playlist taking your music files as input and generate using Genetic Algorithms either a text file containing the list or merge the entire list into a single music track.",
+        "tags" : [
+            "Python",
+            "Genetic Algorithm"
+        ],
+        "github" : "https://github.com/ani-poroorkara/PlaylistGenerator-using-Genetic-Algorithm",
+        "img_url" : "https://images.unsplash.com/photo-1608934923079-ef4aee854cd8?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80"
+    },
+    {
+        "id" : 4002,
+        "name" : "Hand Gesture Recognition",
+        "description" : "The data model uses Deep learning, Convolutional Neural Networks and a dataset from Multi-Modal Dataset. The program then uses an algorithm to recognise the background, segments the hand gesture and then recognises the gesture.",
+        "tags" : [
+            "Python",
+            "Artificial Intelligence"
+        ],
+        "github" : "https://github.com/ani-poroorkara/handRecogz",
+        "img_url" : "https://images.unsplash.com/photo-1587226516191-47ad119ba2fa?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80"
+    }
+]

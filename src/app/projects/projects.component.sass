@@ -24,9 +24,10 @@
     color: $text-color
 
 
-#featured-right, #featured-left
-    span.featured
-        color: $text-pop
+.featured-right, .featured-left
+    .d-flex
+        span.featured
+            color: $text-pop
     p
         color: $background-color
         background-color: $link-pop
@@ -46,7 +47,7 @@
         span
             color: $link-pop
 
-#featured-left
+.featured-left
     text-align: end    
 
 #all
@@ -55,7 +56,8 @@
         border: 1px solid $link-pop
         span
             color: $link-pop
-            padding: 2%
+            margin-bottom: 3%
+        
         .card-title
             color: $text-pop
         .card-text
@@ -63,7 +65,10 @@
             color: $background-color
             padding: 2%
             border-radius: 10px
-
+        .card-img-top
+            filter: hue-rotate(-175deg)
+            &:hover, &:focus
+                filter: none
         .card-body
             a
                 img
