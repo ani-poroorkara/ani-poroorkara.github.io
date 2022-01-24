@@ -1,0 +1,45 @@
+@import "../../styles"
+
+.stroke-animation
+    fill: none
+    stroke: $link-pop
+    stroke-width: 5px
+
+    stroke-dasharray: 1353px
+    stroke-dashoffset: 1353px
+    animation: move 4s linear, fillcol 6s ease-in
+
+#hideMe
+    -moz-animation: cssAnimation 0s ease-in 7s forwards
+    width: 100%
+    height: 100%
+
+    /* Firefox
+    -webkit-animation: cssAnimation 0s ease-in 7s forwards
+
+    /* Safari and Chrome
+    -o-animation: cssAnimation 0s ease-in 7s forwards
+
+    /* Opera
+    animation: cssAnimation 0s ease-in 7s forwards
+    -webkit-animation-fill-mode: forwards
+    animation-fill-mode: forwards
+
+@keyframes move
+    100%
+        stroke-dashoffset: 0
+@keyframes fillcol
+    100%
+        fill: $link-pop
+
+@keyframes cssAnimation
+  to
+    width: 0
+    height: 0
+    overflow: hidden
+
+@-webkit-keyframes cssAnimation
+  to
+    width: 0
+    height: 0
+    visibility: hidden
