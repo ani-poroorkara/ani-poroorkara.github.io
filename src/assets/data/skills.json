@@ -1,0 +1,11 @@
+[
+    {
+        "content" : "The most fun part of being in technology is adapting and learning new stuff everyday. As a developer, Python is one of my most favorite languages. I also enjoy developing web applications in Angular, HTML, CSS, SCSS and Bootstrap. I enjoy solving Machine Learning problems and learning cyber security.",
+        "skills" : [
+            "Machine Learning", 
+            "Data structures", 
+            "Web Development",
+            "Problem Solving"
+        ]
+    }
+]
