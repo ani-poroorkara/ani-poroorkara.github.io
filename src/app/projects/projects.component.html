@@ -1,61 +1,64 @@
-<hr id="start-line">
+<div class="container">
+    <hr id="start-line">
 
-<section id="projects">
-    <h1 class="display-5">Projects</h1>
-    <br>
+    <section id="projects">
+        <h1 class="display-5">Projects</h1>
+        <br>
 
-    <div id="featured" *ngFor="let fproject of featuredProjects">
+        <div id="featured" *ngFor="let fproject of featuredProjects">
 
-        <div [ngClass]="{'featured-right' : fproject.id%2 === 1, 'featured-left' : fproject.id%2 === 0 }" class="row align-items-center">
-            <div class="col-12 col-md-6 align-middle align-items-center">
-                <img class="figure-img img-fluid rounded" src="{{ fproject.img_url }}">
-            </div>
-            <div [ngClass]="{'order-md-first' : fproject.id%2 === 0}" class="col-12 col-md-6 align-middle align-items-center">
-                <div class="d-flex justify-content-between">
-                  <span class="featured">Featured</span>
-                  <a [ngClass]="{'order-md-first' : fproject.id%2 === 0}" href="{{ fproject.github }}" class="icon-animation" target="_blank">
-                    <img src="../../assets/icons/github.svg" alt="">
-                  </a>
+            <div [ngClass]="{'featured-right' : fproject.id%2 === 1, 'featured-left' : fproject.id%2 === 0 }" class="row align-items-center">
+                <div class="col-12 col-md-6 align-middle align-items-center">
+                    <img class="figure-img img-fluid rounded" src="{{ fproject.img_url }}">
                 </div>
-                <h3 class="display-6">{{ fproject.name }}</h3>
-                <p>{{ fproject.description }}</p>
-                <div class="d-flex justify-content-around">
-                    <span *ngFor="let tag of fproject.tags">{{ tag }}</span>
-                </div>
-            </div>
-            <br>
-        </div>
-    </div>
-
-    <br>
-
-    <div id="all">
-        <div class="row row-cols-1 row-cols-md-3 g-4">
-            <div class="col" *ngFor="let project of projects">
-                <div class="card h-75 w-75 mx-auto">
-                  <img src="{{ project.img_url }}" class="card-img-top" alt="...">
-                  <div class="card-body">
-                    <h5 class="card-title">{{ project.name }}</h5>
-                    <div class="d-flex justify-content-around">
-                      <span class="badge" *ngFor="let tag of project.tags">{{ tag }}</span>
+                <div [ngClass]="{'order-md-first' : fproject.id%2 === 0}" class="col-12 col-md-6 align-middle align-items-center">
+                    <div class="d-flex justify-content-between">
+                    <span class="featured">Featured</span>
+                    <a [ngClass]="{'order-md-first' : fproject.id%2 === 0}" href="{{ fproject.github }}" class="icon-animation" target="_blank">
+                        <img src="../../assets/icons/github.svg" alt="">
+                    </a>
                     </div>
-                    <p class="card-text">{{ project.description }}</p>
+                    <h3 class="display-6">{{ fproject.name }}</h3>
+                    <p>{{ fproject.description }}</p>
                     <div class="d-flex justify-content-around">
-                        <a href="{{ project.github }}" class="icon-animation" target="_blank">
-                            <img src="../../assets/icons/github.svg" alt="">
-                        </a>
-                        <a href="" class="icon-animation" target="_blank">
-                            <img src="../../assets/icons/external-link.svg" alt="">
-                        </a>
+                        <span *ngFor="let tag of fproject.tags">{{ tag }}</span>
                     </div>
-                    
-                  </div>
                 </div>
+                <br>
             </div>
-
         </div>
 
-    </div>
-</section>
+        <br>
 
-<hr id="end-line">
+        <div id="all">
+            <div class="row row-cols-1 row-cols-md-3 g-4">
+                <div class="col" *ngFor="let project of projects">
+                    <div class="card h-75 w-75 mx-auto">
+                    <img src="{{ project.img_url }}" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">{{ project.name }}</h5>
+                        <div class="d-flex justify-content-around">
+                        <span class="badge" *ngFor="let tag of project.tags">{{ tag }}</span>
+                        </div>
+                        <p class="card-text">{{ project.description }}</p>
+                        <div class="d-flex justify-content-around">
+                            <a href="{{ project.github }}" class="icon-animation" target="_blank">
+                                <img src="../../assets/icons/github.svg" alt="">
+                            </a>
+                            <a href="" class="icon-animation" target="_blank">
+                                <img src="../../assets/icons/external-link.svg" alt="">
+                            </a>
+                        </div>
+                        
+                    </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <hr id="end-line">
+
+</div>

@@ -16,8 +16,9 @@ $link2-pop: #F4DB7D
 // Global Declarations
 *, html, body
     font-family: 'Comfortaa', cursive
-    background-color: $background-color
 
+body
+    background-color: $background-color
 // Global CSS Animations
 
 // Removing default link styles
@@ -57,10 +58,16 @@ a
 
 // Button design
 .btn
-    color: $link-pop
-    border-color: $link-pop
+    color: $text-pop
+    border-color: $text-pop
     &:focus, &:hover
-        background-color: $link-pop
+        background-color: $text-pop
         color: $background-color
-        border-color: $link-pop
+        border-color: $text-pop
+    a
+        text-decoration: none
+        color: $text-pop
+        &:hover
+            text-decoration: none
+            color: $background-color
         

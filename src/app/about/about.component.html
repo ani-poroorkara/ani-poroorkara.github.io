@@ -1,11 +1,16 @@
-<div id="about-description" class="row justify-content-md-center align-items-center">
-    <div id="text-description" class="col-12 col-md-6 align-middle align-items-center" *ngIf="myData">
-        <p>{{ myData[0].greeting }}</p>
-        <h1 class="display-5">{{ myData[0].name }}</h1>
-        <p>{{ myData[0].content }}<span><a class="link-animation" href='{{ myData[0].spanLink }}'>{{ myData[0].span }}</a></span> </p>
-        <button type="button" class="btn"><a href="" target="_blank">Go to my LinkedIn</a></button>
+<section>
+    <div class="container">
+        <div id="about-description" class="row justify-content-md-center align-items-center">
+            <div id="text-description" class="col-12 col-md-6 align-middle align-items-center" *ngIf="myData">
+                <p>{{ myData[0].greeting }}</p>
+                <h1 class="display-5">{{ myData[0].name }}</h1>
+                <p>{{ myData[0].content }}<span><a class="link-animation" href='{{ myData[0].spanLink }}'>{{ myData[0].span }}</a></span> </p>
+                <button type="button" class="btn"><a href="" target="_blank">Go to my LinkedIn</a></button>
+            </div>
+            <div class="col-12 col-md-6">
+                <img class="img-fluid" src="../../assets/img/about/landing-robot.svg">
+            </div>
+        </div>
     </div>
-    <div class="col-12 col-md-6">
-        <img class="img-fluid" src="../../assets/img/about/landing-robot.svg">
-    </div>
-</div>
+    
+</section>
