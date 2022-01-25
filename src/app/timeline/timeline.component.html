@@ -1,5 +1,6 @@
+<section>
 <div class="container">
-    <section>
+
         <h1 class="display-5" >Experience & Education</h1>
         <div class="item-list" *ngFor="let item of items">
             <div [ngClass]="{'edu-content' : item.type === 'EDU', 'exp-content' : item.type === 'EXP' }" class="items">
@@ -11,6 +12,6 @@
                 </div>
             </div>
         </div>
-    </section>
 </div>
+</section>
   
