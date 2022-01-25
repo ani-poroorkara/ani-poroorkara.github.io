@@ -1,46 +1,14 @@
 <section>
-    <ul class="nav nav-tabs justify-content-center">
-        <li class="nav-item">
-            <a href="#exp-content" class="nav-link active" data-bs-toggle="tab">Experience</a>
-        </li>
-        <li class="nav-item">
-            <a href="#edu-content" class="nav-link" data-bs-toggle="tab">Education</a>
-        </li>
-    </ul>
-    <div class="tab-content">
-        <div class="tab-pane fade show active" id="exp-content">
-            <h1 class="display-5" >Experience</h1>
-            <div class="items">
-                <h6>20XX <i class="bi bi-arrow-right-circle"></i> 20YY</h6>
-                <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <h6 class="card-subtitle mb-2">Card subtitle</h6>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                </div>
-            </div>
-            <div class="items">
-                <h6>20XX <i class="bi bi-arrow-right-circle"></i> 20YY</h6>
-                <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <h6 class="card-subtitle mb-2">Card subtitle</h6>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                </div>
-            </div>
-            
-
-        </div>
-        <div class="tab-pane fade" id="edu-content">
-            <h1 class="display-5" >Education</h1>
-            <div class="items">
-                <h6>2017-2018</h6>
-                <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <h6 class="card-subtitle mb-2">Card subtitle</h6>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                </div>
+    <h1 class="display-5" >Experience & Education</h1>
+    <div class="item-list" *ngFor="let item of items">
+        <div [ngClass]="{'edu-content' : item.type === 'EDU', 'exp-content' : item.type === 'EXP' }" class="items">
+            <h6>{{ item.start }} - {{ item.end }}</h6>
+            <div class="card-body">
+                <h5 class="card-title">{{ item.role }}</h5>
+                <h6 class="card-subtitle mb-2"><a class="link-animation" href="{{ item.company_url }}" target="_blank">{{ item.company }}</a></h6>
+                <p class="card-text">{{ item.description }}</p>
             </div>
         </div>
     </div>
 </section>
-
   

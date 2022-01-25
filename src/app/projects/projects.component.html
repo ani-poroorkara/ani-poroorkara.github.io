@@ -13,7 +13,7 @@
             <div [ngClass]="{'order-md-first' : fproject.id%2 === 0}" class="col-12 col-md-6 align-middle align-items-center">
                 <div class="d-flex justify-content-between">
                   <span class="featured">Featured</span>
-                  <a href="{{ fproject.github }}" class="icon-animation" target="_blank">
+                  <a [ngClass]="{'order-md-first' : fproject.id%2 === 0}" href="{{ fproject.github }}" class="icon-animation" target="_blank">
                     <img src="../../assets/icons/github.svg" alt="">
                   </a>
                 </div>
