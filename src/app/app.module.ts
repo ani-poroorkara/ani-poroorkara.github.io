@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { HttpClientModule } from '@angular/common/http';
+import { RouterModule } from '@angular/router';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -28,7 +29,14 @@ import { PreloaderComponent } from './preloader/preloader.component';
     BrowserModule,
     AppRoutingModule,
     NgbModule,
-    HttpClientModule
+    HttpClientModule,
+    RouterModule.forRoot([
+      {path: 'about', component: AboutComponent},
+      {path: 'project', component: ProjectsComponent},
+      {path: 'experience', component: TimelineComponent},
+      {path: 'contact', component: ContactComponent},
+      {path: '', redirectTo: '/about', pathMatch: 'full'},
+    ]),
   ],
   providers: [],
   bootstrap: [AppComponent]
