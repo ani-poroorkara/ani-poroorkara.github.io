@@ -16,6 +16,7 @@ $link2-pop: #F4DB7D
 // Global Declarations
 *, html, body
     font-family: 'Comfortaa', cursive
+    scroll-behavior: smooth
 
 body
     background-color: $background-color
@@ -71,3 +72,16 @@ a
             text-decoration: none
             color: $background-color
         
+// Image Animation
+.blink
+  animation: blink-animation 3s infinite
+  animation-delay: 2s
+  -webkit-animation: blink-animation 3s infinite
+
+@keyframes blink-animation
+  to
+    filter: hue-rotate(-175deg)
+
+@-webkit-keyframes blink-animation
+  to
+    filter: none
