@@ -1,0 +1,38 @@
+[   
+    {   
+        "type" : "EDU",
+        "start": "September, 2021",
+        "end": "Current",
+        "role": "Master of Applied Computing",
+        "company": "University of Windsor, Canada",
+        "company_url": "https://www.uwindsor.ca/",
+        "description": "Post Graduate Course"
+    },
+    {
+        "type" : "EXP",
+        "start": "July, 2020",
+        "end": "July, 2021",
+        "role": "Associate Project Manager",
+        "company": "Cogno AI",
+        "company_url": "https://www.linkedin.com/company/cognoai/",
+        "description": "CognoAI provides AI chatbots through different platform for improving fintech at an enterprise level."
+    },
+    {
+        "type" : "EXP",
+        "start": "December, 2018",
+        "end": "January, 2019",
+        "role": "Data Analyst Intern",
+        "company": "Abbott Healthcare Private Limited",
+        "company_url": "https://www.abbott.in/",
+        "description": "Abbott is India’s leading and a global healthcare company that conducts innovative research and manufactures products for human health."
+    },
+    {
+        "type" : "EDU",
+        "start": "2016",
+        "end": "2020",
+        "role": "B.E. in Information Technology",
+        "company": "Thadomal Shahani Engineering College, India",
+        "company_url": "https://tsec.edu/",
+        "description": "Undergraduate Course"
+    }
+]
