@@ -2,8 +2,9 @@
     {
         "greeting" : "Hello Friend! I am",
         "name" : "Anirudh Poroorkara",
-        "content" : "I am a software engineer constantly building projects and web applications primarily based on Artificial Intelligence models. Currently, I am a graduate student at ",
-        "span" : "University of Windsor",
-        "spanLink" : "https://www.uwindsor.ca/"
+        "content" : "I am a software engineer constantly building projects and web applications primarily based on different inspirations I get over the internet. Currently, I am a graduate student at ",
+        "span" : "University of Windsor.",
+        "spanLink" : "https://www.uwindsor.ca/",
+        "linkedIn" : "I'm constantly looking for new ideas and new people to meet so come have a chat with me on LinkedIn."
     }
 ]

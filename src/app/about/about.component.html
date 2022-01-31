@@ -4,7 +4,7 @@
             <div id="text-description" class="col-12 col-md-6 align-middle align-items-center" *ngIf="myData">
                 <p>{{ myData[0].greeting }}</p>
                 <h1 class="display-5">{{ myData[0].name }}</h1>
-                <p>{{ myData[0].content }}<span><a class="link-animation" href='{{ myData[0].spanLink }}'>{{ myData[0].span }}</a></span> </p>
+                <p>{{ myData[0].content }}<span><a class="link-animation" href='{{ myData[0].spanLink }}'>{{ myData[0].span }}</a></span> {{ myData[0].linkedIn }}</p>
                 <a href="https://www.linkedin.com/in/anirudh-poroorkara/" target="_blank"><button type="button" class="btn">Go to my LinkedIn</button></a>
             </div>
             <div class="col-12 col-md-6">
