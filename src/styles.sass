@@ -40,21 +40,39 @@ a
         position: absolute
         width: 100%
         transform: scaleX(0)
+        -webkit-transform: scaleX(0)
+        -ms-transform: scaleX(0)
         height: 2px
         bottom: 0
         left: 0
         background-color: $link-pop
+        -webkit-transform-origin: bottom right
+        -ms-transform-origin: bottom right
         transform-origin: bottom right
+        -webkit-transition: -webkit-transform 0.25s ease-out
+        transition: -webkit-transform 0.25s ease-out
+        -o-transition: transform 0.25s ease-out
         transition: transform 0.25s ease-out
+        transition: transform 0.25s ease-out, -webkit-transform 0.25s ease-out
 
     &:hover:after
+        -webkit-transform: scaleX(1)
+        -ms-transform: scaleX(1)
         transform: scaleX(1)
+        -webkit-transform-origin: bottom left
+        -ms-transform-origin: bottom left
         transform-origin: bottom left
 
 // Icon animations on hover
 .icon-animation
+    -webkit-transition: -webkit-transform .7s ease-in-out
+    transition: -webkit-transform .7s ease-in-out
+    -o-transition: transform .7s ease-in-out
     transition: transform .7s ease-in-out
+    transition: transform .7s ease-in-out, -webkit-transform .7s ease-in-out
     &:hover
+        -webkit-transform: rotate(360deg)
+        -ms-transform: rotate(360deg)
         transform: rotate(360deg)
 
 // Button design
@@ -74,10 +92,14 @@ a
         
 // Image Animation
 .blink
-  animation: blink-animation 3s infinite
-  animation-delay: 2s
-  -webkit-animation: blink-animation 3s infinite
+    animation: blink-animation 3s infinite
+    -webkit-animation-delay: 2s
+    animation-delay: 2s
+    -webkit-animation: blink-animation 3s infinite
 
+@-webkit-keyframes blink-animation
+  to
+    filter: hue-rotate(-175deg)
 @keyframes blink-animation
   to
     filter: hue-rotate(-175deg)
