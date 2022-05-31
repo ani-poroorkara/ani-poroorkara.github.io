@@ -8,11 +8,11 @@
 
         <div id="featured" *ngFor="let fproject of featuredProjects">
 
-            <div [ngClass]="{'featured-right' : fproject.id%2 === 1, 'featured-left' : fproject.id%2 === 0 }" class="row align-items-center">
+            <div [ngClass]="{'featured-right' : fproject.id%2 === 1, 'featured-left' : fproject.id%2 === 0 }" class="row align-items-center images">
                 <div class="col-12 col-md-6 align-middle align-items-center">
                     <img class="figure-img img-fluid rounded blink" src="{{ fproject.img_url }}">
                 </div>
-                <div [ngClass]="{'order-md-first' : fproject.id%2 === 0}" class="col-12 col-md-6 align-middle align-items-center">
+                <div [ngClass]="{'order-md-first' : fproject.id%2 === 0}" class="col-12 col-md-6 align-middle align-items-center textonly">
                     <div class="d-flex justify-content-between">
                     <span class="featured">Featured</span>
                     <a [ngClass]="{'order-md-first' : fproject.id%2 === 0}" href="{{ fproject.github }}" class="icon-animation" target="_blank">
@@ -25,7 +25,7 @@
                         <span *ngFor="let tag of fproject.tags">{{ tag }}</span>
                     </div>
                 </div>
-                <br>
+                <br><br>
             </div>
         </div>
 
