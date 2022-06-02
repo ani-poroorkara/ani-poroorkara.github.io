@@ -1,20 +1,21 @@
 @import "../../styles"
 section
-    background-image: url('../../assets/img/bg-waves.svg')
-    background-blend-mode: overlay
+    background-image: url('../../assets/img/about/bg-waves.svg')
+    background-position: center
     background-repeat: no-repeat
     background-color: $background-color
 
 #about-description
     color: $text-color
-    background: rgba(26, 34, 56, 0.25)
-    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37)
-    backdrop-filter: blur(4px)
-    -webkit-backdrop-filter: blur(4px)
-    border-radius: 10px
 
     #text-description
         padding: 5%
+        background: rgba(26, 34, 56, 0.25)
+        box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37)
+        backdrop-filter: blur(4px)
+        -webkit-backdrop-filter: blur(4px)
+        border-radius: 10px
+        
     h1
         color: $text-pop
     
@@ -23,3 +24,5 @@ section
 
     .img-fluid
         max-height: 500px
+        padding: 2%
+        margin: 2%

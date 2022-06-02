@@ -34,7 +34,7 @@
         <div id="all">
             <div class="row row-cols-1 row-cols-md-3 g-4">
                 <div class="col" *ngFor="let project of projects">
-                    <div class="card h-75 w-75 mx-auto">
+                    <div class="card h-100 w-80 mx-auto">
                     <img src="{{ project.img_url }}" class="card-img-top blink" alt="...">
                     <div class="card-body">
                         <h5 class="card-title">{{ project.name }}</h5>
@@ -42,7 +42,7 @@
                         <span class="badge" *ngFor="let tag of project.tags">{{ tag }}</span>
                         </div>
                         <p class="card-text">{{ project.description }}</p>
-                        <div class="d-flex justify-content-around">
+                        <div class="card-footer d-flex justify-content-around">
                             <a href="{{ project.github }}" class="icon-animation" target="_blank">
                                 <img src="../../assets/icons/github.svg" alt="">
                             </a>
