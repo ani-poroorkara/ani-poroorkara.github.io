@@ -1,25 +1,10 @@
 @import "../../styles"
 
-section
-    background-image: url('../../assets/img/bg-line.svg')
-    background-blend-mode: soft-light
-    background-repeat-x: no-repeat
-    background-repeat-y: repeat
-    background-color: $background-color
-
-#start-line
-    border: 5px solid $link2-pop
-    background-color: $link2-pop
-    color: $link2-pop
-    width: 67%
-    margin-left:0
-
-#end-line
-    border: 5px solid $link2-pop
-    background-color: $link2-pop
-    color: $link2-pop
-    width: 67%
-    margin-right:0
+h1
+    text-align: center
+    backdrop-filter: blur(4.5px)
+    -webkit-backdrop-filter: blur(4.5px)
+    border-radius: 10px
 
 .icons-sqr
     max-width: 50px
@@ -30,15 +15,26 @@ section
 #projects
     color: $text-color
 
+#featured
+    padding: 3% 5%
 
 .featured-right, .featured-left
+    background: rgba(26, 34, 56, 0.7)
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37)
+    backdrop-filter: blur(4.5px)
+    -webkit-backdrop-filter: blur(4.5px)
+    border-radius: 10px
+    border: 1px solid rgba(255, 255, 255, 0.18)
+
+    .textonly
+        padding: 2%
     .d-flex
         span.featured
             color: $text-pop
     p
         color: $background-color
         background-color: $link-pop
-        padding: 1%
+        padding: 2%
         text-align: justify
         border-radius: 10px
 
@@ -58,9 +54,15 @@ section
     text-align: end    
 
 #all
+    .col 
+        margin-bottom: 2%
     .card
-        background-color: $background-color
-        border: 1px solid $link-pop
+        background: rgba(26, 34, 56, 0.7)
+        box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37)
+        backdrop-filter: blur(4.5px)
+        -webkit-backdrop-filter: blur(4.5px)
+        border-radius: 10px
+        border: 1px solid rgba(255, 255, 255, 0.18)
         span
             color: $link-pop
             margin-bottom: 3%
