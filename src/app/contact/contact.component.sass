@@ -1,28 +1,27 @@
 @import "../../styles"
 
 section
-    background-image: url('../../assets/img/bg-spike.svg')
-    background-blend-mode: soft-light
-    background-repeat-x: no-repeat
-    background-repeat-y: repeat
-    background-color: $background-color
+    padding: 3% 10%
+    background: rgba(26, 34, 56, 0.7)
+    backdrop-filter: blur(4.5px)
+    -webkit-backdrop-filter: blur(4.5px)
+    border-radius: 10px
 
 #contact
     color: $text-color
-    .d-flex
-        margin: 2% 10%
 
 #text-description
-    padding: 3% 10%
     p 
         text-align: justify    
 
-#start-line
-    border: 5px solid $link2-pop
-    background-color: $link2-pop
-    color: $link2-pop
-    width: 67%
-    margin-left:0
+#text-links
+    text-align: right
+    a
+        color: $text-pop
+        &:hover
+            color: $link-pop
+
 
 footer
+    color: $text-color
     text-align: center
