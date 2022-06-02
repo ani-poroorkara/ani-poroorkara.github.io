@@ -1,6 +1,24 @@
 <section>
+    <div class="container mt-5 mb-5">
+        <!-- <div class="row"> -->
+            <!-- <div class="col-md-6 offset-md-3"> -->
+                <h1 class="display-4" >Experience & Education</h1>
+                <ul class="timeline" id="content" *ngFor="let item of items">
+                    <li class="item">
+                        <span>{{ item.role }}</span> @ <a class="link-animation" target="_blank" href="{{ item.company_url }}">{{ item.company }}</a>
+                        <p class="float-right">{{ item.start }} - {{ item.end }}</p>
+                        <p class="card-text">{{ item.description }}</p>
+                    </li>
+                </ul>
+            </div>
+        <!-- </div> -->
+    <!-- </div> -->
+</section>
+
+
+<!-- <section>
 <div class="container">
-        <h1 class="display-4" >Experience & Education</h1>
+        
         <div id="content">
             <div class="item-list" *ngFor="let item of items">
                 <div [ngClass]="{'edu-content' : item.type === 'EDU', 'exp-content' : item.type === 'EXP' }" class="items">
@@ -15,5 +33,5 @@
         </div>
         
 </div>
-</section>
+</section> -->
   
