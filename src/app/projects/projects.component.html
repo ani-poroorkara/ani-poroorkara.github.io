@@ -1,0 +1,35 @@
+<!-- Projects -->
+<div class="container">
+    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-4">
+      <div class="col" *ngFor="let project of projects">
+        <div class="card h-100 shadow-sm">
+          <img src="{{ project.img_url }}">
+          <div class="card-body">
+            <h5 class="card-title display-6">{{ project.name }}</h5>
+            <span class="badge text-bg-light" *ngFor="let tag of project.tags">{{ tag }}</span>
+            <p class="card-text">
+              {{ project.description }} 
+            </p>
+              
+          </div>
+          <div class="card-footer d-flex justify-content-between">
+              <span class="text-muted">{{ project.pub }}</span> 
+            <div class="text-end">
+              <div class="btn-group">
+                <a
+                  href="{{ project.github }}"
+                  type="button"
+                  class="btn btn-sm btn-outline-light"
+                  target="_blank"
+                >
+                <i class="bi bi-github"></i>
+                </a>
+            </div>
+            </div>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Projects End -->

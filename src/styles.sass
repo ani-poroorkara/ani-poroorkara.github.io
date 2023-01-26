@@ -1,1 +1,52 @@
 /* You can add global styles to this file, and also import other style files */
+
+// Global Colors
+$bg-col: #92DCE5
+$text-color: #FFFFFF
+$text-pop: #FF6A3D
+$link-pop: #9DAAF2
+$link: #2B2D42
+// html
+html
+    background-color: $bg-col
+
+// Body
+body
+    background-image: url('./assets/brand/bg.png')
+    background-attachment: fixed
+    background-size: cover
+    background-repeat: no-repeat
+
+// Link animation on hover
+.link-animation
+    display: inline-block
+    position: relative
+    color: $bg-col
+
+    &:after
+        content: ''
+        position: absolute
+        width: 100%
+        transform: scaleX(0)
+        -webkit-transform: scaleX(0)
+        -ms-transform: scaleX(0)
+        height: 2px
+        bottom: 0
+        left: 0
+        background-color: $bg-col
+        -webkit-transform-origin: bottom right
+        -ms-transform-origin: bottom right
+        transform-origin: bottom right
+        -webkit-transition: -webkit-transform 0.25s ease-out
+        transition: -webkit-transform 0.25s ease-out
+        -o-transition: transform 0.25s ease-out
+        transition: transform 0.25s ease-out
+        transition: transform 0.25s ease-out, -webkit-transform 0.25s ease-out
+
+    &:hover:after
+        -webkit-transform: scaleX(1)
+        -ms-transform: scaleX(1)
+        transform: scaleX(1)
+        -webkit-transform-origin: bottom left
+        -ms-transform-origin: bottom left
+        transform-origin: bottom left
