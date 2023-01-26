@@ -12,10 +12,25 @@ html
 
 // Body
 body
-    background-image: url('./assets/brand/bg.png')
     background-attachment: fixed
     background-size: cover
     background-repeat: no-repeat
+@media (max-width: 300px)
+  body
+    background-image: url('./assets/brand/bg300.png')
+
+@media (min-width: 301px) and (max-width: 600px)
+  body
+    background-image:  url('./assets/brand/bg600.png')
+
+@media (min-width: 601px) and (max-width: 768px)
+  body
+    background-image:  url('./assets/brand/bg768.png')
+
+@media (min-width: 769px)
+  body
+    background-image: url('./assets/brand/bg.png')
+
 
 // Link animation on hover
 .link-animation
