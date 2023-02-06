@@ -14,6 +14,12 @@ body
     background-repeat: no-repeat
     background-size: cover
     background-color: $bg-col
+@supports (-webkit-touch-callout: none)
+  body
+    background-attachment: scroll
+    background-repeat: no-repeat
+    background-size: auto 100vh
+    background-color: $bg-col
 
 @media (max-width: 300px)
   body
