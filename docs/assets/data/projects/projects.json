@@ -1,0 +1,54 @@
+[
+    {
+        "id" : 3001,
+        "name" : "GradBot",
+        "description" : "A simple bot implementation using logistic regression and Rivescript to estimate admit chances to a graduate university.",
+        "tags" : [
+            "Python",
+            "Artificial Intelligence"
+        ],
+        "github" : "https://github.com/ani-poroorkara/gradBot",
+        "img_url" : "../../assets/projects/chatbot.svg",
+        "pub":"Feb 21, 2022",
+        "class":"project-post"
+    },
+    {
+        "id" : 3002,
+        "name" : "Predicting Hatred Tweets",
+        "description" : "Predict Hatred tweets from twitter using deep convolutional layers with multichannel input layers.",
+        "tags" : [
+            "Python",
+            "NLP"
+        ],
+        "github" : "https://github.com/ani-poroorkara/PredictingHatredCommentsOnTwitter",
+        "img_url" : "../../assets/projects/twitter.svg",
+        "pub":"Apr 18, 2020",
+        "class":"project-post"
+    },
+    {
+        "id" : 1001,
+        "name" : "Decision Tree Classifier",
+        "description" : "Create any kind of Decision Tree Classifier with any dataset.",
+        "tags" : [
+            "Python",
+            "Machine Learning"
+        ],
+        "github" : "https://github.com/ani-poroorkara/DecisionTreeClassifier",
+        "img_url" : "../../assets/projects/tree.svg",
+        "pub":"Apr 18, 2020",
+        "class":"project-post"
+    },
+    {
+        "id" : 1002,
+        "name" : "Random Forest Classifier",
+        "description" : "Create any kind of Random Forest Classifier with any dataset.",
+        "tags" : [
+            "Python",
+            "Machine Learning"
+        ],
+        "github" : "https://github.com/ani-poroorkara/RandomForestClassifier",
+        "img_url" : "../../assets/projects/forest.svg",
+        "pub":"Apr 18, 2020",
+        "class":"project-post"
+    }
+]
