@@ -1,31 +1,5 @@
 [
     {
-        "id" : 4001,
-        "name" : "Playlist Generation",
-        "description" : "Generate a playlist taking your music files as input and generate using Genetic Algorithms either a text file containing the list or merge the entire list into a single music track.",
-        "tags" : [
-            "Python",
-            "Genetic Algorithm"
-        ],
-        "github" : "https://github.com/ani-poroorkara/PlaylistGenerator-using-Genetic-Algorithm",
-        "img_url" : "../../assets/projects/PlaylistGen.svg"
-        ,"pub":"Apr 4, 2022"
-
-    },
-    {
-        "id" : 4002,
-        "name" : "Hand Gesture Recognition",
-        "description" : "The data model uses Deep learning, Convolutional Neural Networks and a dataset from Multi-Modal Dataset. The program then uses an algorithm to recognise the background, segments the hand gesture and then recognises the gesture.",
-        "tags" : [
-            "Python",
-            "Artificial Intelligence"
-        ],
-        "github" : "https://github.com/ani-poroorkara/handRecogz",
-        "img_url" : "../../assets/projects/handtrak.svg"
-        ,"pub": "Oct 6, 2021"
-
-    },
-    {
         "id" : 3001,
         "name" : "GradBot",
         "description" : "A simple bot implementation using logistic regression and Rivescript to estimate admit chances to a graduate university.",
@@ -34,8 +8,9 @@
             "Artificial Intelligence"
         ],
         "github" : "https://github.com/ani-poroorkara/gradBot",
-        "img_url" : "../../assets/projects/chatbot.svg"
-        ,"pub":"Feb 21, 2022"
+        "img_url" : "../../assets/projects/chatbot.svg",
+        "pub":"Feb 21, 2022",
+        "class":"project-post"
     },
     {
         "id" : 3002,
@@ -46,8 +21,9 @@
             "NLP"
         ],
         "github" : "https://github.com/ani-poroorkara/PredictingHatredCommentsOnTwitter",
-        "img_url" : "../../assets/projects/twitter.svg"
-        ,"pub":"Apr 18, 2020"
+        "img_url" : "../../assets/projects/twitter.svg",
+        "pub":"Apr 18, 2020",
+        "class":"project-post"
     },
     {
         "id" : 1001,
@@ -59,7 +35,8 @@
         ],
         "github" : "https://github.com/ani-poroorkara/DecisionTreeClassifier",
         "img_url" : "../../assets/projects/tree.svg",
-        "pub":"Apr 18, 2020"
+        "pub":"Apr 18, 2020",
+        "class":"project-post"
     },
     {
         "id" : 1002,
@@ -71,7 +48,7 @@
         ],
         "github" : "https://github.com/ani-poroorkara/RandomForestClassifier",
         "img_url" : "../../assets/projects/forest.svg",
-        "pub":"Apr 18, 2020"
-    
+        "pub":"Apr 18, 2020",
+        "class":"project-post"
     }
 ]
