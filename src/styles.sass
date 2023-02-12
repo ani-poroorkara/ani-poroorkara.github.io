@@ -1,1 +1,95 @@
-/* You can add global styles to this file, and also import other style files */
+// Imports
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa&family=Space+Mono&display=swap')
+
+// Color
+$dark-color: #2C3639
+$light-dark-color: #3F4E4F
+$light-color: #DCD7C9
+$light-green-color: #8CADA7
+$lighter-green-color: #B7CECE
+$light-purple-color: #A7ADC6
+$orange-color: #D66853
+
+// Fonts
+$display-font: 'Comfortaa', cursive
+$text-font: 'Space Mono', monospace
+
+// Body 
+body
+    background: $dark-color
+    color: $light-color
+
+// Animation
+.badge-dark
+    color: $light-color
+    background-color: $dark-color
+
+.link-dark
+    color: $dark-color
+
+.link-light
+    color: $light-color
+    
+.link-pop
+    color: $light-color
+    &:hover,&:focus, &:active
+        color: $orange-color
+
+.btn-dark
+    color: $light-color
+    background-color: $dark-color 
+    &:hover,&:focus, &:active
+        filter: brightness(85%)
+
+.btn-light
+    color: $dark-color
+    background-color: $light-color 
+    &:hover,&:focus, &:active
+        filter: brightness(85%)
+
+.btn-outline-light
+    color: $light-color
+    border-color: $light-color
+    &:hover,&:focus, &:active
+        background-color: $light-color
+        color: $dark-color
+
+// Link click animation
+.link-click-animation
+     transition: transform 0.3s ease-in-out
+     &:hover, &:focus
+        transform: translateY(-10px)
+
+// Link underline 
+.link-animation
+    display: inline-block
+    position: relative
+    color: $dark-color
+
+    &:after
+        content: ''
+        position: absolute
+        width: 100%
+        transform: scaleX(0)
+        -webkit-transform: scaleX(0)
+        -ms-transform: scaleX(0)
+        height: 2px
+        bottom: 0
+        left: 0
+        background-color: $light-color
+        -webkit-transform-origin: bottom right
+        -ms-transform-origin: bottom right
+        transform-origin: bottom right
+        -webkit-transition: -webkit-transform 0.25s ease-out
+        transition: -webkit-transform 0.25s ease-out
+        -o-transition: transform 0.25s ease-out
+        transition: transform 0.25s ease-out
+        transition: transform 0.25s ease-out, -webkit-transform 0.25s ease-out
+
+    &:hover:after
+        -webkit-transform: scaleX(1)
+        -ms-transform: scaleX(1)
+        transform: scaleX(1)
+        -webkit-transform-origin: bottom left
+        -ms-transform-origin: bottom left
+        transform-origin: bottom left
