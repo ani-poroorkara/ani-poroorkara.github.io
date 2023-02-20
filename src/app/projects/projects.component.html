@@ -15,7 +15,7 @@
     <div class="container p-4 overflow-hidden featured-project">
       <div class="row rounded-3 px-4">
         <div class="col-lg-6 text-end">
-          <img class="rounded-lg-3" src="{{ projects_featured[0].img_url }}" alt="">
+          <img class="rounded-lg-3 img-fluid" src="{{ projects_featured[0].img_url }}" alt="">
       </div>
         <div class="col-lg-6 text-start">
           <p class="tag-group rounded-3">Featured Project</p>
@@ -51,13 +51,13 @@
           </div>
         </div>
         <div class="col-lg-6 text-start order-1 order-lg-2">
-          <img class="rounded-lg-3" src="{{ projects_featured[1].img_url }}" alt="">
+          <img class="rounded-lg-3 img-fluid" src="{{ projects_featured[1].img_url }}" alt="">
       </div>
       </div>
     </div>
 
     <!-- All -->
-    <div class="row p-2" data-masonry="{&quot;percentPosition&quot;: true}">
+    <div class="row p-2">
       <div class="col-sm-6 col-lg-4 mb-4" *ngFor="let project of projects">
         <div class="card {{ project.class }}">
           <div class="card-body">
@@ -101,4 +101,4 @@
     </div>
   </div>
 
-  </section>
+</section>
