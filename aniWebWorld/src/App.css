@@ -22,6 +22,36 @@
   }
 }
 
+@keyframes slideInFromLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-100%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideOutToRight {
+  0% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+  100% {
+    opacity: 0;
+    transform: translateX(100%);
+  }
+}
+
+.page-enter {
+  animation: slideInFromLeft 0.5s ease-out forwards;
+}
+
+.page-exit {
+  animation: slideOutToRight 0.5s ease-out forwards;
+}
+
 @keyframes fadeIn {
   0% {
     opacity: 0;
@@ -75,4 +105,9 @@
 /* Add a subtle text shadow to improve readability */
 h1, h2 {
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+/* Add a glow effect for timeline dots */
+.shadow-glow {
+  box-shadow: 0 0 8px rgba(255, 255, 255, 0.6);
 }
