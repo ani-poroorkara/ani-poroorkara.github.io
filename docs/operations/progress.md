@@ -7,12 +7,14 @@ Resume by reading this file, the plan/spec, and git log/status. Do not redo comm
 ## Current status
 
 - Task 0: legacy cleanup and recovery completed; authenticated Pages settings inventory pending.
-- Tasks 1–5: root foundation, validated data/publication, pages, content/media/Markdown checks and CMS forms implemented. 42 unit checks and 13 generated-output checks pass; hosted editor round-trip remains unverified.
+- Tasks 1–5: local foundation, data/publication, pages, content/media/Markdown checks and CMS forms verified. Hosted editor round-trip remains unverified.
 - Task 6: pending owner sign-in/App authorization and remote setup.
-- Task 7: design implemented; desktop visual review completed; mobile/print review in progress.
+- Task 7: desktop/mobile/tablet visual review, direct refresh/Back, keyboard skip and long-link wrapping checked. Real print/200% zoom review pending.
 - Task 8: historical projects migrated, sharing metadata/RSS/sitemap implemented; final copy/resume facts pending.
-- Task 9: output link checker implemented; deployment workflows in progress.
-- Tasks 10–12: pending live cutover, handover and independent review.
+- Task 9: output checker and gated workflows implemented; remote CI results pending branch push.
+- Task 10: live cutover pending; launch and recovery instructions written.
+- Task 11: editor/maintenance guide and monthly dependency proposals written; owner publishing exercise pending.
+- Task 12: independent review completed, two Important issues reproduced and fixed. Clean install and full verify pass (44 unit/28 output). Final CSS build and remote checks pending. Details in `acceptance.md`.
 
 ## Rulings and access
 
@@ -25,6 +27,10 @@ Resume by reading this file, the plan/spec, and git log/status. Do not redo comm
 - CMS default social image now accepts upload paths as well as trusted brand assets so the editor image field works.
 - Initial audit issue resolved by compatible transitive dependency update; latest audit reports zero vulnerabilities.
 - Dependent foundation/data/page/design/editor work is being committed as a coherent verified milestone rather than partially runnable intermediate scaffolds.
+- Final: content-state tests now allow real blog/PDF/project updates; encoded query URLs no longer fail local path checks. Both regression tests failed before fixes and pass after.
+- Final: long URL/inline-code overflow reproduced in a360px browser; prose wrapping fixed it. Fenced code retains internal horizontal scrolling.
+- Final minor deferred: résumé start fields lack required editor flags; CI still rejects missing dates.
+- Six original repository links resolve to Git HEADs, checked October4. No invented résumé data or public cutover.
 
 ## Continuation schedule
 

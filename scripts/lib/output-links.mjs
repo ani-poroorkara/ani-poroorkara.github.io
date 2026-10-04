@@ -4,10 +4,11 @@ import { load } from 'cheerio';
 const site = 'https://ani-poroorkara.github.io';
 export function resolveOutputTarget(sourceFile, url, root) {
   if (/^(mailto:|tel:|data:)/i.test(url)) return null;
-  if (/%2e|%2f|%5c/i.test(url) || url.includes('\\') || url.startsWith('/') && /(^|\/)\.\.(\/|$)/.test(url.split(/[?#]/)[0])) throw new Error('Unsafe path');
   const sourcePath = '/' + relative(root, sourceFile).split(sep).join('/');
   const target = new URL(url, new URL(sourcePath, site));
   if (target.origin !== site) return null;
+  const rawPath = url.split(/[?#]/)[0];
+  if (/%2e|%2f|%5c/i.test(rawPath) || rawPath.includes('\\') || rawPath.startsWith('/') && /(^|\/)\.\.(\/|$)/.test(rawPath)) throw new Error('Unsafe path');
   const pathname = decodeURIComponent(target.pathname);
   let file = resolve(root, '.' + pathname);
   if (pathname.endsWith('/')) file = resolve(file, 'index.html');

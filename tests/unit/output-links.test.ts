@@ -17,6 +17,10 @@ it('ignores external destinations but rejects traversal paths', () => {
   expect(resolveOutputTarget(join(root, 'index.html'), 'mailto:hello@example.com', root)).toBeNull();
   expect(() => resolveOutputTarget(join(root, 'index.html'), '/%2e%2e/secret', root)).toThrow();
 });
+it('accepts encoded query parameters on local and external links', () => {
+  expect(resolveOutputTarget(join(root, 'index.html'), 'https://github.com/search?q=repo%3Aani-poroorkara%2FgradBot', root)).toBeNull();
+  expect(resolveOutputTarget(join(root, 'index.html'), '/blog/example/?next=%2Fprojects%2F#heading', root)).toEqual({ file: join(root, 'blog/example/index.html'), fragment: 'heading' });
+});
 it('reports missing local assets and fragment targets', async () => {
   await writeFile(join(root, 'index.html'), '<a href="/blog/example/#missing">Go</a><img src="/no.png">');
   await writeFile(join(root, 'blog/example/index.html'), '<h1 id="present">Hello</h1>');

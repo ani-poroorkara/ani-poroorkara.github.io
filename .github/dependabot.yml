@@ -1,0 +1,18 @@
+version: 2
+updates:
+  - package-ecosystem: npm
+    directory: /
+    target-branch: 9.0v
+    schedule:
+      interval: monthly
+    groups:
+      compatible-packages:
+        update-types: [minor, patch]
+  - package-ecosystem: github-actions
+    directory: /
+    target-branch: 9.0v
+    schedule:
+      interval: monthly
+    groups:
+      actions:
+        patterns: ['*']
