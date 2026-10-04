@@ -64,4 +64,9 @@ Header now stays at the viewport top with a theme-aware background/blur. Anchor 
 Added native same-origin cross-document view transitions:140ms exit/220ms entrance for main content, with stable navigation. Normal links/history/refresh and scripts are retained. Reduced-motion opts out; Pause motion removes transition animation. Unsupported browsers retain standard navigation, per [MDN](https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/At-rules/@view-transition).
 Browser observed Projects→Blog crossfade, named main/header layers, Back navigation and paused pseudo-element animation:none. Build/output link checks pass. Refresh the currently open old page once to load opt-in CSS before trying links.
 
+## Sun/moon theme reveal — 2026-10-04
+
+Theme switching now reveals the entire new palette through a700ms circle expanding from the header button to the farthest viewport corner. The current-theme sun/moon sets and rises in its own clipped layer. Normal page transitions remain separate. Unsupported browsers, paused motion and reduced-motion preferences switch instantly; blocked storage and failed snapshots preserve the selected theme. The switch prevents overlapping transitions and unlocks after completion/failure.
+Full verify passes (51unit/28output). Browser observed both directional reveals, button origin, old/new full-page layers and celestial rise. Local preview remains running; publication remains disabled.
+
 Paused heartbeat `continue-website-9-0v-implementation`, every five hours. Owner can enable it at the first usage exhaustion. It resumes from this checkpoint and does not override account limits.

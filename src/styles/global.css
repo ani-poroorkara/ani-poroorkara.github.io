@@ -141,4 +141,19 @@ a:hover { color: var(--accent); } .button:hover { color: var(--button-ink); back
 }
 @keyframes page-leave { to { opacity: 0; transform: translateY(-4px); } }
 @keyframes page-enter { from { opacity: 0; transform: translateY(6px); } to { opacity: 1; transform: translateY(0); } }
+/* A whole-page day/night reveal, originating at the celestial switch. */
+:root[data-theme-transition='active'] .site-header,
+:root[data-theme-transition='active'] main { view-transition-name: none; }
+:root[data-theme-transition='active'] .theme-toggle { view-transition-name: theme-switch; overflow: hidden; }
+:root[data-theme-transition='active']::view-transition-group(root),
+:root[data-theme-transition='active']::view-transition-old(root),
+:root[data-theme-transition='active']::view-transition-new(root) { animation: none; }
+:root[data-theme-transition='active']::view-transition-image-pair(root) { isolation: isolate; }
+:root[data-theme-transition='active']::view-transition-old(root) { display: block; z-index: 1; mix-blend-mode: normal; }
+:root[data-theme-transition='active']::view-transition-new(root) { z-index: 2; mix-blend-mode: normal; }
+:root[data-theme-transition='active']::view-transition-group(theme-switch) { z-index: 3; animation: none; overflow: hidden; border-radius: 50%; }
+:root[data-theme-transition='active']::view-transition-old(theme-switch) { animation: celestial-set 420ms ease-in both; }
+:root[data-theme-transition='active']::view-transition-new(theme-switch) { animation: celestial-rise 600ms 100ms ease-out both; }
+@keyframes celestial-set { to { opacity: 0; transform: translate(12px, 32px) rotate(50deg); } }
+@keyframes celestial-rise { from { opacity: 0; transform: translate(-12px, 32px) rotate(-50deg); } to { opacity: 1; transform: translate(0, 0) rotate(0); } }
 :root[data-motion='paused']::view-transition-group(*), :root[data-motion='paused']::view-transition-old(*), :root[data-motion='paused']::view-transition-new(*) { animation: none !important; }

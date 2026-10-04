@@ -8,6 +8,6 @@ const current = Astro.url.pathname;
   <a href="/" class="wordmark" aria-label={`${site.name} — Home`}>ap<span class="brand-dot">.</span></a>
   <div class="header-actions">
     <nav aria-label="Main navigation"><ul>{links.map(([href, label]) => <li><a href={href} aria-current={(href === '/' ? current === '/' : current.startsWith(href)) ? 'page' : undefined}>{label}</a></li>)}</ul></nav>
-    <button class="theme-toggle" data-theme-toggle hidden aria-label="Dark mode" aria-pressed="false" title="Switch to dark mode"><span aria-hidden="true">☾</span></button>
+    <button class="theme-toggle" data-theme-toggle hidden aria-label="Dark mode" aria-pressed="false" title="Switch to dark mode"><span aria-hidden="true">☀</span></button>
   </div>
 </div></header>
