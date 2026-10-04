@@ -75,4 +75,10 @@ Owner approved the current visual direction and will review the blog next. Expli
 
 Recommendation under discussion: a separate private résumé workspace with a structured career record, job-specific variants, reviewed AI suggestions and editable DOCX/text-based PDF exports. The public site would receive only the selected general résumé and downloads. This is a recommendation, not an authorized builder implementation or a claim that exports already exist.
 
+## Private résumé generator — 2026-10-04
+
+Owner subsequently requested building the generator first and selected a local private app. Implemented separately in ignored resume-studio/ with its own local source repository and no remote. Browser workspace: http://127.0.0.1:4380/. See its local README and docs/progress.md for startup, capabilities, checks and continuation. Career data and exports are excluded from this public repository; no résumé facts or files published here.
+
+The tool supports career forms, isolated saved job versions, literal posting phrase coverage, selected AI suggestion review via copy/paste, and real DOCX/PDF exports. Historical data is an unreviewed local draft, pending current roles. No automatic AI service connection.18 automated checks pass, both formats rendered/inspected and browser downloads confirmed. Public website remains unreleased and its content/editor prerequisites still apply.
+
 Paused heartbeat `continue-website-9-0v-implementation`, every five hours. Owner can enable it at the first usage exhaustion. It resumes from this checkpoint and does not override account limits.

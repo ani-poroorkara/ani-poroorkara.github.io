@@ -14,6 +14,9 @@ coverage/
 *.log
 /tmp/
 
+# Separate private résumé workspace; never include career drafts in this public repo.
+/resume-studio/
+
 # Editor and system files
 .vscode/*
 !.vscode/extensions.json
