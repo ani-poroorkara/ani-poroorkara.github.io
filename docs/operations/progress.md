@@ -69,4 +69,10 @@ Browser observed Projects→Blog crossfade, named main/header layers, Back navig
 Theme switching now reveals the entire new palette through a700ms circle expanding from the header button to the farthest viewport corner. The current-theme sun/moon sets and rises in its own clipped layer. Normal page transitions remain separate. Unsupported browsers, paused motion and reduced-motion preferences switch instantly; blocked storage and failed snapshots preserve the selected theme. The switch prevents overlapping transitions and unlocks after completion/failure.
 Full verify passes (51unit/28output). Browser observed both directional reveals, button origin, old/new full-page layers and celestial rise. Local preview remains running; publication remains disabled.
 
+## Owner review and content completion — 2026-10-04
+
+Owner approved the current visual direction and will review the blog next. Explicitly keep release disabled while completing résumé, projects and remaining page content. Résumé data currently has no supplied summary, experience, education or skills; request the owner's existing résumé and target roles before writing career claims.
+
+Recommendation under discussion: a separate private résumé workspace with a structured career record, job-specific variants, reviewed AI suggestions and editable DOCX/text-based PDF exports. The public site would receive only the selected general résumé and downloads. This is a recommendation, not an authorized builder implementation or a claim that exports already exist.
+
 Paused heartbeat `continue-website-9-0v-implementation`, every five hours. Owner can enable it at the first usage exhaustion. It resumes from this checkpoint and does not override account limits.
