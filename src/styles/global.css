@@ -31,7 +31,7 @@ nav ul { list-style: none; padding: 0; margin: 0; display: flex; gap: 28px; }
 .site-header nav a { font-size: .85rem; color: var(--muted); padding: 8px 0; }
 .site-header nav a[aria-current] { color: var(--ink); border-bottom: 2px solid var(--accent); }
 a:hover { color: var(--accent); } .button:hover { color: var(--button-ink); background: var(--accent-hover); }
-.button { display: inline-flex; justify-content: center; gap: 20px; align-items: center; border: 1px solid var(--accent); background: var(--accent); color: var(--button-ink); border-radius: 6px; font-size: .85rem; font-weight: 550; padding: 14px 20px; transition: background 150ms; }
+.button { display: inline-flex; justify-content: center; gap: 20px; align-items: center; border: 1px solid var(--accent-fill); background: var(--accent-fill); color: var(--button-ink); border-radius: 6px; font-size: .85rem; font-weight: 550; padding: 14px 20px; transition: background 150ms, transform 180ms; }
 .button.secondary { background: transparent; color: var(--accent); }
 .text-link { font-size: .85rem; font-weight: 550; white-space: nowrap; }
 .hero { display: grid; grid-template-columns: 1.15fr 1fr; gap: 48px; align-items: center; padding: 88px 0 72px; }
@@ -40,7 +40,7 @@ a:hover { color: var(--accent); } .button:hover { color: var(--button-ink); back
 .hero-description { max-width: 410px; font-size: 1rem; color: var(--muted); margin-bottom: 28px; }
 .hero-actions { display: flex; align-items: center; gap: 24px; }
 .hero-footnote { display: flex; flex-wrap: wrap; gap: 16px; margin-top: 36px; font: .63rem ui-monospace, monospace; color: var(--muted); }
-.hero-footnote span+span::before { content: '/'; margin-right: 16px; color: #90a49d; }
+.hero-footnote span+span::before { content: '/'; margin-right: 16px; color: var(--muted); }
 .hero-visual { position: relative; min-height: 350px; display: grid; place-items: center; overflow: hidden; }
 .visual-grid { position: absolute; inset: 0; background-image: linear-gradient(var(--grid) 1px, transparent 1px), linear-gradient(90deg, var(--grid) 1px, transparent 1px); background-size: 32px 32px; mask-image: radial-gradient(ellipse, black 20%, transparent 70%); }
 .clarity-node { position: relative; z-index: 1; width: 260px; padding: 28px; background: var(--bg); border: 1px solid var(--line); box-shadow: 12px 12px 0 var(--shadow); border-radius: 8px; transform: rotate(-5deg); }
@@ -64,8 +64,8 @@ a:hover { color: var(--accent); } .button:hover { color: var(--button-ink); back
 .art-1 { background: var(--art-warm); } .art-2 { background: var(--art-cool); }
 .art-label { position: absolute; bottom: 14px; left: 16px; font: .6rem ui-monospace, monospace; color: var(--diagram-ink); }
 .diagram { display: flex; gap: 8px; position: relative; align-items: center; transform: rotate(-8deg); }
-.diagram span { width: 20px; height: 55px; border: 1px solid #658879; border-radius: 5px; background: color-mix(in srgb, var(--bg) 40%, transparent); }
-.diagram span:nth-child(2) { height: 90px; } .diagram span:nth-child(3) { height: 75px; background: #0f766e33; } .diagram span:nth-child(4) { height: 110px; }
+.diagram span { width: 20px; height: 55px; border: 1px solid var(--line); border-radius: 5px; background: color-mix(in srgb, var(--bg) 40%, transparent); }
+.diagram span:nth-child(2) { height: 90px; } .diagram span:nth-child(3) { height: 75px; background: color-mix(in srgb, var(--accent-fill) 20%, transparent); } .diagram span:nth-child(4) { height: 110px; }
 .diagram-1 { transform: rotate(14deg); gap: 0; } .diagram-1 span { width: 55px; height: 55px !important; border-radius: 50%; margin-left: -20px; border-color: #8e806b; } .diagram-1 span:nth-child(3) { background: #b6a38144; }
 .diagram-2 { transform: rotate(-15deg); display: grid; grid-template-columns: repeat(2, 45px); } .diagram-2 span { width: 45px; height: 45px !important; border-radius: 4px; border-color: #697e8e; }
 .card-top { display: flex; justify-content: space-between; align-items: center; } .card-top .eyebrow { margin: 0 0 8px; font-size: .62rem; }
@@ -95,3 +95,15 @@ a:hover { color: var(--accent); } .button:hover { color: var(--button-ink); back
 @media (prefers-reduced-motion: reduce) { *, *::before, *::after { scroll-behavior: auto !important; transition: none !important; animation: none !important; } }
 
 @media (max-width: 680px) { .header-actions { gap: 10px; } .site-header { gap: 10px; flex-wrap: wrap; } .site-header nav ul { gap: 12px; } }
+
+/* A short entrance and two quiet drifts; content remains visible without motion. */
+@media (prefers-reduced-motion: no-preference) {
+  .hero-copy { animation: hero-arrive 650ms ease-out both; }
+  .hero-visual { animation: hero-arrive 800ms ease-out both; }
+  .clarity-node { animation: clarity-drift 1800ms ease-in-out 800ms 2; }
+  .node-lines i:nth-child(3) { transform-origin: left; animation: line-grow 900ms ease-out 450ms both; }
+  .button:hover { transform: translateY(-2px); }
+}
+@keyframes hero-arrive { from { opacity: .35; transform: translateY(10px); } to { opacity: 1; transform: translateY(0); } }
+@keyframes clarity-drift { 0%, 100% { transform: translateY(0) rotate(-5deg); } 50% { transform: translateY(-5px) rotate(-4deg); } }
+@keyframes line-grow { from { transform: scaleX(.2); } to { transform: scaleX(1); } }

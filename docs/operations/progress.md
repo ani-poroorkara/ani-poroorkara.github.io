@@ -46,4 +46,8 @@ Next: owner editor sign-in/App authorization; current résumé facts/PDF; authen
 Added a keyboard-accessible header switch, system preference default, saved light/dark choice across pages and reloads, storage-blocked fallback, and dark surface/button colours. Head initialization avoids a light flash; printing retains a light palette. This supersedes the original no-theme-toggle scope constraint at the owner's request.
 Verification: 48 unit/28 output checks and complete verify pass. Browser toggle/keyboard/reload/navigation and360px mobile header checked; no page overflow. Preview remains at http://127.0.0.1:4321/.
 
+## Owner-requested yellow accent and motion — 2026-10-04
+
+Replaced green with warm yellow buttons/highlights and charcoal/cream neutrals. Light-mode text uses a darker gold for contrast. Hero has a brief entrance, a growing line and two subtle card drifts that finish within4.4seconds; no endless motion. All motion is disabled for reduced-motion preference. This supersedes the original colour/motion choices.
+
 Paused heartbeat `continue-website-9-0v-implementation`, every five hours. Owner can enable it at the first usage exhaustion. It resumes from this checkpoint and does not override account limits.
