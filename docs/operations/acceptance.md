@@ -2,6 +2,8 @@
 
 Implementation is reviewable on `9.0v`. Full launch acceptance is pending the owner prerequisites below.
 
+Verified revision: `5ecdc50ba03000ef00665ee392d53d093ee49c24`. [GitHub verification](https://github.com/ani-poroorkara/ani-poroorkara.github.io/actions/runs/37176797504) succeeded; [publication](https://github.com/ani-poroorkara/ani-poroorkara.github.io/actions/runs/37176797496) was skipped. Original live site remains unchanged.
+
 ## Verified locally
 
 - Clean Node24 installation from lockfile succeeded; npm audit reported zero vulnerabilities.

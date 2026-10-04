@@ -11,10 +11,10 @@ Resume by reading this file, the plan/spec, and git log/status. Do not redo comm
 - Task 6: pending owner sign-in/App authorization and remote setup.
 - Task 7: desktop/mobile/tablet visual review, direct refresh/Back, keyboard skip and long-link wrapping checked. Real print/200% zoom review pending.
 - Task 8: historical projects migrated, sharing metadata/RSS/sitemap implemented; final copy/resume facts pending.
-- Task 9: output checker and gated workflows implemented; remote CI results pending branch push.
+- Task 9: output checker and gated workflows verified. Branch pushed; GitHub verification succeeded and publication was skipped with gate disabled.
 - Task 10: live cutover pending; launch and recovery instructions written.
 - Task 11: editor/maintenance guide and monthly dependency proposals written; owner publishing exercise pending.
-- Task 12: independent review completed, two Important issues reproduced and fixed. Clean install and full verify pass (44 unit/28 output). Final CSS build and remote checks pending. Details in `acceptance.md`.
+- Task 12: independent review completed, two Important issues reproduced and fixed. Clean install/full verify pass (44 unit/28 output), including final CSS change. Remote CI succeeded for implementation commit `5ecdc50`. Details in `acceptance.md`.
 
 ## Rulings and access
 
@@ -31,6 +31,13 @@ Resume by reading this file, the plan/spec, and git log/status. Do not redo comm
 - Final: long URL/inline-code overflow reproduced in a360px browser; prose wrapping fixed it. Fenced code retains internal horizontal scrolling.
 - Final minor deferred: résumé start fields lack required editor flags; CI still rejects missing dates.
 - Six original repository links resolve to Git HEADs, checked October4. No invented résumé data or public cutover.
+
+## Remote checkpoint
+
+`origin/9.0v` pushed. Verified implementation revision `5ecdc50ba03000ef00665ee392d53d093ee49c24`.
+GitHub checks: https://github.com/ani-poroorkara/ani-poroorkara.github.io/actions/runs/37176797504 (success).
+Publication: https://github.com/ani-poroorkara/ani-poroorkara.github.io/actions/runs/37176797496 (skipped).
+Next: owner editor sign-in/App authorization; current résumé facts/PDF; authenticated Pages baseline; hosted round-trip and reviewed cutover. Do not repeatedly rerun completed local work while these prerequisites remain absent.
 
 ## Continuation schedule
 

@@ -4,7 +4,7 @@
 
 Fresh source: `origin/world-7.1v`, commit `e5bd23b0df82a124b67a342bac011570e0c16570`. New local branch: `9.0v`, without an upstream until explicitly pushed to `origin/9.0v`. This baseline is Angular 15; `angular.json` built into `docs/`. Actual Pages settings still need inspection.
 
-Removed legacy `src/`, generated website `docs/`, Angular configuration, old package manifest/lockfile, TypeScript configuration and Angular-specific VS Code tasks/extensions/debugging. These remain recoverable from the source commit. Retained generic EditorConfig and refreshed ignore rules/README. No remote branches, settings, or deployment changed. This branch intentionally has no runnable app yet.
+Removed legacy `src/`, generated website `docs/`, Angular configuration, old package manifest/lockfile, TypeScript configuration and Angular-specific VS Code tasks/extensions/debugging. These remain recoverable from the source commit. Retained generic EditorConfig. Cleanup initially left no application; subsequent verified Astro implementation is now pushed to `9.0v`. Original branches, Pages settings and live deployment remain unchanged.
 
 ## Existing work preserved
 
