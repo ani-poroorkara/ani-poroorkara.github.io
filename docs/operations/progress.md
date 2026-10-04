@@ -59,4 +59,9 @@ Full verify passes (48unit/28output). Browser checked infinite loop, pause/reloa
 
 Header now stays at the viewport top with a theme-aware background/blur. Anchor scrolling leaves space for the header; skip link stays above it and print still hides it. Browser check at720px scroll: header top0, desktop/mobile no overflow. Build and generated-link verification pass.
 
+## Page-switch transitions — 2026-10-04
+
+Added native same-origin cross-document view transitions:140ms exit/220ms entrance for main content, with stable navigation. Normal links/history/refresh and scripts are retained. Reduced-motion opts out; Pause motion removes transition animation. Unsupported browsers retain standard navigation, per [MDN](https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/At-rules/@view-transition).
+Browser observed Projects→Blog crossfade, named main/header layers, Back navigation and paused pseudo-element animation:none. Build/output link checks pass. Refresh the currently open old page once to load opt-in CSS before trying links.
+
 Paused heartbeat `continue-website-9-0v-implementation`, every five hours. Owner can enable it at the first usage exhaustion. It resumes from this checkpoint and does not override account limits.
