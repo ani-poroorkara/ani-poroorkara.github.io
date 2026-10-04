@@ -11,6 +11,7 @@ interface Props { title: string; description: string; canonicalPath: string; ima
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <script is:inline src="/theme.js"></script>
+    <script is:inline src="/motion.js" defer></script>
     <Seo {...Astro.props} />
   </head>
   <body><Navigation /><main id="main" class="wrap" tabindex="-1"><slot /></main><Footer /></body>

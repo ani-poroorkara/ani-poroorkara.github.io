@@ -96,14 +96,32 @@ a:hover { color: var(--accent); } .button:hover { color: var(--button-ink); back
 
 @media (max-width: 680px) { .header-actions { gap: 10px; } .site-header { gap: 10px; flex-wrap: wrap; } .site-header nav ul { gap: 12px; } }
 
-/* A short entrance and two quiet drifts; content remains visible without motion. */
+/* One-time entrance, gentle continuous illustration, and progressive scroll reveals. */
 @media (prefers-reduced-motion: no-preference) {
   .hero-copy { animation: hero-arrive 650ms ease-out both; }
   .hero-visual { animation: hero-arrive 800ms ease-out both; }
   .clarity-node { animation: clarity-drift 1800ms ease-in-out 800ms 2; }
   .node-lines i:nth-child(3) { transform-origin: left; animation: line-grow 900ms ease-out 450ms both; }
   .button:hover { transform: translateY(-2px); }
+  :root[data-motion='running'] .clarity-node { animation: clarity-drift 6s ease-in-out infinite; }
+  :root[data-motion='running'] .signal-a { animation: signal-drift 8s ease-in-out infinite; }
+  :root[data-motion='running'] .signal-c { animation: signal-drift 7s ease-in-out -2s infinite reverse; }
+  :root[data-motion='running'] .signal-d { animation: quiet-pulse 4s ease-in-out infinite; }
+  :root[data-motion='running'] .scroll-reveal { transition: opacity 600ms ease, transform 600ms ease; }
+  :root[data-motion='running'] .scroll-reveal:not(.is-revealed):not(:focus-within) { opacity: 0; transform: translateY(14px); }
+  .project-art { transition: transform 200ms ease, border-color 200ms ease; }
+  .project-card:hover .project-art, .project-card:focus-within .project-art { transform: translateY(-4px); border-color: var(--accent); }
+  .card-top>span:last-child, .button>span { display: inline-block; transition: transform 180ms ease; }
+  .project-card:hover .card-top>span:last-child, .project-card:focus-within .card-top>span:last-child, .button:hover>span { transform: translate(2px, -2px); }
 }
 @keyframes hero-arrive { from { opacity: .35; transform: translateY(10px); } to { opacity: 1; transform: translateY(0); } }
 @keyframes clarity-drift { 0%, 100% { transform: translateY(0) rotate(-5deg); } 50% { transform: translateY(-5px) rotate(-4deg); } }
 @keyframes line-grow { from { transform: scaleX(.2); } to { transform: scaleX(1); } }
+@keyframes signal-drift { 0%, 100% { transform: translateY(0) rotate(20deg); } 50% { transform: translateY(-6px) rotate(26deg); } }
+@keyframes quiet-pulse { 0%, 100% { opacity: .6; } 50% { opacity: 1; } }
+.hero-motion { text-align: center; padding-top: 14px; }
+.motion-control { border: 0; background: transparent; color: var(--muted); font: .65rem ui-monospace, monospace; cursor: pointer; padding: 8px; text-decoration: underline; text-underline-offset: 3px; }
+.motion-control[hidden] { display: none; }
+.motion-control:hover { color: var(--accent); }
+:root[data-motion='paused'] *, :root[data-motion='paused'] *::before, :root[data-motion='paused'] *::after { animation: none !important; transition: none !important; scroll-behavior: auto !important; }
+@media (prefers-reduced-motion: reduce), print { .scroll-reveal { opacity: 1 !important; transform: none !important; } }

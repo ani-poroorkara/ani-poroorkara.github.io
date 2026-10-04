@@ -1,6 +1,6 @@
 @media print {
   :root, :root[data-theme] { --bg: #fff; --ink: #000; --muted: #333; --accent: #000; --border: #ccc; color: #000; background: #fff; color-scheme: light; }
-  .site-header, .site-footer, .skip-link, .button, .page-intro .eyebrow { display: none !important; }
+  .site-header, .site-footer, .skip-link, .button, .motion-control, .page-intro .eyebrow { display: none !important; }
   main.wrap { padding: 0; }
   .page-intro { padding: 0 0 24px; } h1 { font-size: 28pt; }
   .resume-content { max-width: none; margin: 0; }

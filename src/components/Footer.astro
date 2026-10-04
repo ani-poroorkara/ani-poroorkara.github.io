@@ -1,8 +1,9 @@
 ---
 import { site } from '../lib/data';
+import MotionControl from './MotionControl.astro';
 ---
 <footer class="site-footer wrap">
   <div><a class="footer-name" href="/">{site.name}</a><p>Clear thinking. Useful work.</p></div>
   <nav aria-label="Social and contact links"><ul>{site.socials.map(link => <li><a href={link.url}>{link.label} <span aria-hidden="true">↗</span></a></li>)}<li><a href={`mailto:${site.contactEmail}`}>Email ↗</a></li><li><a href="/rss.xml">RSS</a></li></ul></nav>
-  <small>© {new Date().getFullYear()} · Built with care.</small>
+  <small>© {new Date().getFullYear()} · Built with care. <MotionControl /></small>
 </footer>

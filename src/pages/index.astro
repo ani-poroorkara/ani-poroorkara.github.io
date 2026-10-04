@@ -2,6 +2,7 @@
 import BaseLayout from '../layouts/BaseLayout.astro';
 import ProjectCard from '../components/ProjectCard.astro';
 import PostCard from '../components/PostCard.astro';
+import MotionControl from '../components/MotionControl.astro';
 import { site } from '../lib/data';
 import { getPublicProjects, getPublicPosts } from '../lib/content/queries';
 const projects = (await getPublicProjects()).filter(entry => entry.data.featured).slice(0, 3);
@@ -10,7 +11,7 @@ const posts = (await getPublicPosts()).slice(0, 3);
 <BaseLayout title="Anirudh Poroorkara — AI-first thinking" description={site.seoDescription} canonicalPath="/">
   <section class="hero" id="landing">
     <div class="hero-copy"><p class="eyebrow"><span class="status-dot"></span> Anirudh Poroorkara / Engineer & explorer</p><h1>Complex problems.<br /><span class="serif">Simple answers.</span></h1><p class="hero-description">{site.headline} I build, experiment, and share what I learn along the way.</p><div class="hero-actions"><a class="button" href="/projects/">Explore my work <span aria-hidden="true">↗</span></a><a class="text-link" href="/blog/">Read my notes →</a></div><div class="hero-footnote"><span>AI & machine learning</span><span>Software</span><span>Curiosity</span></div></div>
-    <div class="hero-visual" aria-hidden="true"><div class="visual-grid"></div><div class="signal signal-a"></div><div class="signal signal-b"></div><div class="signal signal-c"></div><div class="signal signal-d"></div><div class="clarity-node"><span>many possibilities</span><strong>one clear path<span>↗</span></strong><div class="node-lines"><i></i><i></i><i></i></div><small>think · build · simplify</small></div><span class="visual-caption">From complexity to clarity.</span></div>
+    <div class="hero-illustration"><div class="hero-visual" aria-hidden="true"><div class="visual-grid"></div><div class="signal signal-a"></div><div class="signal signal-b"></div><div class="signal signal-c"></div><div class="signal signal-d"></div><div class="clarity-node"><span>many possibilities</span><strong>one clear path<span>↗</span></strong><div class="node-lines"><i></i><i></i><i></i></div><small>think · build · simplify</small></div><span class="visual-caption">From complexity to clarity.</span></div><div class="hero-motion"><MotionControl /></div></div>
   </section>
   <section class="work-section section" id="projects"><div class="section-heading"><div><p class="eyebrow">01 / Selected work</p><h2>Ideas, made tangible<span class="accent">.</span></h2></div><a class="text-link" href="/projects/">All projects ↗</a></div><div class="project-grid">{projects.map((entry, index) => <ProjectCard {entry} {index} />)}</div>{!projects.length && <p class="empty-state">Selected projects are on their way.</p>}</section>
   <section class="about-section section" id="about"><div><p class="eyebrow">02 / A little context</p><h2>Curious by nature.<br /><span class="serif">Practical by choice.</span></h2></div><div><p class="intro">{site.bio}</p><p class="muted">Away from the screen, I enjoy cooking, movies, art, and finding something new to learn.</p><a class="text-link" href="/resume/">More about my background ↗</a></div></section>

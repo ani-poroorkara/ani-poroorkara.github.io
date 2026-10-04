@@ -50,4 +50,9 @@ Verification: 48 unit/28 output checks and complete verify pass. Browser toggle/
 
 Replaced green with warm yellow buttons/highlights and charcoal/cream neutrals. Light-mode text uses a darker gold for contrast. Hero has a brief entrance, a growing line and two subtle card drifts that finish within4.4seconds; no endless motion. All motion is disabled for reduced-motion preference. This supersedes the original colour/motion choices.
 
+## Owner-requested continuous motion — 2026-10-04
+
+The previous finite drift is now a gentle6second loop with slow decorative signals, one-time scroll reveals, project-card lift and arrow nudges. Pause/Resume controls by the hero and in the footer remember the preference. Reduced-motion disables animation; paused mode exposes all content, missing JavaScript/IntersectionObserver never hides it, and background tabs pause motion.
+Full verify passes (48unit/28output). Browser checked infinite loop, pause/reload persistence, resume, sections revealing on scroll, and360px layout without overflow. Live publication remains disabled.
+
 Paused heartbeat `continue-website-9-0v-implementation`, every five hours. Owner can enable it at the first usage exhaustion. It resumes from this checkpoint and does not override account limits.
