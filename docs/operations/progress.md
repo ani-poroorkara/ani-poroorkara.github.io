@@ -55,4 +55,8 @@ Replaced green with warm yellow buttons/highlights and charcoal/cream neutrals. 
 The previous finite drift is now a gentle6second loop with slow decorative signals, one-time scroll reveals, project-card lift and arrow nudges. Pause/Resume controls by the hero and in the footer remember the preference. Reduced-motion disables animation; paused mode exposes all content, missing JavaScript/IntersectionObserver never hides it, and background tabs pause motion.
 Full verify passes (48unit/28output). Browser checked infinite loop, pause/reload persistence, resume, sections revealing on scroll, and360px layout without overflow. Live publication remains disabled.
 
+## Sticky navbar — 2026-10-04
+
+Header now stays at the viewport top with a theme-aware background/blur. Anchor scrolling leaves space for the header; skip link stays above it and print still hides it. Browser check at720px scroll: header top0, desktop/mobile no overflow. Build and generated-link verification pass.
+
 Paused heartbeat `continue-website-9-0v-implementation`, every five hours. Owner can enable it at the first usage exhaustion. It resumes from this checkpoint and does not override account limits.

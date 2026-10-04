@@ -2,7 +2,7 @@
 @import './prose.css';
 @import './print.css';
 * { box-sizing: border-box; }
-html { scroll-behavior: smooth; }
+html { scroll-behavior: smooth; scroll-padding-top: 112px; }
 body { margin: 0; }
 a { color: inherit; text-decoration: none; }
 img { max-width: 100%; }
@@ -18,9 +18,10 @@ main { padding: 0; }
 .muted, .meta { color: var(--muted); } .intro { font-size: 1.2rem; line-height: 1.7; color: var(--muted); max-width: 640px; }
 .eyebrow { font: 500 .7rem/1.6 ui-monospace, SFMono-Regular, Consolas, monospace; letter-spacing: .13em; text-transform: uppercase; color: var(--muted); }
 :focus-visible { outline: 3px solid var(--accent); outline-offset: 5px; border-radius: 3px; }
-.skip-link { position: fixed; left: 16px; top: 12px; padding: 12px; background: var(--ink); color: var(--bg); z-index: 10; transform: translateY(-160%); }
+.skip-link { position: fixed; left: 16px; top: 12px; padding: 12px; background: var(--ink); color: var(--bg); z-index: 40; transform: translateY(-160%); }
 .skip-link:focus { transform: translateY(0); }
-.site-header { display: flex; justify-content: space-between; align-items: center; padding: 24px 0; border-bottom: 1px solid var(--border); }
+.site-header { position: sticky; top: 0; z-index: 20; background: var(--bg); background: color-mix(in srgb, var(--bg) 94%, transparent); backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px); }
+.nav-inner { display: flex; justify-content: space-between; align-items: center; padding: 24px 0; border-bottom: 1px solid var(--border); }
 .wordmark { font-size: 2.1rem; font-weight: 750; letter-spacing: -.12em; }
 .brand-dot { color: var(--accent); }
 .header-actions { display: flex; align-items: center; gap: 24px; }
@@ -87,14 +88,14 @@ a:hover { color: var(--accent); } .button:hover { color: var(--button-ink); back
 .resume-content { max-width: 800px; margin: 0 0 72px; } .resume-section { border-top: 1px solid var(--border); padding-top: 28px; margin-top: 36px; } .resume-section h2 { font-size: 1.8rem; } .resume-section article { margin-bottom: 32px; } .resume-section li { color: var(--muted); line-height: 1.7; } .resume-meta { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 16px; } .resume-meta span { font-size: .8rem; color: var(--muted); } .organization { color: var(--accent); }
 @media (max-width: 900px) { .hero { gap: 24px; padding-top: 64px; } .hero-visual { min-height: 300px; } .clarity-node { width: 230px; padding: 22px; } .hero h1 { font-size: 3.5rem; } .project-grid { gap: 20px; } .project-art { height: 170px; } }
 @media (max-width: 680px) {
-  .wrap { width: calc(100% - 40px); } .site-header { padding: 18px 0; } .site-header nav ul { gap: 18px; } .site-header nav a { font-size: .75rem; } .wordmark { font-size: 1.8rem; }
+  .wrap { width: calc(100% - 40px); } .nav-inner { padding: 18px 0; } .site-header nav ul { gap: 18px; } .site-header nav a { font-size: .75rem; } .wordmark { font-size: 1.8rem; }
   .hero { grid-template-columns: 1fr; padding: 48px 0 40px; } .hero h1 { font-size: clamp(2.6rem, 10vw, 3.7rem); } .hero .eyebrow { font-size: .6rem; margin-bottom: 24px; } .hero-visual { min-height: 280px; margin-top: 16px; } .hero-footnote { gap: 10px; margin-top: 28px; } .hero-footnote span+span::before { margin-right: 10px; }
   .section { padding: 36px 0; } .section-heading { align-items: flex-start; flex-direction: column; gap: 14px; } .project-grid { grid-template-columns: 1fr; gap: 36px; } .project-art { height: 220px; } .about-section { grid-template-columns: 1fr; gap: 20px; }
   .writing-empty { flex-wrap: wrap; gap: 16px; } .writing-empty .text-link { margin-left: 0; } .contact-section { margin-bottom: 48px; padding: 36px 20px; } .site-footer { flex-direction: column; gap: 20px; } .site-footer nav { margin-left: 0; } .page-intro { padding-top: 44px; }
 }
 @media (prefers-reduced-motion: reduce) { *, *::before, *::after { scroll-behavior: auto !important; transition: none !important; animation: none !important; } }
 
-@media (max-width: 680px) { .header-actions { gap: 10px; } .site-header { gap: 10px; flex-wrap: wrap; } .site-header nav ul { gap: 12px; } }
+@media (max-width: 680px) { html { scroll-padding-top: 96px; } .header-actions { gap: 10px; } .nav-inner { gap: 10px; flex-wrap: wrap; } .site-header nav ul { gap: 12px; } }
 
 /* One-time entrance, gentle continuous illustration, and progressive scroll reveals. */
 @media (prefers-reduced-motion: no-preference) {
