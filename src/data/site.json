@@ -1,0 +1,12 @@
+{
+  "name": "Anirudh Poroorkara",
+  "headline": "AI-first thinking. Simple solutions to complex problems.",
+  "bio": "I explore AI and build software with a focus on making complex ideas useful. I like understanding a problem, finding a clear approach, and learning from what I build.",
+  "contactEmail": "pdani444@gmail.com",
+  "availability": "Open to conversations about AI, software, and interesting problems.",
+  "socials": [
+    { "label": "GitHub", "url": "https://github.com/ani-poroorkara" },
+    { "label": "LinkedIn", "url": "https://www.linkedin.com/in/anirudh-poroorkara/" }
+  ],
+  "seoDescription": "Projects and notes by Anirudh Poroorkara. AI-first thinking and simple solutions to complex problems."
+}

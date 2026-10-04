@@ -1,0 +1,10 @@
+---
+import BaseLayout from './BaseLayout.astro';
+import { formatCalendarDate } from '../lib/content/dates';
+interface Props { title: string; description: string; canonicalPath: string; published: string; updated?: string; kind?: string; image?: string; }
+const { title, description, canonicalPath, published, updated, image, kind = 'Writing' } = Astro.props;
+---
+<BaseLayout {title} {description} {canonicalPath} {image} article={{ published, updated }}>
+  <div class="article-header"><a class="text-link" href={kind === 'Project' ? '/projects/' : '/blog/'}>← {kind === 'Project' ? 'All projects' : 'All writing'}</a><p class="eyebrow">{kind} · <time datetime={published}>{formatCalendarDate(published)}</time></p><h1>{title}</h1><p class="intro">{description}</p>{updated && <p class="meta">Updated <time datetime={updated}>{formatCalendarDate(updated)}</time></p>}</div>
+  <article class="prose"><slot /></article>
+</BaseLayout>

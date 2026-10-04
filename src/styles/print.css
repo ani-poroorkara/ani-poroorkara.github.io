@@ -1,0 +1,9 @@
+@media print {
+  :root { color: #000; background: #fff; }
+  .site-header, .site-footer, .skip-link, .button, .page-intro .eyebrow { display: none !important; }
+  main.wrap { padding: 0; }
+  .page-intro { padding: 0 0 24px; } h1 { font-size: 28pt; }
+  .resume-content { max-width: none; margin: 0; }
+  .resume-section article { break-inside: avoid; }
+  a { color: #000; } .empty-state { border: 0; padding: 0; }
+}

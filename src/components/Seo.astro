@@ -1,0 +1,26 @@
+---
+import { site } from '../lib/data';
+interface Props { title: string; description: string; canonicalPath: string; image?: string; article?: { published: string; updated?: string }; }
+const { title, description, canonicalPath, image, article } = Astro.props;
+const fullTitle = title.includes(site.name) ? title : `${title} — ${site.name}`;
+const canonical = new URL(canonicalPath, Astro.site);
+const socialImage = new URL(image || site.socialImage || '/brand/social.png', Astro.site);
+---
+<title>{fullTitle}</title>
+<meta name="description" content={description} />
+<link rel="canonical" href={canonical} />
+<meta property="og:type" content={article ? 'article' : 'website'} />
+<meta property="og:site_name" content={site.name} />
+<meta property="og:title" content={fullTitle} />
+<meta property="og:description" content={description} />
+<meta property="og:url" content={canonical} />
+<meta property="og:image" content={socialImage} />
+<meta property="og:image:alt" content={fullTitle} />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content={fullTitle} />
+<meta name="twitter:description" content={description} />
+<meta name="twitter:image" content={socialImage} />
+{article && <><meta property="article:published_time" content={`${article.published}T12:00:00Z`} />{article.updated && <meta property="article:modified_time" content={`${article.updated}T12:00:00Z`} />}</>}
+<link rel="icon" type="image/svg+xml" href="/brand/favicon.svg" />
+<link rel="alternate" type="application/rss+xml" title={`${site.name} — Blog`} href="/rss.xml" />
+<link rel="sitemap" href="/sitemap-index.xml" />

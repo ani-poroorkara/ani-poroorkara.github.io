@@ -1,0 +1,476 @@
+{
+  "media": [
+    {
+      "name": "images",
+      "label": "Images",
+      "input": "public/uploads/images",
+      "output": "/uploads/images",
+      "extensions": [
+        "jpg",
+        "jpeg",
+        "png",
+        "webp",
+        "avif"
+      ],
+      "rename": "safe"
+    },
+    {
+      "name": "documents",
+      "label": "Résumé PDFs",
+      "input": "public/uploads/documents",
+      "output": "/uploads/documents",
+      "extensions": [
+        "pdf"
+      ],
+      "rename": "safe"
+    }
+  ],
+  "content": [
+    {
+      "name": "projects",
+      "label": "Projects",
+      "type": "collection",
+      "path": "src/content/projects",
+      "format": "yaml-frontmatter",
+      "filename": {
+        "template": "{fields.title}.md",
+        "field": "create"
+      },
+      "operations": {
+        "create": true,
+        "rename": false,
+        "delete": false
+      },
+      "view": {
+        "primary": "title",
+        "fields": [
+          "title",
+          "published",
+          "draft"
+        ],
+        "sort": [
+          "published",
+          "title"
+        ]
+      },
+      "fields": [
+        {
+          "name": "title",
+          "label": "Title",
+          "type": "string",
+          "required": true
+        },
+        {
+          "name": "summary",
+          "label": "Short summary",
+          "type": "text",
+          "required": true
+        },
+        {
+          "name": "published",
+          "label": "Publish date",
+          "type": "date",
+          "required": true,
+          "options": {
+            "format": "yyyy-MM-dd",
+            "time": false
+          }
+        },
+        {
+          "name": "updated",
+          "label": "Last updated",
+          "type": "date",
+          "default": "",
+          "options": {
+            "format": "yyyy-MM-dd",
+            "time": false
+          }
+        },
+        {
+          "name": "tags",
+          "label": "Tags",
+          "type": "string",
+          "list": true,
+          "default": []
+        },
+        {
+          "name": "cover",
+          "label": "Cover image",
+          "type": "image",
+          "options": {
+            "media": "images"
+          },
+          "description": "JPG, PNG, WebP or AVIF; maximum 2 MiB."
+        },
+        {
+          "name": "coverAlt",
+          "label": "Image description",
+          "type": "string",
+          "description": "Required when a cover image is selected."
+        },
+        {
+          "name": "draft",
+          "label": "Keep unpublished",
+          "type": "boolean",
+          "default": true,
+          "description": "Drafts stay off the site, but their files are visible in a public repository."
+        },
+        {
+          "name": "status",
+          "label": "Project status",
+          "type": "select",
+          "required": true,
+          "default": "experiment",
+          "options": {
+            "values": [
+              "active",
+              "archived",
+              "experiment"
+            ]
+          }
+        },
+        {
+          "name": "featured",
+          "label": "Feature on Home",
+          "type": "boolean",
+          "default": false
+        },
+        {
+          "name": "repository",
+          "label": "Source code URL",
+          "type": "string"
+        },
+        {
+          "name": "demo",
+          "label": "Demo URL",
+          "type": "string"
+        },
+        {
+          "name": "body",
+          "label": "Content",
+          "type": "rich-text",
+          "options": {
+            "format": "markdown",
+            "media": "images"
+          },
+          "description": "Use Markdown headings, links, lists, code and images. Give images descriptive alt text; raw HTML is not supported."
+        }
+      ]
+    },
+    {
+      "name": "blog",
+      "label": "Blog posts",
+      "type": "collection",
+      "path": "src/content/blog",
+      "format": "yaml-frontmatter",
+      "filename": {
+        "template": "{fields.title}.md",
+        "field": "create"
+      },
+      "operations": {
+        "create": true,
+        "rename": false,
+        "delete": false
+      },
+      "view": {
+        "primary": "title",
+        "fields": [
+          "title",
+          "published",
+          "draft"
+        ],
+        "sort": [
+          "published",
+          "title"
+        ]
+      },
+      "fields": [
+        {
+          "name": "title",
+          "label": "Title",
+          "type": "string",
+          "required": true
+        },
+        {
+          "name": "summary",
+          "label": "Short summary",
+          "type": "text",
+          "required": true
+        },
+        {
+          "name": "published",
+          "label": "Publish date",
+          "type": "date",
+          "required": true,
+          "options": {
+            "format": "yyyy-MM-dd",
+            "time": false
+          }
+        },
+        {
+          "name": "updated",
+          "label": "Last updated",
+          "type": "date",
+          "default": "",
+          "options": {
+            "format": "yyyy-MM-dd",
+            "time": false
+          }
+        },
+        {
+          "name": "tags",
+          "label": "Tags",
+          "type": "string",
+          "list": true,
+          "default": []
+        },
+        {
+          "name": "cover",
+          "label": "Cover image",
+          "type": "image",
+          "options": {
+            "media": "images"
+          },
+          "description": "JPG, PNG, WebP or AVIF; maximum 2 MiB."
+        },
+        {
+          "name": "coverAlt",
+          "label": "Image description",
+          "type": "string",
+          "description": "Required when a cover image is selected."
+        },
+        {
+          "name": "draft",
+          "label": "Keep unpublished",
+          "type": "boolean",
+          "default": true,
+          "description": "Drafts stay off the site, but their files are visible in a public repository."
+        },
+        {
+          "name": "body",
+          "label": "Content",
+          "type": "rich-text",
+          "options": {
+            "format": "markdown",
+            "media": "images"
+          },
+          "description": "Use Markdown headings, links, lists, code and images. Give images descriptive alt text; raw HTML is not supported."
+        }
+      ]
+    },
+    {
+      "name": "site",
+      "label": "Site settings",
+      "type": "file",
+      "path": "src/data/site.json",
+      "format": "json",
+      "operations": {
+        "create": false,
+        "rename": false,
+        "delete": false
+      },
+      "fields": [
+        {
+          "name": "name",
+          "label": "Name",
+          "type": "string",
+          "required": true
+        },
+        {
+          "name": "headline",
+          "label": "Headline",
+          "type": "string",
+          "required": true
+        },
+        {
+          "name": "bio",
+          "label": "About me",
+          "type": "text",
+          "required": true
+        },
+        {
+          "name": "contactEmail",
+          "label": "Contact email",
+          "type": "string",
+          "required": true
+        },
+        {
+          "name": "availability",
+          "label": "Contact invitation",
+          "type": "text"
+        },
+        {
+          "name": "socials",
+          "label": "Social links",
+          "type": "object",
+          "list": true,
+          "fields": [
+            {
+              "name": "label",
+              "label": "Label",
+              "type": "string",
+              "required": true
+            },
+            {
+              "name": "url",
+              "label": "HTTPS URL",
+              "type": "string",
+              "required": true
+            }
+          ]
+        },
+        {
+          "name": "seoDescription",
+          "label": "Search description",
+          "type": "text",
+          "required": true
+        },
+        {
+          "name": "socialImage",
+          "label": "Social preview image",
+          "type": "image",
+          "options": {
+            "media": "images"
+          },
+          "description": "Optional uploaded preview; otherwise the default brand card is used."
+        }
+      ]
+    },
+    {
+      "name": "resume",
+      "label": "Résumé",
+      "type": "file",
+      "path": "src/data/resume.json",
+      "format": "json",
+      "operations": {
+        "create": false,
+        "rename": false,
+        "delete": false
+      },
+      "fields": [
+        {
+          "name": "summary",
+          "label": "Professional summary",
+          "type": "text"
+        },
+        {
+          "name": "experience",
+          "label": "Experience",
+          "type": "object",
+          "list": true,
+          "fields": [
+            {
+              "name": "organization",
+              "label": "Organization",
+              "type": "string",
+              "required": true
+            },
+            {
+              "name": "role",
+              "label": "Role",
+              "type": "string",
+              "required": true
+            },
+            {
+              "name": "start",
+              "label": "Start month",
+              "type": "string",
+              "description": "YYYY-MM, for example 2026-10. Leave end empty for a current role."
+            },
+            {
+              "name": "end",
+              "label": "End month",
+              "type": "string",
+              "description": "YYYY-MM, for example 2026-10. Leave end empty for a current role."
+            },
+            {
+              "name": "location",
+              "label": "Location",
+              "type": "string"
+            },
+            {
+              "name": "highlights",
+              "label": "Highlights",
+              "type": "text",
+              "list": true,
+              "default": []
+            }
+          ]
+        },
+        {
+          "name": "education",
+          "label": "Education",
+          "type": "object",
+          "list": true,
+          "fields": [
+            {
+              "name": "institution",
+              "label": "Institution",
+              "type": "string",
+              "required": true
+            },
+            {
+              "name": "qualification",
+              "label": "Qualification",
+              "type": "string",
+              "required": true
+            },
+            {
+              "name": "start",
+              "label": "Start month",
+              "type": "string",
+              "description": "YYYY-MM, for example 2026-10. Leave end empty for a current role."
+            },
+            {
+              "name": "end",
+              "label": "End month",
+              "type": "string",
+              "description": "YYYY-MM, for example 2026-10. Leave end empty for a current role."
+            }
+          ]
+        },
+        {
+          "name": "skills",
+          "label": "Skills",
+          "type": "object",
+          "list": true,
+          "fields": [
+            {
+              "name": "category",
+              "label": "Category",
+              "type": "string",
+              "required": true
+            },
+            {
+              "name": "items",
+              "label": "Skills",
+              "type": "string",
+              "list": true,
+              "default": []
+            }
+          ]
+        },
+        {
+          "name": "pdf",
+          "label": "Downloadable résumé",
+          "type": "file",
+          "options": {
+            "media": "documents"
+          },
+          "description": "Maximum 10 MiB. Upload separately when updating résumé information."
+        },
+        {
+          "name": "pdfUpdated",
+          "label": "PDF last updated",
+          "type": "date",
+          "default": "",
+          "options": {
+            "format": "yyyy-MM-dd",
+            "time": false
+          }
+        }
+      ]
+    }
+  ]
+}
+

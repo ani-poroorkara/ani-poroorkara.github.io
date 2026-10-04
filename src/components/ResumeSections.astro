@@ -1,0 +1,9 @@
+---
+import type { ResumeData } from '../lib/content/schema';
+interface Props { resume: ResumeData; }
+const { resume } = Astro.props;
+---
+{resume.summary && <p class="intro">{resume.summary}</p>}
+{resume.experience.length > 0 && <section class="resume-section"><h2>Experience</h2>{resume.experience.map(entry => <article><div class="resume-meta"><h3>{entry.role}</h3><span>{entry.start} — {entry.end || 'Present'}</span></div><p class="organization">{entry.organization}{entry.location && ` · ${entry.location}`}</p><ul>{entry.highlights.map(item => <li>{item}</li>)}</ul></article>)}</section>}
+{resume.education.length > 0 && <section class="resume-section"><h2>Education</h2>{resume.education.map(entry => <article><div class="resume-meta"><h3>{entry.qualification}</h3><span>{entry.start} — {entry.end || 'Present'}</span></div><p>{entry.institution}</p></article>)}</section>}
+{resume.skills.length > 0 && <section class="resume-section"><h2>Skills</h2>{resume.skills.map(entry => <div><h3>{entry.category}</h3><p>{entry.items.join(' · ')}</p></div>)}</section>}

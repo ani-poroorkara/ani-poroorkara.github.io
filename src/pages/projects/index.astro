@@ -1,0 +1,10 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import ProjectCard from '../../components/ProjectCard.astro';
+import { getPublicProjects } from '../../lib/content/queries';
+const entries = await getPublicProjects();
+---
+<BaseLayout title="Projects — Anirudh Poroorkara" description="Experiments and projects exploring AI, algorithms, and software." canonicalPath="/projects/">
+  <section class="page-intro"><p class="eyebrow">Ideas put to work</p><h1>Projects<span class="accent">.</span></h1><p class="intro">A collection of things I’ve built, explored, and learned from.</p><p class="muted">Earlier experiments are kept here as part of the journey.</p></section>
+  {entries.length ? <div class="project-grid">{entries.map((entry, index) => <ProjectCard {entry} {index} />)}</div> : <p class="empty-state">Projects are on their way. Come back soon.</p>}
+</BaseLayout>

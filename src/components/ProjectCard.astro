@@ -1,0 +1,15 @@
+---
+import type { CollectionEntry } from 'astro:content';
+interface Props { entry: CollectionEntry<'projects'>; index?: number; }
+const { entry, index = 0 } = Astro.props;
+---
+<article class="project-card">
+  <a href={`/projects/${entry.id}/`} class={`project-art art-${index % 3}`} tabindex="-1" aria-hidden="true">
+    {entry.data.cover ? <img src={entry.data.cover} alt="" loading="lazy" width="640" height="400" /> : <div class={`diagram diagram-${index % 3}`}><span></span><span></span><span></span><span></span><i></i></div>}
+    <span class="art-label">{entry.data.tags[0] || 'Software'} / {entry.data.published.slice(0, 4)}</span>
+  </a>
+  <div class="card-top"><span class="eyebrow">{entry.data.status === 'archived' ? 'From the archive' : entry.data.status === 'experiment' ? 'Experiment' : 'Project'}</span><span aria-hidden="true">↗</span></div>
+  <h3><a href={`/projects/${entry.id}/`}>{entry.data.title}</a></h3>
+  <p>{entry.data.summary}</p>
+  <ul class="tags" aria-label="Technologies">{entry.data.tags.map(tag => <li>{tag}</li>)}</ul>
+</article>

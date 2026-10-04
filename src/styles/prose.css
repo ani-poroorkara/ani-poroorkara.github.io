@@ -1,0 +1,12 @@
+.prose { max-width: var(--reading); margin: 0 auto 100px; font-size: 1.0625rem; line-height: 1.85; }
+.prose h2 { font-size: 1.8rem; margin-top: 2.5rem; letter-spacing: -.04em; }
+.prose h3 { margin-top: 2rem; }
+.prose p, .prose li { color: var(--muted); }
+.prose a { color: var(--accent); text-decoration: underline; text-underline-offset: 4px; }
+.prose img { width: 100%; height: auto; border-radius: 12px; }
+.prose pre { overflow-x: auto; padding: 24px; border-radius: 12px; max-width: 100%; font-size: .875rem; }
+.prose :not(pre)>code { background: #e7eeeb; padding: 2px 5px; border-radius: 4px; }
+.prose blockquote { border-left: 3px solid var(--accent); padding-left: 24px; margin-inline: 0; }
+.prose table { display: block; width: 100%; overflow-x: auto; border-collapse: collapse; }
+.prose td, .prose th { padding: 8px 16px; border: 1px solid var(--border); }
+.project-links { display: flex; gap: 12px; margin-bottom: 32px; flex-wrap: wrap; }

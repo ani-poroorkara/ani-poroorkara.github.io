@@ -1,0 +1,14 @@
+---
+import { render, type CollectionEntry } from 'astro:content';
+import ArticleLayout from '../../layouts/ArticleLayout.astro';
+import { getPublicProjects } from '../../lib/content/queries';
+export async function getStaticPaths() { return (await getPublicProjects()).map(entry => ({ params: { id: entry.id }, props: { entry } })); }
+interface Props { entry: CollectionEntry<'projects'>; }
+const { entry } = Astro.props;
+const { Content } = await render(entry);
+---
+<ArticleLayout title={entry.data.title} description={entry.data.summary} canonicalPath={`/projects/${entry.id}/`} published={entry.data.published} updated={entry.data.updated} image={entry.data.cover} kind="Project">
+  <div class="project-links">{entry.data.repository && <a class="button" href={entry.data.repository}>View source <span aria-hidden="true">↗</span></a>}{entry.data.demo && <a class="button secondary" href={entry.data.demo}>Try the project ↗</a>}</div>
+  {entry.data.cover && <img src={entry.data.cover} alt={entry.data.coverAlt} width="1200" height="750" />}
+  <Content />
+</ArticleLayout>

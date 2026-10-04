@@ -1,0 +1,7 @@
+---
+import type { CollectionEntry } from 'astro:content';
+import { formatCalendarDate } from '../lib/content/dates';
+interface Props { entry: CollectionEntry<'blog'>; }
+const { entry } = Astro.props;
+---
+<article class="post-card"><time datetime={entry.data.published}>{formatCalendarDate(entry.data.published)}</time><h3><a href={`/blog/${entry.id}/`}>{entry.data.title}</a></h3><p>{entry.data.summary}</p><ul class="tags">{entry.data.tags.map(tag => <li>{tag}</li>)}</ul></article>
