@@ -1,27 +1,11 @@
-# Webworld
+# Anirudh Poroorkara — website 9.0v
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.0.0.
+Fresh baseline: world-7.1v at e5bd23b0df82a124b67a342bac011570e0c16570.
 
-## Development server
+The old Angular application and committed build output were removed for the approved rebuild. There is intentionally no runnable application yet. The live website and remote branches have not changed. Do not publish this planning branch.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+- [Design brief](docs/superpowers/specs/2026-10-03-website-9-design.md)
+- [Implementation plan: all phases](docs/superpowers/plans/2026-10-03-website-9.md)
+- [Legacy content and recovery](docs/migration/legacy-inventory.md)
 
-## Code scaffolding
-
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+Target: Astro static pages, repository-owned content, Pages CMS browser editing and uploads, GitHub Actions publication to GitHub Pages.
