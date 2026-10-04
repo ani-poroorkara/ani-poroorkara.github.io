@@ -41,4 +41,9 @@ Next: owner editor sign-in/App authorization; current résumé facts/PDF; authen
 
 ## Continuation schedule
 
+## Owner-requested dark mode — 2026-10-04
+
+Added a keyboard-accessible header switch, system preference default, saved light/dark choice across pages and reloads, storage-blocked fallback, and dark surface/button colours. Head initialization avoids a light flash; printing retains a light palette. This supersedes the original no-theme-toggle scope constraint at the owner's request.
+Verification: 48 unit/28 output checks and complete verify pass. Browser toggle/keyboard/reload/navigation and360px mobile header checked; no page overflow. Preview remains at http://127.0.0.1:4321/.
+
 Paused heartbeat `continue-website-9-0v-implementation`, every five hours. Owner can enable it at the first usage exhaustion. It resumes from this checkpoint and does not override account limits.

@@ -5,7 +5,7 @@
 .prose a { color: var(--accent); text-decoration: underline; text-underline-offset: 4px; }
 .prose img { width: 100%; height: auto; border-radius: 12px; }
 .prose pre { overflow-x: auto; padding: 24px; border-radius: 12px; max-width: 100%; font-size: .875rem; }
-.prose :not(pre)>code { background: #e7eeeb; padding: 2px 5px; border-radius: 4px; }
+.prose :not(pre)>code { background: var(--surface); padding: 2px 5px; border-radius: 4px; }
 .prose blockquote { border-left: 3px solid var(--accent); padding-left: 24px; margin-inline: 0; }
 .prose table { display: block; width: 100%; overflow-x: auto; border-collapse: collapse; }
 .prose td, .prose th { padding: 8px 16px; border: 1px solid var(--border); }
