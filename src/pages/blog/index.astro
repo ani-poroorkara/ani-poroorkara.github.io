@@ -4,7 +4,7 @@ import PostCard from '../../components/PostCard.astro';
 import { getPublicPosts } from '../../lib/content/queries';
 const entries = await getPublicPosts();
 ---
-<BaseLayout title="Blog — Anirudh Poroorkara" description="Notes on AI, software, and finding clearer ways to solve problems." canonicalPath="/blog/">
-  <section class="page-intro"><p class="eyebrow">Thinking out loud</p><h1>Notes & ideas<span class="accent">.</span></h1><p class="intro">Making sense of what I build, what I learn, and what comes next.</p></section>
+<BaseLayout title="Blog — Anirudh Poroorkara" description="Notes on AI, software, and finding clearer ways to tackle life." canonicalPath="/blog/">
+  <section class="page-intro"><p class="eyebrow">Thinking out loud</p><h1>Notes & ideas<span class="accent">.</span></h1><p class="intro">Making sense of what I build, what I learn, and whatever comes next in life.</p></section>
   {entries.length ? <div class="post-list">{entries.map(entry => <PostCard {entry} />)}</div> : <div class="empty-state"><span class="eyebrow">A fresh page</span><h2>No published posts yet.</h2><p>Notes on AI, software, and simple approaches are on their way.</p><a class="text-link" href="/projects/">Explore my projects instead ↗</a></div>}
 </BaseLayout>
