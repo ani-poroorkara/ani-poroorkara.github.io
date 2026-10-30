@@ -1,0 +1,52 @@
+---
+interface Props { id: string; title: string; }
+const { id, title } = Astro.props;
+---
+<svg class="project-graphic" viewBox="0 0 640 400" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label={title}>
+  <g stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+    {id === 'playlist-generation' ? <>
+      <rect x="238" y="103" width="132" height="166" rx="10" opacity=".2" />
+      <rect x="254" y="119" width="132" height="166" rx="10" fill="var(--art)" />
+      <path d="M280 135h78l44 44v112a10 10 0 0 1-10 10H280a10 10 0 0 1-10-10V145a10 10 0 0 1 10-10Z" fill="var(--art)" />
+      <path d="M358 135v44h44" opacity=".4" />
+      <path d="M322 250v-47l39-9v47m-39-26 39-9" stroke="var(--accent-fill)" stroke-width="4" />
+      <ellipse cx="313" cy="251" rx="10" ry="7" fill="var(--accent-fill)" stroke="none" />
+      <ellipse cx="352" cy="242" rx="10" ry="7" fill="var(--accent-fill)" stroke="none" />
+    </> : id === 'gradbot' ? <>
+      <path d="M220 145h180a16 16 0 0 1 16 16v80a16 16 0 0 1-16 16h-104l-42 32v-32h-34a16 16 0 0 1-16-16v-80a16 16 0 0 1 16-16Z" />
+      <path d="m280 134 48-22 48 22-48 22-48-22Z" fill="var(--accent-fill)" stroke="var(--accent-fill)" />
+      <path d="M300 149v16q28 18 56 0v-16M376 134v38" />
+      <circle cx="263" cy="211" r="5" fill="currentColor" stroke="none" />
+      <circle cx="309" cy="211" r="5" fill="currentColor" stroke="none" />
+      <circle cx="355" cy="211" r="5" fill="var(--accent-fill)" stroke="none" />
+    </> : id === 'hand-gesture-recognition' ? <>
+      <path d="M275 285c-23-24-36-44-42-66-5-18 12-25 21-9l18 25V138c0-18 24-18 24 0v59-80c0-18 24-18 24 0v80-66c0-18 24-18 24 0v66-40c0-17 24-17 24 0v76c0 24-13 41-21 52" />
+      <path d="M217 129v-20h20m129 0h20v20m0 142v20h-20m-129 0h-20v-20" opacity=".3" />
+      <path d="m284 161 12 79 12-94 12 94 12-84 12 84 12-57" stroke="var(--accent-fill)" stroke-width="2" />
+      {[ [284,161],[308,146],[332,156],[356,183],[308,258] ].map(([cx,cy])=><circle {cx} {cy} r="5" fill="var(--accent-fill)" stroke="none" />)}
+    </> : id === 'decision-tree-classifier' ? <>
+      <path d="M320 133v43H240v44m80-44h80v44M240 244v22h-44v24m44-24h44v24m116-46v22h-44v24m44-24h44v24" opacity=".65" />
+      <rect x="305" y="103" width="30" height="30" rx="5" fill="var(--accent-fill)" stroke="none" />
+      {[240,400].map(cx=><circle {cx} cy="232" r="12" />)}
+      {[196,284,356,444].map((x,i)=><rect x={x-10} y="290" width="20" height="20" rx="4" fill={i===1?'var(--accent-fill)':'var(--art)'} stroke={i===1?'var(--accent-fill)':'currentColor'} />)}
+    </> : id === 'random-forest-classifier' ? <>
+      {[224,320,416].map((x,i)=><g>
+        <path d={`M${x} 125v28m-24 26v-26h48v26M${x} 220v35h${320-x}v35`} opacity=".4" />
+        <circle cx={x} cy="115" r="10" fill={i===1?'var(--accent-fill)':'var(--art)'} stroke={i===1?'var(--accent-fill)':'currentColor'} />
+        <rect x={x-33} y="179" width="18" height="18" rx="3" />
+        <rect x={x+15} y="179" width="18" height="18" rx="3" />
+        <path d={`m${x-24} 197 24 23 24-23`} opacity=".4" />
+      </g>)}
+      <circle cx="320" cy="300" r="14" fill="var(--accent-fill)" stroke="none" />
+    </> : id === 'predicting-hatred-tweets' ? <>
+      <path d="M215 131h125a12 12 0 0 1 12 12v88a12 12 0 0 1-12 12h-74l-31 25v-25h-20a12 12 0 0 1-12-12v-88a12 12 0 0 1 12-12Z" />
+      <path d="M231 165h91m-91 23h63m-63 23h42" opacity=".35" />
+      <path d="m357 194 60 0m-13-13 13 13-13 13" />
+      <rect x="377" y="232" width="44" height="44" rx="10" fill="var(--accent-fill)" stroke="none" />
+      <path d="m389 254 7 7 13-15" stroke="var(--bg)" />
+    </> : <><path d="m290 169-31 31 31 31m60-62 31 31-31 31m-21-72-18 82" /></>}
+  </g>
+</svg>
+<style>
+  .project-graphic { display:block; width:100%; height:100%; color:var(--ink); }
+</style>

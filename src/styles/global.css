@@ -62,6 +62,7 @@ a:hover { color: var(--accent); } .button:hover { color: var(--button-ink); back
 .project-card { min-width: 0; }
 .project-art { height: 200px; display: grid; place-items: center; position: relative; overflow: hidden; border: 1px solid var(--border); border-radius: 10px; background: var(--art); margin-bottom: 20px; }
 .project-art img { width: 100%; height: 100%; object-fit: cover; }
+.project-art:has(img) .art-label { color: #fff; background: #191a1dcc; padding: 6px 9px; border-radius: 4px; backdrop-filter: blur(8px); }
 .art-1 { background: var(--art-warm); } .art-2 { background: var(--art-cool); }
 .art-label { position: absolute; bottom: 14px; left: 16px; font: .6rem ui-monospace, monospace; color: var(--diagram-ink); }
 .diagram { display: flex; gap: 8px; position: relative; align-items: center; transform: rotate(-8deg); }
