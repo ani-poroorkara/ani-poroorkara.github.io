@@ -2,7 +2,7 @@
 
 Fresh baseline: world-7.1v at e5bd23b0df82a124b67a342bac011570e0c16570.
 
-An Astro portfolio, blog and résumé built from Markdown and JSON, with [Pages CMS](https://app.pagescms.org) browser forms and uploads. Visitors cannot edit; authorized repository access is required. The previous public site remains deployed while launch prerequisites are pending.
+An Astro portfolio, blog and résumé built from Markdown and JSON, with [Pages CMS](https://app.pagescms.org) browser forms and uploads. Visitors cannot edit; authorized repository access is required. The public site deploys verified output from `9.0v` through GitHub Actions.
 
 Use Node24 and npm:
 
@@ -21,7 +21,7 @@ Entries default to draft. Production excludes drafts and future dates; filenames
 
 Read the [browser guide](docs/content/editor-guide.md), [editor setup](docs/operations/editor-setup.md), [publishing instructions](docs/operations/publishing.md), [launch checklist](docs/operations/launch-checklist.md) and [recovery guide](docs/operations/rollback.md).
 
-Deployment stays disabled unless `PAGES_DEPLOY_ENABLED` is explicitly enabled. Checks run for pushes to `9.0v` and PRs. Only verified `dist` output can deploy from `9.0v`. Hosted editor authorization, current résumé facts and live cutover are required before full launch acceptance. See [checkpoint](docs/operations/progress.md), [acceptance](docs/operations/acceptance.md) and [maintenance](docs/operations/maintenance.md).
+Deployment is enabled with `PAGES_DEPLOY_ENABLED=true`; GitHub Pages uses the Actions workflow. Checks run for pushes to `9.0v` and PRs. Only verified `dist` output can deploy from `9.0v`. Hosted editor authorization and current résumé facts still require owner validation for full editor acceptance. See [checkpoint](docs/operations/progress.md), [acceptance](docs/operations/acceptance.md) and [maintenance](docs/operations/maintenance.md).
 
 - [Design brief](docs/superpowers/specs/2026-10-03-website-9-design.md)
 - [Implementation plan: all phases](docs/superpowers/plans/2026-10-03-website-9.md)

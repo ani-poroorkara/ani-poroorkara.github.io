@@ -20,3 +20,5 @@ Confirmed through the GitHub API before publishing the owner-requested `9.0v` up
 - `PAGES_DEPLOY_ENABLED` was absent; the latest `9.0v` publication run was skipped.
 
 Cutover uses GitHub Actions, adds only `9.0v` to the existing environment policies, and enables `PAGES_DEPLOY_ENABLED`. To restore the prior publication source, disable that variable and restore Pages build type `legacy` with branch `world-7.1v`, path `/docs`. Preserve the old branches and policies.
+
+The initial cutover succeeded with commit `781db17ff249a758cac3043878649ba61f63a0d9`. Both verification and publication completed successfully; publication run: https://github.com/ani-poroorkara/ani-poroorkara.github.io/actions/runs/41566926272. The public homepage was confirmed to serve the new heading, revised section order, and corrected Sun Tzu quotation.
